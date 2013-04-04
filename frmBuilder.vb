@@ -420,19 +420,38 @@ Public Class frmBuilder
                             Case "Ethernet"
                                 If aDevice.ContainsKey("Slots") Then
                                     tabMain.TabPages.Add(tabEthernet)
-                                    MsgBox(aDevice("Slots").Count)
-                                    MsgBox(aDevice("Slots").Length)
                                     ' add all communication slots, even disabled ones
-                                    While dgvPortsEthernet.RowCount > aDevice("Slots").Count
-                                        dgvPortsSerial.Rows.RemoveAt(dgvPortsSerial.RowCount - 1)
+                                    While dgvPortsEthernet.RowCount > aDevice("Slots").Length
+                                        dgvPortsEthernet.Rows.RemoveAt(dgvPortsEthernet.RowCount - 1)
                                     End While
-                                    While dgvPortsSerial.RowCount < 1
-                                        dgvPortsSerial.Rows.Add(OnboardSerialPort, "")
+                                    While dgvPortsEthernet.RowCount < aDevice("Slots").Length
+                                        dgvPortsEthernet.Rows.Add("00", "Updating...")
                                     End While
-                                    dgvPortsSerial.Rows(0).Cells(0).Value = OnboardSerialPort
+                                    ' update each slot details and data field states
+                                    Dim i As Integer = 0
+                                    For Each aSlot As Dictionary(Of String, Object) In aDevice("Slots")
+                                        dgvPortsEthernet.Rows(i).Cells(0).Value = aSlot("Number")
+                                        If aSlot("ConnType") = "OFF" Then
+                                            dgvPortsEthernet.Rows(i).Cells(1).Value = aSlot("ConnType")
+                                            dgvPortsEthernet.Rows(i).Cells(2).ReadOnly = True
+                                            dgvPortsEthernet.Rows(i).Cells(2).Style.ForeColor = Drawing.Color.Gray
+                                            dgvPortsEthernet.Rows(i).Cells(2).Style.BackColor = Drawing.Color.LightGray
+                                            dgvPortsEthernet.Rows(i).Cells(2).Style.SelectionForeColor = Drawing.Color.Gray
+                                            dgvPortsEthernet.Rows(i).Cells(2).Style.SelectionBackColor = Drawing.Color.LightGray
+                                        Else
+                                            dgvPortsEthernet.Rows(i).Cells(1).Value = aSlot("ConnType") & " " & aSlot("ConnMode") & ", " & aSlot("IP") & ":" & aSlot("Port")
+                                            dgvPortsEthernet.Rows(i).Cells(2).ReadOnly = False
+                                            dgvPortsEthernet.Rows(i).Cells(2).Style.ForeColor = Drawing.SystemColors.ControlText
+                                            dgvPortsEthernet.Rows(i).Cells(2).Style.BackColor = Drawing.SystemColors.Window
+                                            dgvPortsEthernet.Rows(i).Cells(2).Style.SelectionForeColor = Drawing.SystemColors.HighlightText
+                                            dgvPortsEthernet.Rows(i).Cells(2).Style.SelectionBackColor = Drawing.SystemColors.Highlight
+                                        End If
+
+                                        i += 1
+                                    Next
                                 Else
                                     tabMain.TabPages.Add(tabError)
-                                    lblErrorMsg.Text = "An invalid Ethernet device was selected."
+                                    lblErrorMsg.Text = "An invalid Ethernet device was selected (missing Ethernet slot configurations)."
                                 End If
                                 
                         End Select
@@ -530,6 +549,39 @@ Public Class frmBuilder
             End Select
         End If
     End Sub
+
+#Region "ETHERNET"
+    Private Sub btnGenerateEthernet_Click(sender As Object, e As EventArgs) Handles btnGenerateEthernet.Click
+        ' Loop through ethernet slots
+        Dim dataString As String = ""
+        Dim commandName As String = ""
+        Dim found As Boolean = False
+        For i As Integer = 0 To dgvPortsEthernet.Rows.Count - 1
+            If dgvPortsEthernet.Rows(i).Cells(1).Value <> "OFF" AndAlso dgvPortsEthernet.Rows(i).Cells(2).Value <> "" Then
+                If found Then
+                    MsgBox("Only one ethernet slot command can be built at a time. The command has been generated for the first slot in the list only." & Environment.NewLine & _
+                           "If you want to create commands for additional slots, please define them individually before adding to your project.")
+                    Exit For
+                Else
+                    ' slot has data to send, so add it to the command string
+                    commandName &= "-SLOT" & dgvPortsEthernet.Rows(i).Cells(0).Value
+                    dataString &= PadZero(dgvPortsEthernet.Rows(i).Cells(0).Value) & ":" & dgvPortsEthernet.Rows(i).Cells(2).Value
+                    found = True
+                End If
+                
+            End If
+        Next
+
+        ' Check that at least one slot was used to send data
+        If dataString = "" Then
+            MsgBox("You must enter data for at least one ethernet slot to generate the CFLink command.")
+            Exit Sub
+        End If
+
+        txtCommandValue.Text = BuildCFLinkCommandRAW(SelectedDevice("CFLinkID"), "TLANSND", dataString)
+        txtCommandName.Text = SelectedDevice("Model") & "-" & Integer2HexString(SelectedDevice("CFLinkID")) & "_ETH" & commandName
+    End Sub
+#End Region
 
 #Region "LED"
     Private Sub dgvPortsLED_CellValueChanged(sender As Object, e As DataGridViewCellEventArgs) Handles dgvPortsLED.CellValueChanged
@@ -973,93 +1025,6 @@ Public Class frmBuilder
     End Sub
 #End Region
 
-    Private Sub EnableCommandObjects(Optional ByVal enabled As Boolean = True)
-        cboSystems.Enabled = enabled
-        'txtCommandName.Enabled = enabled
-        'txtCommandValue.Enabled = enabled
-        btnAdd.Enabled = enabled
-        btnAddAllIRCommands.Enabled = enabled
-    End Sub
-
-    Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
-        If cboSystems.SelectedIndex = -1 Then
-            MsgBox("Please select a system to add the command to.")
-            cboSystems.Focus()
-            Exit Sub
-        End If
-
-        If txtCommandName.Text = "" Then
-            MsgBox("Please enter a command name.")
-            txtCommandName.Focus()
-            Exit Sub
-        End If
-
-        If txtCommandValue.Text = "" Then
-            MsgBox("Please enter a command value.")
-            txtCommandValue.Focus()
-            Exit Sub
-        End If
-
-        Dim newCommand As New CommandFusion.SystemCommand()
-        If cboSystems.SelectedItem = NewSystem Then
-            If discoveredDevices Is Nothing OrElse Not discoveredDevices.ContainsKey("DeviceList") Then
-                MsgBox("Please select a valid device discovery export file first.")
-                Exit Sub
-            End If
-
-            Dim newSystem As New CommandFusion.SystemClass
-
-            ' Create a new default system using the selected discovered devices
-            For Each aDevice As Dictionary(Of String, Object) In discoveredDevices("DeviceList")
-                If aDevice("IsEthernet") Then
-                    newSystem.Name = aDevice("Model") & "-" & Integer2HexString(aDevice("CFLinkID"))
-                    newSystem.Protocol = "UDP"
-                    newSystem.IPAddress = aDevice("NetworkName")
-                    newSystem.PortDestination = 10207
-                    newSystem.PortOrigin = 10207
-                    newSystem.Queue = False
-                    newSystem.EOM = "\xF5\xF5"
-                    newSystem.AcceptBroadcasts = True
-                    newSystem.AcceptIncoming = True
-                    newSystem.AlwaysOn = True
-                    Exit For
-                End If
-            Next
-
-            newCommand.Name = txtCommandName.Text
-            newCommand.Value = txtCommandValue.Text
-            newCommand.System = newSystem
-            newSystem.Commands.Add(newCommand)
-
-            LastSystemName = newSystem.Name
-
-            RaiseEvent AddSystem(Me, newSystem)
-            RaiseEvent RequestSystemList(Me)
-
-        Else
-            If ListOfSystems IsNot Nothing AndAlso ListOfSystems.Count > 0 Then
-                Dim theSystem As CommandFusion.SystemClass = GetSystem(cboSystems.SelectedItem)
-                If theSystem IsNot Nothing Then
-                    newCommand.Name = txtCommandName.Text
-                    newCommand.Value = txtCommandValue.Text
-                    newCommand.System = theSystem
-                    theSystem.Commands.Add(newCommand)
-
-                    LastSystemName = theSystem.Name
-
-                    RaiseEvent AppendSystem(Me, theSystem)
-                End If
-            Else
-                MsgBox("Please add a System to your guiDesigner project.")
-                Exit Sub
-            End If
-        End If
-    End Sub
-
-    Private Sub btnRefreshSystems_Click(sender As Object, e As EventArgs) Handles btnRefreshSystems.Click
-        RaiseEvent RequestSystemList(Me)
-    End Sub
-
 #Region "IR"
     Private Sub LoadOnboardDatabase()
         Try
@@ -1351,5 +1316,92 @@ Public Class frmBuilder
     End Sub
 
 #End Region
+
+    Private Sub EnableCommandObjects(Optional ByVal enabled As Boolean = True)
+        cboSystems.Enabled = enabled
+        'txtCommandName.Enabled = enabled
+        'txtCommandValue.Enabled = enabled
+        btnAdd.Enabled = enabled
+        btnAddAllIRCommands.Enabled = enabled
+    End Sub
+
+    Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+        If cboSystems.SelectedIndex = -1 Then
+            MsgBox("Please select a system to add the command to.")
+            cboSystems.Focus()
+            Exit Sub
+        End If
+
+        If txtCommandName.Text = "" Then
+            MsgBox("Please enter a command name.")
+            txtCommandName.Focus()
+            Exit Sub
+        End If
+
+        If txtCommandValue.Text = "" Then
+            MsgBox("Please enter a command value.")
+            txtCommandValue.Focus()
+            Exit Sub
+        End If
+
+        Dim newCommand As New CommandFusion.SystemCommand()
+        If cboSystems.SelectedItem = NewSystem Then
+            If discoveredDevices Is Nothing OrElse Not discoveredDevices.ContainsKey("DeviceList") Then
+                MsgBox("Please select a valid device discovery export file first.")
+                Exit Sub
+            End If
+
+            Dim newSystem As New CommandFusion.SystemClass
+
+            ' Create a new default system using the selected discovered devices
+            For Each aDevice As Dictionary(Of String, Object) In discoveredDevices("DeviceList")
+                If aDevice("IsEthernet") Then
+                    newSystem.Name = aDevice("Model") & "-" & Integer2HexString(aDevice("CFLinkID"))
+                    newSystem.Protocol = "UDP"
+                    newSystem.IPAddress = aDevice("NetworkName")
+                    newSystem.PortDestination = 10207
+                    newSystem.PortOrigin = 10207
+                    newSystem.Queue = False
+                    newSystem.EOM = "\xF5\xF5"
+                    newSystem.AcceptBroadcasts = True
+                    newSystem.AcceptIncoming = True
+                    newSystem.AlwaysOn = True
+                    Exit For
+                End If
+            Next
+
+            newCommand.Name = txtCommandName.Text
+            newCommand.Value = txtCommandValue.Text
+            newCommand.System = newSystem
+            newSystem.Commands.Add(newCommand)
+
+            LastSystemName = newSystem.Name
+
+            RaiseEvent AddSystem(Me, newSystem)
+            RaiseEvent RequestSystemList(Me)
+
+        Else
+            If ListOfSystems IsNot Nothing AndAlso ListOfSystems.Count > 0 Then
+                Dim theSystem As CommandFusion.SystemClass = GetSystem(cboSystems.SelectedItem)
+                If theSystem IsNot Nothing Then
+                    newCommand.Name = txtCommandName.Text
+                    newCommand.Value = txtCommandValue.Text
+                    newCommand.System = theSystem
+                    theSystem.Commands.Add(newCommand)
+
+                    LastSystemName = theSystem.Name
+
+                    RaiseEvent AppendSystem(Me, theSystem)
+                End If
+            Else
+                MsgBox("Please add a System to your guiDesigner project.")
+                Exit Sub
+            End If
+        End If
+    End Sub
+
+    Private Sub btnRefreshSystems_Click(sender As Object, e As EventArgs) Handles btnRefreshSystems.Click
+        RaiseEvent RequestSystemList(Me)
+    End Sub
 
 End Class
