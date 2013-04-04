@@ -1,0 +1,3556 @@
+========================================================================================
+GondarII              	       DeviceKey
+========================================================================================
+
+========================================================================================		  
+				   Change History
+========================================================================================
+v01.00.00     			Date: <08/06/2010>	    	Remarks: <ALL>
+========================================================================================
+
+
+
+###### Setup Codes For Audio - Amplifier (A) ######
+
+Acoustic Solutions                      1446, 1501
+Anthem                                  2220
+Cambridge Audio                         1730, 1982
+Denon                                   0272, 2134
+Halcro                                  1934
+Logitech                                1408
+Marantz                                 1892, 2138
+Parasound                               1934
+Primare                                 1851
+Thule Audio                             1851
+upXus                                   1446
+Yamaha                                  0354
+
+
+###### Setup Codes For Cable Set Top Box (C) ######
+
+ADB                                     2254
+Akado                                   2043, 2339
+Altibox                                 2030
+Amino                                   1602, 1481, 1822, 2482
+AT&T                                    0858
+Auna                                    1439
+Azteca                                  2237
+Belgacom TV                             2345
+Bright House                            1376, 1877
+Cable & Wireless                        1068
+Cable One                               1376, 1877
+Cablecom                                1582
+Cablevision                             1376, 1877, 1006
+Charter                                 1376, 1877, 2187
+Chunghwa                                1917
+Cisco                                   1877, 0877, 0858, 1982, 2345
+ClubInternet                            2132
+Com Hem                                 0660, 1666, 2015, 2447
+Comcast                                 1376, 1877, 1982, 2576
+Cox                                     1376, 1877
+Daeryung                                1877, 0877
+Digeo                                   1187, 2187
+Freebox                                 1482, 1976
+General Instrument                      1439
+Gradiente                               1136
+Hathw@y                                 2043
+Homecast                                2301
+Humax                                   0660, 1981, 1983, 2043, 2339, 2447
+i3 Micro                                1602
+Insight                                 1376, 1877
+J:COM                                   1760, 1782
+Jerrold                                 1439
+Kabel Deutschland                       1981, 1983
+KabelBW                                 1981, 1983, 2174
+Kiss                                    2132
+Knology                                 1877
+KoolConnect                             1481
+Kreatel                                 2030
+Mediacom                                1376, 1877
+Mega TV                                 2683
+Motorola                                1376, 1187, 0858, 1439, 1982, 2030, 2378
+MyLGTV                                  2682
+Myrio                                   1602, 1822
+NET                                     1439
+Now TV                                  2013
+NTL                                     1060, 1068, 1439
+Ono                                     1068
+Optus                                   1060
+Orange                                  2407
+Pace                                    1376, 1877, 1060, 1068, 1982
+Panasonic                               1760, 1982
+PCCW                                    2013
+Philips                                 1582, 2174
+Pioneer                                 1877, 0877, 1782
+Premiere                                2174
+Primestar                               2030
+PrimeTV                                 2030
+Qtel                                    1822
+Rogers                                  1877
+Sagem                                   2407
+Samsung                                 1877, 1060, 1666, 1987, 2015, 2174, 2407
+Scientific Atlanta                      1877, 0877, 0858, 1982, 1987, 2132, 2345
+Sejin                                   1602
+SetaBox                                 1917
+Shaw                                    1376
+Sony                                    1006
+Stofa                                   2015
+Suddenlink                              1376, 1877
+SureWest                                1481
+T-Home                                  2132
+Telenet                                 1920
+Telewest                                1068, 1987
+Thomson                                 1582, 1981, 1982, 1983, 2174, 2237, 2407
+Time Warner                             1376, 1877, 2187
+Tivo                                    2576
+UPC                                     1582
+Verizon                                 2378
+Viasat                                  2030
+Viken Fibernett                         2030
+Virgin Media                            1060, 1068, 1987
+WideOpenWest                            1877
+Ziggo                                   0660, 1666, 2015, 2447
+
+
+--- Cable/PVR Combination (C) ---
+
+Akado                                   2339
+Amino                                   1822
+Bright House                            1376, 1877
+Cable One                               1376, 1877
+Cablevision                             1376, 1877, 1006
+Charter                                 1376, 1877, 2187
+Cisco                                   1877, 1982
+Comcast                                 1376, 1877, 1982, 2576
+Cox                                     1376, 1877
+Digeo                                   1187, 2187
+Freebox                                 1482, 1976
+Homecast                                2301
+Humax                                   1981, 1983, 2339
+Insight                                 1376, 1877
+Knology                                 1877
+Mediacom                                1376, 1877
+Motorola                                1376, 1187
+Myrio                                   1822
+Pace                                    1877
+Panasonic                               1982
+Philips                                 1582
+Pioneer                                 1877
+Rogers                                  1877
+Samsung                                 1877, 1987
+Scientific Atlanta                      1877, 1982, 1987
+Shaw                                    1376
+Sony                                    1006
+Suddenlink                              1376, 1877
+Telenet                                 1920
+Telewest                                1987
+Thomson                                 1582
+Time Warner                             1376, 1877, 2187
+Tivo                                    2576
+UPC                                     1582
+Virgin Media                            1987
+WideOpenWest                            1877
+
+
+--- DTA Converter (C) ---
+
+Motorola                                1982
+Pace                                    1982
+Thomson                                 1982
+
+
+--- IPTV (C) ---
+
+ADB                                     2254
+Altibox                                 2030
+Amino                                   1481, 2482
+AT&T                                    0858
+Azteca                                  2237
+Chunghwa                                1917
+Cisco                                   0858, 2345
+ClubInternet                            2132
+Kiss                                    2132
+KoolConnect                             1481
+Kreatel                                 2030
+Mega TV                                 2683
+Motorola                                1376, 0858, 2030, 2378
+MyLGTV                                  2682
+Now TV                                  2013
+Orange                                  2407
+PCCW                                    2013
+Philips                                 2174
+Primestar                               2030
+PrimeTV                                 2030
+Qtel                                    1822
+Sagem                                   2407
+Samsung                                 2174, 2407
+Scientific Atlanta                      0858, 2345
+SetaBox                                 1917
+SureWest                                1481
+T-Home                                  2132
+Thomson                                 2174, 2237, 2407
+Verizon                                 2378
+Viasat                                  2030
+Viken Fibernett                         2030
+
+
+--- SAT/PVR Combination (C) ---
+
+Philips                                 1582
+T-Home                                  2132
+UPC                                     1582
+
+
+###### Setup Codes For Audio - CD (D) ######
+
+Advantage                               0032
+AH!                                     0157
+Aiwa                                    0157
+Arcam                                   0157
+Atoll Electronique                      0157
+Audio Research                          0157
+Audiolab                                0157
+Audiomeca                               0157
+Audioton                                0157
+AVI                                     0157
+Balanced Audio Technology               0157
+Cairn                                   0157
+California Audio Labs                   0029, 0303
+Cambridge                               0157
+Cambridge Audio                         0157
+Carver                                  0157
+CCE                                     0157
+Cyrus                                   0157
+Denon                                   0034
+DKK                                     0000
+DMX Electronics                         0157
+Dynaco                                  0157
+Genexxa                                 0000, 0032
+Goldmund                                0157
+Grundig                                 0157
+Harman/Kardon                           0157, 0173
+Hitachi                                 0032
+Integra                                 0101
+JVC                                     0072
+Kenwood                                 0157, 0028, 0036
+Krell                                   0157
+Linn                                    0157
+Loewe                                   0157
+Magnavox                                0157
+Marantz                                 0029, 0157
+Matsui                                  0157
+MCS                                     0029
+Memorex                                 0032
+Meridian                                0157
+Micromega                               0157
+Miro                                    0000
+Mission                                 0157
+Myryad                                  0157
+NAD                                     0000
+Naim                                    0157
+NSM                                     0157
+Onkyo                                   0101
+Optimus                                 0000, 0032
+Panasonic                               0029, 0303
+Philips                                 0157
+Pioneer                                 0032, 0101
+Polk Audio                              0157
+Primare                                 0157
+Proceed                                 0157
+Proton                                  0157
+QED                                     0157
+Quad                                    0157
+Quasar                                  0029
+Radiola                                 0157
+RCA                                     0032, 0053
+Restek                                  0157
+Revox                                   0157
+Rotel                                   0157
+SAE                                     0157
+Sansui                                  0157
+SAST                                    0157
+Sharp                                   0034
+Siemens                                 0157
+Silsonic                                0036
+Simaudio                                0157
+Sonic Frontiers                         0157
+Sony                                    0000, 0185
+Sylvania                                0157
+TAG McLaren                             0157
+Tandy                                   0032
+Technics                                0029, 0303
+Thomson                                 0053
+Thorens                                 0157
+Thule Audio                             0157
+Universum                               0157, 0053
+Victor                                  0072
+Wards                                   0000, 0032, 0157, 0053
+Yamaha                                  0032, 0036
+Zonda                                   0157
+
+
+###### Setup Codes For Audio - Accessory (M) ######
+
+Altec Lansing                           2251
+Denon                                   2502
+Philips                                 2327
+Polk Audio                              2228
+Samsung                                 2609
+Vizio                                   2454
+Yamaha                                  2021, 2116, 2458
+
+
+--- Docking System (M) ---
+
+Altec Lansing                           2251
+Philips                                 2327
+Polk Audio                              2228
+
+
+###### Setup Codes For Video - Accessory (N) ######
+
+A.C.Ryan                                2535, 2709
+ABS                                     1272
+Access HD                               2185
+Acer                                    1272
+Airlink 101                             2491
+Alienware                               1272
+Alpha Digital                           2185
+AMTC                                    2185
+Apex Digital                            2478
+Apple                                   2615
+Argosy                                  2270
+Artec                                   2490
+ATMT                                    2270
+Axonix                                  1447
+Channel Master                          2365
+chiliGREEN                              2535
+Claritas                                1272
+Coby                                    2667
+Coship                                  2487
+CyberPower                              1272
+Daewoo                                  2338
+Daily Media                             1272
+Digital Stream                          2303
+Digitech                                2260
+Dish Network                            2470
+DVICO                                   2153
+Echostar                                2470
+Elonex                                  1272
+Emtec                                   2535, 2709
+Epson                                   1563
+EverTech                                2535
+Fantec                                  2535, 2709
+Fujitsu Siemens                         1272
+Galaxy                                  2238
+Gateway                                 1272
+GE                                      2360, 2450
+Goodmind                                2450
+Hewlett Packard                         1272
+Howard Computers                        1272
+HP                                      1272
+Hush                                    1272
+iBUYPOWER                               1272
+INOi                                    2270
+Insignia                                1415
+Iomega                                  2238, 2270
+LaCie                                   2238
+LG                                      1415
+Linksys                                 1272
+Macpower                                2238
+Magnavox                                1563
+me2                                     2270, 2535
+Mede8er                                 2709
+Media Center PC                         1272
+Memorex                                 2486
+Memup                                   2270
+Microsoft                               2049, 1272
+Mind                                    1272
+Niveus Media                            1272
+Northgate                               1272
+Olidata                                 2270
+Packard Bell                            1272, 2238
+Philco                                  1563
+Philips                                 1272
+Pinnacle Systems                        1447
+Popcorn Hour                            2260
+RaidSonic                               2238
+RCA                                     2325, 2454
+Ricavision                              1272
+Roku                                    2371
+Samsung                                 1967
+Sling Media                             2612
+Sony                                    1272
+Stack 9                                 1272
+Sylvania                                1563
+Systemax                                1272
+Tagar Systems                           1272
+Tivax                                   2185
+Toshiba                                 1272
+Touch                                   1272
+Trust                                   1272
+TViX                                    2153
+Ventura                                 2454
+Venturer                                2454
+VIA Technologies                        1272
+Viewsonic                               1272
+Voodoo                                  1272
+Vudu                                    2298
+Western Digital                         2558
+Winegard                                2454
+Woxter                                  2535
+Xbox                                    2049, 1272
+Zenith                                  1415
+Zentech                                 2491
+Zinwell                                 2488
+ZT Group                                1272
+
+
+--- DTA Converter (N) ---
+
+Access HD                               2185
+Airlink 101                             2491
+Alpha Digital                           2185
+AMTC                                    2185
+Apex Digital                            2478
+Artec                                   2490
+Channel Master                          2365
+Coby                                    2667
+Coship                                  2487
+Daewoo                                  2338
+Digital Stream                          2303
+Dish Network                            2470
+Echostar                                2470
+GE                                      2360, 2450
+Goodmind                                2450
+Insignia                                1415
+Magnavox                                1563
+Memorex                                 2486
+Philco                                  1563
+RCA                                     2325, 2454
+Sylvania                                1563
+Tivax                                   2185
+Ventura                                 2454
+Venturer                                2454
+Winegard                                2454
+Zenith                                  1415
+Zentech                                 2491
+Zinwell                                 2488
+
+
+--- Game Console (N) ---
+
+Microsoft                               2049
+Xbox                                    2049
+
+
+--- Media Center Controller (N) ---
+
+ABS                                     1272
+Acer                                    1272
+Alienware                               1272
+Apple                                   2615
+Claritas                                1272
+CyberPower                              1272
+Daily Media                             1272
+DVICO                                   2153
+Elonex                                  1272
+Emtec                                   2535
+Fujitsu Siemens                         1272
+Gateway                                 1272
+Hewlett Packard                         1272
+Howard Computers                        1272
+HP                                      1272
+Hush                                    1272
+iBUYPOWER                               1272
+Iomega                                  2270
+LaCie                                   2238
+Linksys                                 1272
+me2                                     2270, 2535
+Media Center PC                         1272
+Microsoft                               2049, 1272
+Mind                                    1272
+Niveus Media                            1272
+Northgate                               1272
+Olidata                                 2270
+Packard Bell                            1272, 2238
+Philips                                 1272
+RaidSonic                               2238
+Ricavision                              1272
+Sony                                    1272
+Stack 9                                 1272
+Systemax                                1272
+Tagar Systems                           1272
+Toshiba                                 1272
+Touch                                   1272
+Trust                                   1272
+TViX                                    2153
+VIA Technologies                        1272
+Viewsonic                               1272
+Voodoo                                  1272
+Xbox                                    2049
+ZT Group                                1272
+
+
+###### Setup Codes For Audio - Receiver (R) ######
+
+AEG                                     1389, 1390
+AFK                                     1389
+Aiwa                                    1405, 0121, 1089, 1827
+Akai                                    0609, 1390
+Alco                                    1390
+All-Tel                                 1390
+AMC                                     1077
+Amstrad                                 1390
+Anam                                    1609, 0609
+Arcam                                   1189, 0642, 1120
+ASCOMTEC                                1389
+Audiolab                                1189
+Audiosonic                              1389
+Audiotronic                             1189
+Audiovox                                1390
+Audioworld                              1390
+Bang & Olufsen                          0799
+Belson                                  1389
+Binatone                                1389
+Blue Sky                                1390
+Bose                                    1229, 1629, 1933
+Cambridge Audio                         1647
+Cameron                                 2426
+Carver                                  1189, 0121, 1089
+Cat                                     1389
+Clatronic                               1389
+Coby                                    1389
+Curtis                                  1389
+Daewoo                                  1293
+Dantax                                  1390
+Denon                                   2857, 1360, 0771, 1460, 2279, 2820
+Denver                                  1389
+Diamond                                 1390
+Dual                                    1390
+Elta                                    1390
+Fine Arts                               1189
+Fisher                                  1801
+Fonmix                                  1360
+Goodmans                                0609, 1389, 1390
+Grundig                                 1189, 1089
+Grunkel                                 1390
+Hanseatic                               1390
+Harman/Kardon                           1189, 1304, 1306, 2241, 2443
+HCM                                     1390
+HE                                      1389
+Hitachi                                 1801
+Hiteker                                 1389
+HitPlus                                 2483
+Home Tech Industries                    1389
+Insignia                                1077, 2126, 2169
+Integra                                 0135, 1298, 1320, 1805
+JBL                                     1304, 1306
+JVC                                     0074, 1374, 1495, 1676, 2239, 2331
+Kenwood                                 1313, 0712, 1293
+KLH                                     1390
+KXD                                     1389
+Lenoxx                                  1389
+LG                                      1293, 2197, 2676
+Magnat                                  1389
+Magnavox                                1189, 1269, 1089
+Marantz                                 1189, 1269, 0642, 1089, 1289, 2114, 2117
+McIntosh                                1289
+Medion                                  2197
+MEI                                     1390
+Micromega                               1189
+Musicmagic                              1089
+Muvid                                   2476
+Myryad                                  1189
+NAD                                     0320, 0609
+Nakamichi                               1313
+Nexius                                  1390
+Nikkai                                  1389
+Nikko                                   0609
+Norcent                                 1389
+Nova                                    1389
+Onkyo                                   0135, 1298, 1320, 1805
+Optimus                                 1023
+Palladium                               1293, 1390
+Panasonic                               1308, 1518, 1288, 1309, 1548, 1633, 1763, 1765, 
+                                        1779, 2221, 2452, 2967
+Philco                                  1390
+Philips                                 1189, 1269, 0642, 1089, 1120, 1266, 1289, 1673, 
+                                        1831, 2029, 2311, 2341, 2459
+Pioneer                                 1023, 1123, 1284, 1459, 1623, 1935
+PJ                                      1389
+Polk Audio                              1289
+Proficient                              0609
+Proline                                 1390
+Proscan                                 1254
+ProVision                               1389
+Qisheng                                 1609, 1390
+QONIX                                   1390
+Quadro                                  1389
+Radionette                              1293
+RCA                                     1023, 1609, 1254, 1123, 1390, 1459, 2426, 2490
+Redstar                                 1389
+Revox                                   1089
+Rotel                                   0793
+Samsung                                 1295, 1304, 1500, 1868
+Sansui                                  0609, 1089
+Sanyo                                   1801
+Schneider                               1390
+Scott                                   1389
+Sharp                                   0771
+Sherwood                                1077, 1905, 2169
+Sherwood Newcastle                      2169
+Shinco                                  1390
+Siemens                                 0609
+Silsonic                                0176
+Silva Schneider                         1390
+Sony                                    1759, 1058, 1441, 1258, 1622, 2522, 2475, 2172, 
+                                        1882, 1858, 1827, 1822, 1758, 1722, 1658, 1558, 
+                                        1454, 1358, 1158, 1112
+Soundwave                               0609
+Stereophonics                           1023
+Sunfire                                 1313
+Sungoo                                  1313
+TAG McLaren                             1189
+Targa                                   1293
+Teac                                    1609, 0609, 1390
+Technics                                1308, 1518, 1309, 1633, 1763, 1765
+Technika                                2426
+Techwood                                0609
+Telefunken                              1389, 1390
+Tevion                                  1389
+Thomson                                 1254, 1194, 1354
+Thorens                                 1189
+Tokai                                   1390
+Toshiba                                 1123
+United                                  1390
+Universum                               1609, 0609, 1390
+Venturer                                1390
+Victor                                  0074
+Vtrek                                   2426, 2483
+Wharfedale                              1390
+Xenius                                  1390
+Yamaha                                  0176, 0376, 0712, 1276, 1331, 1476, 1776, 2061, 
+                                        2467
+Zenith                                  1293
+
+
+--- DVD/PVR Combination (R) ---
+
+Pioneer                                 1459
+Sony                                    2172
+
+
+--- HTiB (R) ---
+
+AEG                                     1389, 1390
+AFK                                     1389
+Akai                                    1390
+All-Tel                                 1390
+Amstrad                                 1390
+Anam                                    1609
+ASCOMTEC                                1389
+Audiosonic                              1389
+Audiovox                                1390
+Audioworld                              1390
+Belson                                  1389
+Binatone                                1389
+Blue Sky                                1390
+Bose                                    1229, 1629, 1933
+Cameron                                 2426
+Cat                                     1389
+Clatronic                               1389
+Coby                                    1389
+Curtis                                  1389
+Daewoo                                  1293
+Dantax                                  1390
+Denon                                   2857, 1460, 2279
+Denver                                  1389
+Diamond                                 1390
+Dual                                    1390
+Elta                                    1390
+Fisher                                  1801
+Goodmans                                1389, 1390
+Grunkel                                 1390
+Hanseatic                               1390
+Harman/Kardon                           1306
+HCM                                     1390
+HE                                      1389
+Hitachi                                 1801
+Hiteker                                 1389
+HitPlus                                 2483
+Home Tech Industries                    1389
+Integra                                 0135, 1298
+JBL                                     1306
+JVC                                     0074, 1374, 1495, 1676, 2239, 2331
+Kenwood                                 1313, 1293
+KLH                                     1390
+KXD                                     1389
+Lenoxx                                  1389
+LG                                      1293, 2197, 2676
+Magnat                                  1389
+Medion                                  2197
+MEI                                     1390
+NAD                                     0609
+Nexius                                  1390
+Nikkai                                  1389
+Norcent                                 1389
+Nova                                    1389
+Onkyo                                   0135, 1298
+Palladium                               1293, 1390
+Panasonic                               1288, 1548, 1633, 1763, 1765, 1779, 2221, 2452, 
+                                        2967
+Philco                                  1390
+Philips                                 1269, 1266, 1673, 1831, 2311, 2341, 2459
+Pioneer                                 1123, 1284, 1459
+PJ                                      1389
+Polk Audio                              1289
+Proline                                 1390
+ProVision                               1389
+QONIX                                   1390
+Quadro                                  1389
+Radionette                              1293
+RCA                                     1609, 1390, 1459, 2426, 2490
+Redstar                                 1389
+Samsung                                 1295, 1500, 1868
+Sanyo                                   1801
+Schneider                               1390
+Scott                                   1389
+Sherwood                                1905
+Silva Schneider                         1390
+Sony                                    1622, 1454, 1558, 1658, 1722, 1758, 1822, 1827, 
+                                        1858, 1882, 2172, 2522
+Targa                                   1293
+Teac                                    1609, 1390
+Technics                                1763, 1765
+Technika                                2426
+Telefunken                              1389, 1390
+Tevion                                  1389
+Thomson                                 1194
+Tokai                                   1390
+United                                  1390
+Universum                               1609, 1390
+Venturer                                1390
+Vtrek                                   2426, 2483
+Wharfedale                              1390
+Xenius                                  1390
+Yamaha                                  0712, 1331, 2061
+Zenith                                  1293
+
+
+###### Setup Codes For Satellite Set Top Box (S) ######
+
+@sat                                    1300
+@Sky                                    1334
+ABsat                                   0713
+Acoustic Solutions                      1284
+ADB                                     0887, 1367, 2367
+Airis                                   1659, 1993
+Akai                                    0200
+Akura                                   1626
+Alba                                    0713, 1284, 1659, 2296
+Allsat                                  0200
+Alltech                                 0713
+Allvision                               1334
+Amitronica                              0713
+Ampere                                  0396
+Amstrad                                 0396, 0713, 0847, 1175, 1662, 1693, 1801, 1848, 
+                                        2139
+Anglo                                   0713
+Ankaro                                  0713
+Ansonic                                 2418
+Apro                                    1672
+Arena                                   1736
+Armstrong                               0200
+Arnion                                  1300
+ASA                                     0740
+Asat                                    0200
+ASCI                                    0114, 1334
+ASLF                                    0713
+AssCom                                  0853
+Astra                                   0713
+Astratec                                1743, 1929
+Astro                                   0173, 0658, 1099, 1100, 1816, 2026, 2627
+Atlanta                                 2418
+Atsat                                   1300
+AtSky                                   1334
+Audiola                                 2418
+Audioline                               1672
+Aurora                                  0879
+Austar                                  0879
+Avalon                                  0396
+Awa                                     1659
+Axil                                    1659, 1777, 1993, 2139, 2418
+Axitronic                               1626
+B.net                                   1672
+B@ytronic                               0740
+Bell ExpressVu                          0775
+Belson                                  2139, 2418
+Best Buy                                1993, 2139
+Big Sat                                 1572
+BIG TV                                  2463
+Black Diamond                           1284
+Blaupunkt                               0173
+Blue Sky                                0713
+Boca                                    0713, 1366, 2026, 2308
+Boshmann                                1631
+Boxer                                   1692, 1957
+Brainwave                               0658, 1672
+British Sky Broadcasting                0847, 1175, 1662
+Broco                                   0713
+BskyB                                   0847, 1175, 1662
+Bubu Sat                                0713
+Bush                                    1284, 1291, 1626, 1645, 1672, 1743, 1935, 1993, 
+                                        2167, 2376
+Canal Digitaal                          2466
+Canal Digital                           0853, 1004, 1334, 1780, 2553
+Canal Satellite                         0853, 2107, 2657
+Canal+                                  0853, 2107, 2657
+CanalSat                                0853, 2107, 2657
+CDV                                     1993
+Century                                 0856
+CGV                                     2034
+Chess                                   0114, 0713, 1334, 1626, 2026
+CityCom                                 0658, 1176
+Clarity                                 2296
+Classic                                 1672
+Clayton                                 1626
+Clemens Kamphus                         0396
+CMX                                     2205
+CNS                                     1367
+Cobra                                   0396
+Com Hem                                 1176, 1915, 2357
+Comag                                   1366, 2026, 2308
+Comwell                                 1956
+Conia                                   2167
+Connexions                              0396
+Coship                                  1672, 2525
+Crown                                   1284
+CS                                      1631
+Cyfra+                                  1076, 1409, 2593
+Cyfrowy Polsat                          0253, 0853, 2262, 2527
+Cyrus                                   0200
+D-box                                   0723, 1114
+Daeryung                                0396
+Daewoo                                  0713, 1743
+DAK                                     1993
+Dantax                                  1626
+Denver                                  2418
+Dgtec                                   1631, 2418
+Dick Smith Electronics                  2418
+Digi                                    2026
+Digi Raum Electronics                   1176, 2622
+Digiality                               1334
+Digifusion                              1645, 1743, 1929
+Digihome                                1284, 1935, 2034
+DigiLogic                               1284, 1993
+DigiQuest                               1300, 1631
+Digital                                 2308
+Digital Vision                          1929
+DigitalBox                              1100, 1631
+Digitel+                                1659
+Digittrade                              1659
+Digiturk                                1076, 2097
+Digiwave                                1631
+Dilog                                   1780, 1957
+DiPro                                   1367
+DirecTV                                 1377, 0392, 0566, 0639, 1639, 1142, 0247, 0749, 
+                                        1749, 1856, 1076, 0099, 1414, 1442, 1609
+Dish Network                            0775, 1775
+Dishpro                                 0775, 1775
+DishTV                                  1300, 1780
+Distratel                               1704
+DNT                                     0200, 0396
+Doro                                    1672
+DRE                                     1176, 2622
+Dream Multimedia                        1237, 1652, 1923
+DSE                                     2418
+DSTV                                    0879
+Dual                                    2034
+Durabrand                               1284, 2034, 2241
+DVX                                     1993, 2167
+Echolink                                1366, 1572
+Echostar                                0775, 0396, 0713, 0853, 1323, 1409, 1775, 2262, 
+                                        2527
+Edision                                 1631, 2306
+Einhell                                 0713
+Elap                                    0713
+Elbe                                    2418
+Electron                                1956
+Elisa                                   1322
+Elless                                  0740
+Elsat                                   0713
+Elta                                    0200, 1659
+Emtec                                   1659
+Energy Sistem                           1631, 2418
+Engel                                   0713, 1801, 1993
+Europhon                                0713
+Eurosky                                 0114, 0740
+Eutelsat                                0713
+Eutra                                   0740
+Evesham                                 2034
+Expressvu                               0775, 1775
+Fagor                                   1611
+Fenner                                  0713
+Ferguson                                1291, 1743, 1929
+Finepass                                1780
+Finlux                                  1626
+FinnSat                                 0740
+Flair Mate                              0713
+FMD                                     0114
+Foxtel                                  0879, 1176
+FPE                                     1993
+Freesat+                                2443
+FTEmaximal                              0713
+Fuba                                    0173, 0396, 1801
+Funai                                   2167
+Galaxis                                 0853, 0879
+Galaxy                                  1956
+GE                                      0566
+General Instrument                      0869
+General Satellite                       1176, 2622
+Globo                                   0740, 1334, 1429, 1626, 2026
+GOD Digital                             0200
+GOI                                     0775, 1775
+Gold Box                                0853
+Gold Vision                             1631
+Golden Channel                          1572
+Golden Interstar                        1572
+GoldMaster                              1334
+Goodmans                                1284, 1291, 2034, 2376
+Gradiente                               0856, 0099, 0887
+Gran Prix                               0740
+Grandin                                 1626
+Grocos                                  1409
+Grundig                                 0173, 0847, 0853, 0879, 1284, 1291, 1659, 1672, 
+                                        1780, 2034, 2367, 2376
+Haier                                   2418
+Hallo                                   1626
+Handan                                  1780, 1957
+Hanseatic                               1099, 1100
+Hauppauge                               1672
+HB                                      1801
+Hirschmann                              0173, 0396, 0740, 2026
+Hitachi                                 1284, 2034
+Homecast                                1736, 2525
+Hornet                                  1300
+Houston                                 0396
+HTS                                     0775, 1775
+Hughes Network Systems                  1142, 0749, 1749, 1442
+Humax                                   1377, 1176, 1427, 1675, 1743, 1808, 1915, 2144, 
+                                        2357, 2408, 2443, 2616
+Hyundai                                 2463
+i-Box                                   1652
+i-CAN                                   1367, 2367
+ID Digital                              1176
+ID Sat                                  1334
+ILLUSION sat                            1631
+Imperial                                1100, 1195, 1197, 1334, 1429, 1672
+Indovision                              0856, 0887
+iNETBOX                                 1652
+Ingelen                                 0114, 0396
+Inno Hit                                1626
+Innova                                  0099
+Inves                                   1743, 1993
+inVion                                  2418
+ISkyB                                   0887
+ITT                                     2418
+ITT Nokia                               0723
+Jaeger                                  1334
+Jerrold                                 0869
+JVC                                     0775, 1775
+K-SAT                                   0713
+KabelBW                                 1195, 1197, 1915
+Kamm                                    0713
+Kaon                                    1300
+Kathrein                                0114, 0173, 0200, 0658, 0713, 1561, 2263, 2569
+Kenwood                                 0853
+Kiton                                   0114
+Koenig                                  1631
+Koscom                                  1956
+Kreiling                                0114, 0658, 1626
+Kreiselmeyer                            0173
+L&S Electronic                          1334
+LA Digital                              1743
+LaSAT                                   0173, 0740
+Lava                                    1631
+Leiko                                   1626
+Lemon                                   1334
+Lenco                                   0713
+Lenoxx                                  1611
+LG                                      1414
+Lifesat                                 0713
+Linsar                                  1284
+Listo                                   1626
+Lodos                                   1284
+Logik                                   1284
+Luxor                                   1935
+Manata                                  0713
+Manhattan                               1300
+Maplin                                  2034
+Marantz                                 0200
+Maspro                                  0173, 0713
+Matsui                                  0173, 1284, 1626, 1743, 1929
+Maximum                                 1334
+Mediabox                                0853
+Mediacom                                1206
+MediaSat                                0853, 2107
+Mediastar                               1572
+Medion                                  0713, 0740, 1334, 1626, 2026
+Medison                                 0713
+Mega                                    0200
+Meo                                     2466
+Metronic                                0713, 1334, 1659, 1704, 2167, 2269
+Metz                                    0173
+MiCO                                    1993
+Micro                                   0713
+Micro Elektronic                        0713
+Micro Technology                        0713
+Microtec                                0713
+Mitsubishi                              0749
+Morgan's                                0200, 0713, 2026
+Motorola                                0869, 0856
+Movistar                                2262, 2263, 2527
+Multichoice                             0879, 1959, 1960, 2059, 2060
+Mustek                                  1659
+Mx Onda                                 1659
+Myryad                                  0200
+Mysat                                   0713
+MySky                                   1693, 1848
+Neom                                    1993
+NEOTION                                 1334
+Net Brazil                              2262
+Netgem                                  1322
+Netsat                                  0099, 0887
+Neuf TV                                 1322
+Neuhaus                                 0713
+Neusat                                  0713
+Nevir                                   1659
+Newton                                  0396
+Next Level                              0869
+Nextvision                              1956
+NextWave                                1956
+Nikkai                                  1993
+Nikko                                   0200, 0713, 0723
+Noda Electronic                         1704
+Nokia                                   0723, 0853, 1023
+Nordmende                               1611
+Nova                                    1959
+Numericable                             2466
+Omni                                    1993
+Onn                                     1284, 2034, 2241
+Openbox                                 1956
+Opensat                                 1956
+Optex                                   0114, 0713, 1611, 1626
+Optus                                   0879
+Orbis                                   1334
+Orbit                                   0208
+Orbitech                                0114, 1099, 1100, 1195, 1197
+Pace                                    2657, 2593, 2466, 2211, 2097, 2060, 2059, 1848, 
+                                        1693, 1682, 1662, 1323, 1175, 0887, 0853, 0847, 
+                                        0200
+Pacific                                 1284
+Palcom                                  1409
+Palladium                               0396
+Panasat                                 0879
+Panasonic                               0247, 0701, 0847, 1304
+Panda                                   0173
+peeKTon                                 1659, 1993, 2418
+Philips                                 1142, 0749, 1749, 0856, 1076, 0099, 0853, 0208, 
+                                        0887, 0200, 1114, 0173, 1442, 1499, 1672, 1743, 
+                                        2107, 2176, 2211, 2466, 2593
+Phoenix                                 1956, 2418
+Phonotrend                              1780
+Pino                                    1334
+Pioneer                                 0853
+Planet                                  0396
+PMB                                     0713, 1611, 1659
+Polytron                                0396
+Portugal Telecom                        2466
+Premier                                 2176
+Preisner                                0396, 1366
+Premiere                                0723, 1429, 2176
+Premium                                 1736
+Pro Basic                               0853, 2205
+Proline                                 1284, 1659
+Proscan                                 0392, 0566
+QNS                                     1367
+Radiola                                 0200
+RadioShack                              0869
+Radix                                   0396
+RCA                                     0392, 0566, 0143, 1291
+Reliance                                2463
+RFT                                     0200
+RiksTV                                  1692, 2367
+Roadstar                                0713, 0853
+Rover                                   0713
+SAB                                     1300, 1956
+Saba                                    0740, 2205
+Sagem                                   0208, 1004, 1114, 1690, 1692, 2107, 2553, 2564
+Saivod                                  1659, 2418
+Samsung                                 1377, 1276, 0253, 0853, 1206, 1442, 1609, 1662, 
+                                        1682, 1916
+Sansui                                  1545
+Sanyo                                   1626
+Sat Control                             1300
+Sat Team                                0713
+SAT+                                    1409
+SatCatcher                              1956
+Satec                                   0713
+Satplus                                 1100
+SatyCon                                 1631
+Schaub Lorenz                           2418
+Schneider                               1206
+Schwaiger                               0740, 1334, 1429, 1631, 1672, 2308
+SCS                                     0740
+Sedea Electronique                      0114, 1206, 1626
+Seeltech                                1993
+Seemann                                 0396
+SEG                                     0114, 1284, 1626, 1993
+Servimat                                1611
+ServiSat                                0713
+Shark                                   1631
+Sharp                                   1935, 2034
+Sherwood                                1409
+Siemens                                 0173, 1334, 1429, 1626, 1657
+Sigmatek                                2139, 2418
+SignalMAX                               1956
+SilverCrest                             2026, 2308
+Skantin                                 0713
+SKR                                     0713
+SKY                                     0856, 1856, 0099, 0847, 0887, 1175, 1358, 1499, 
+                                        1662, 1693, 1848, 2619
+SKY Brazil                              0856, 0887, 1358, 1499
+SKY Italia                              0853, 1693, 1848
+SKY Mexico                              0856, 2619
+SKY New Zealand                         2211
+SKY PerfecTV!                           2299, 2616
+Sky+                                    1175, 1662
+Skymaster                               0713, 1334, 1409, 1545, 1611, 2205, 2241
+Skymax                                  0200
+Skypex                                  0740
+Skyplus                                 0740, 1175, 1334, 2026
+SkySat                                  0114, 0713, 1100
+Skyvision                               1334
+SL                                      0740, 1672, 2026
+SM Electronic                           0713, 1409
+Smart                                   0396, 0713, 1631
+Sony                                    0639, 1639, 0847, 0853, 1558, 2299
+Star                                    0887
+Star Choice                             0869
+Starland                                0713
+Starlite                                0200
+Stream                                  1848
+Stream System                           1300
+Strong                                  0713, 0853, 0879, 1284, 1300, 1409, 1626, 1801, 
+                                        2235, 2418
+Sun Direct                              2525
+Sunny                                   1300
+Sunsat                                  0713
+Sunstech                                1993, 2139
+Supernova                               0887
+SupportPlus                             2167
+Supratech                               1993, 2139
+Systec                                  1334
+Sytech                                  2139
+Tahnon                                  1704
+TATA Sky                                1997
+TBoston                                 1659, 2139, 2418
+Teac                                    1322, 1957, 2139
+Technical                               1626
+Technika                                1284, 1672, 2034
+TechniSat                               0114, 0396, 1099, 1100, 1195, 1197, 1322
+Technosat                               1206
+Technosonic                             1672
+Technotrend                             1429, 1672
+Techwood                                0114, 1284, 1626, 1935, 2034
+TELE System                             0396, 1409, 1611, 1801
+TeleClub                                1367
+Telefonica                              2262, 2263, 2272, 2527
+Teleka                                  0396
+Telestar                                0114, 1099, 1100, 1195, 1197, 1334, 1626, 1672
+Teletech                                0114
+Televes                                 1300, 1334
+Televisa                                0887
+Tevion                                  0713, 1409, 1672, 1993, 2205
+Thomson                                 0392, 0713, 0847, 0853, 1046, 1175, 1291, 1662, 
+                                        1848, 1935, 1997, 2107, 2176
+Tiny                                    1672
+Titan                                   2205
+Tividi                                  1429, 1736
+Tivo                                    1142, 1442
+TNT SAT                                 1692, 2564
+Tokai                                   0200
+Tonna                                   0713, 1611
+Topfield                                1206, 1545, 1783, 1824, 1986
+Toshiba                                 0749, 1749, 0790, 1284
+Transparent Video Systems               1780, 1957
+Triax                                   0114, 0200, 0396, 0713, 0853, 1291, 1611, 1626, 
+                                        1631, 2026
+Tricolor TV                             1176, 2622
+TT-micro                                1429
+Turnsat                                 0713
+TWF                                     1993
+Twinner                                 0713, 1611
+UEC                                     0879, 1358, 2463
+Unisat                                  0200
+Unitymedia                              1429
+Universum                               0114, 0173, 0740, 1099
+Unixbox                                 1652
+Vantage                                 2297
+Vaova                                   1993
+Variosat                                0173
+VEA                                     2418
+Ventana                                 0200
+Vestel                                  0114, 1284, 2034
+Viasat                                  1195, 1197, 1682, 2235
+Viola Digital                           1672
+Vision                                  1626
+Visiosat                                0114, 0713
+Viva                                    0856
+Vivax                                   2418
+Volcasat                                2418
+Voom                                    0869
+Wharfedale                              0200, 1284, 1935, 2034
+Winbox                                  1801
+Wisi                                    0173, 0396, 0740
+Worldsat                                0114
+Woxter                                  2139, 2418
+Xsat                                    0713, 0847, 1323
+Xtreme                                  1300
+Yamada                                  1993, 2139
+Yes                                     0887
+Yukai                                   1659
+ZapMaster                               0740
+Zehnder                                 0114, 1334, 1631, 1777
+Zenith                                  0856, 1856
+Zeta Technology                         0200
+Ziggo                                   1499, 1657, 2443
+Zodiac                                  0396, 1801
+
+
+--- Cable/PVR Combination (S) ---
+
+Com Hem                                 1176, 2357
+Handan                                  1957
+Humax                                   1176
+Kathrein                                1561, 2569
+Numericable                             2466
+Philips                                 2466
+Siemens                                 1657
+TechniSat                               1195, 1197
+Topfield                                1545, 1783
+Vantage                                 2297
+Ziggo                                   1657, 2443
+
+
+--- DVD/PVR Combination (S) ---
+
+SL                                      0740
+
+
+--- DTA Converter (S) ---
+
+Dish Network                            0775
+
+
+--- IPTV (S) ---
+
+Indovision                              0856
+Philips                                 2176
+Premiere                                2176
+Thomson                                 2176
+
+
+--- IPTV/PVR Combination (S) ---
+
+Canal+                                  2657
+Pace                                    2657
+
+
+--- Media Center Controller (S) ---
+
+TechniSat                               1100
+Technotrend                             1672
+
+
+--- SAT/PVR Combination (S) ---
+
+@sat                                    1300
+Amstrad                                 1175, 1662, 1693
+Atsat                                   1300
+B@ytronic                               0740
+Bell ExpressVu                          0775
+Boca                                    2308
+Boxer                                   1957
+British Sky Broadcasting                1175, 1662
+BskyB                                   1175, 1662
+Bush                                    1645
+Canal Digitaal                          2466
+Canal Digital                           2553
+Canal Satellite                         2657
+Canal+                                  2657
+CanalSat                                2657
+Comag                                   2308
+Cyfra+                                  2593
+Cyfrowy Polsat                          2527
+Digifusion                              1645, 1929
+Digihome                                2034
+DigiQuest                               1300
+Digital                                 2308
+Digiturk                                1076, 2097
+Dilog                                   1957
+DirecTV                                 1377, 0392, 0639, 1142, 1076, 0099, 1442
+Dish Network                            0775
+Dishpro                                 0775
+Dream Multimedia                        1237, 1923
+Echostar                                0775, 2527
+Edision                                 1631
+Eurosky                                 0740
+Expressvu                               0775
+Freesat+                                2443
+Golden Interstar                        1572
+Goodmans                                2034
+Handan                                  1957
+Hirschmann                              0740
+Hughes Network Systems                  1142, 1442
+Humax                                   1176, 1427, 1675, 1808, 2357, 2443
+Hyundai                                 2463
+ID Sat                                  1334
+Kaon                                    1300
+Kathrein                                0658, 1561, 2569
+LaSAT                                   0740
+Luxor                                   1935
+Maximum                                 1334
+Mediacom                                1206
+MediaSat                                2107
+Medion                                  0740
+Meo                                     2466
+Motorola                                0869
+Movistar                                2527
+Multichoice                             2059, 2060
+MySky                                   1693, 1848
+NEOTION                                 1334
+Nokia                                   1023
+Nova                                    1959
+Omni                                    1993
+Pace                                    1175, 1662, 1682, 1693, 2059, 2060, 2097, 2211, 
+                                        2466, 2593, 2657
+Panasonic                               1304
+Philips                                 1142, 0099, 1442, 2107, 2466, 2593
+Portugal Telecom                        2466
+Proscan                                 0392
+Sagem                                   1692, 2553
+Samsung                                 1206, 1442, 1609, 1662, 1682
+Sansui                                  1545
+Sat Control                             1300
+Schneider                               1206
+Schwaiger                               0740, 2308
+Sedea Electronique                      1206
+Sharp                                   2034
+Siemens                                 1657
+SilverCrest                             2308
+SKY                                     1175, 1358, 1662, 1693, 1848
+SKY Brazil                              1358
+SKY Italia                              1693, 1848
+SKY New Zealand                         2211
+SKY PerfecTV!                           2299
+Sky+                                    1662
+Skymaster                               1545
+Skypex                                  0740
+Skyplus                                 0740, 1175, 1334
+Sony                                    0639, 2299
+Star Choice                             0869
+Stream System                           1300
+Strong                                  1300
+Sunny                                   1300
+Teac                                    1957
+TechniSat                               1195, 1197
+Technosat                               1206
+Telefonica                              2272, 2527
+Telestar                                1195, 1197
+Thomson                                 1175, 1662, 1935
+Tivo                                    1142, 1442
+TNT SAT                                 1692
+Topfield                                1206, 1545, 1783, 1824
+UEC                                     1358
+Vantage                                 2297
+Viasat                                  1195, 1197, 1682
+Wisi                                    0740
+Xtreme                                  1300
+Yamada                                  1993
+Zehnder                                 1777
+
+
+###### Setup Codes For Television (T) ######
+
+A.R. Systems                            0037, 0556
+Accent                                  0009, 0037
+Acer                                    1339
+Acoustic Solutions                      1523, 1037, 1667, 1865
+Action                                  0650
+Acura                                   0009
+Addison                                 0108, 0653
+ADL                                     1217
+Admiral                                 0093
+AEG                                     1037, 1163, 1324, 1556
+Aiko                                    0009, 0035, 0037, 0371
+Aim                                     0706, 0037
+Akai                                    0812, 1675, 0178, 0009, 0035, 0037, 0208, 0371, 
+                                        0480, 0556, 0606, 0714, 1308, 1413, 1865
+Akashi                                  0009, 0860
+Akiba                                   0037
+Akito                                   0037
+Akura                                   0171, 0009, 0037, 0668, 0714, 1037, 1363, 1556, 
+                                        1585, 1667, 1770, 1983
+Alba                                    0009, 0037, 0371, 0443, 0480, 0587, 0668, 0714, 
+                                        1037, 1865, 2104
+Alien                                   1037
+Allstar                                 0037
+Amitech                                 1849
+Amstrad                                 0171, 0009, 0037, 0371, 1037
+Anam                                    0250, 0009, 0037
+Anam National                           0250, 0037, 0650
+Andersson                               1163, 1585
+Anglo                                   0009
+Anitech                                 0009, 0037
+Ansonic                                 0009, 0037, 0668
+AOC                                     0093, 0178, 0009, 0108, 0625, 1365, 1589, 2087, 
+                                        2111, 2214
+Apex Digital                            1217, 2397
+Ardem                                   0037, 0714
+Arena                                   0037
+Aristona                                0037, 0556
+ART                                     1037
+Art Mito                                1585
+Asberg                                  0037
+Asora                                   0009
+Astra                                   0037
+ATD                                     0698
+Atec                                    1606
+Atlantic                                0037
+Atori                                   0009
+Audiosonic                              1675, 0009, 0037, 0714, 0820, 1308, 1983, 2104
+Audioworld                              0698
+Aventura                                0171
+Awa                                     0009, 0108, 0606, 0888
+Axxent                                  0009
+Axxon                                   0714
+Baihe                                   0009
+Baile                                   0009, 0661
+Baird                                   0208, 0343
+Bang & Olufsen                          0565
+Baosheng                                0009
+Barco                                   0556
+Basic Line                              0009, 0037, 0556, 0668, 1037, 1163
+Baur                                    0037, 0195, 0512
+BBK                                     1523, 1741
+Beaumark                                0178
+Beijing                                 0812, 0009, 0208, 0226, 0661
+Beko                                    0037, 0606, 0714, 1652
+Belson                                  0698, 2032
+Belstar                                 1037
+BenQ                                    1562, 1756
+Beon                                    0037
+Berthen                                 0668
+Bestar                                  0037
+Black Diamond                           0587, 0820, 1037, 1163
+Blaupunkt                               0195
+Blue Media                              1606
+Blue Sky                                0037, 0556, 0625, 0668, 0714, 1037, 1363, 1652, 
+                                        2153
+BlueH                                   1745
+Boca                                    1652
+Boman                                   1324
+Boots                                   0009
+Bork                                    1363
+BPL                                     0037, 0208, 0896
+Brandt                                  0335, 0560, 0625, 0714
+Brinkmann                               0037, 0668
+Brionvega                               0037
+Bush                                    2214, 2104, 1983, 1667, 1652, 1645, 1556, 1308, 
+                                        1037, 0714, 0698, 0668, 0661, 0587, 0556, 0443, 
+                                        0371, 0208, 0037, 0009
+Byd:sign                                2140, 2209
+C-Tech                                  0896
+Caihong                                 0009
+Cameron                                 1523
+Camper                                  0037
+Carad                                   0668, 1037
+Carena                                  0037
+Carrefour                               0037
+Cascade                                 0009, 0037
+Casio                                   0037
+Cathay                                  0037
+CCE                                     0037
+Celebrity                               0000
+Celestial                               0820
+cello                                   1770
+Centrum                                 1037
+Centurion                               0037
+Changcheng                              0009, 0661
+Changfei                                0009
+Changhai                                0009
+Changhong                               0156, 0009, 0508, 0820
+Chengdu                                 0009
+Chimei                                  1852
+Ching Tai                               0009
+Chun Yun                                0000, 0706, 0009, 1756
+Chunfeng                                0009
+Chung Hsin                              0053, 0108
+Chunsun                                 0009
+Cimline                                 0009
+Cinex                                   1556
+City                                    0009
+Clarivox                                0037
+Clatronic                               0009, 0037, 0371, 0714, 1324
+Clayton                                 1037
+Coby                                    2348, 2350
+Commercial Solutions                    1447
+Concorde                                0009
+Condor                                  0009, 0037
+Conia                                   1523, 0820, 2032
+Conrowa                                 0156, 0009, 0698
+Contec                                  0009, 0037
+Cosmel                                  0009, 0037
+CPTEC                                   0625, 1363
+Crosley                                 0000
+Crown                                   0053, 0009, 0037, 0208, 0606, 0668, 0714, 1037, 
+                                        1652
+CTX                                     1756
+Curtis                                  2352
+Curtis Mathes                           0093
+Cyberpix                                1667
+Cytronix                                1298
+D-Vision                                0037, 0556
+Daewoo                                  0178, 0009, 0037, 0108, 0556, 0634, 0661, 0860, 
+                                        1606, 1849, 2098
+Dansai                                  0009, 0035, 0037, 0208
+Dantax                                  0714, 1037, 1163, 1652
+Datsura                                 0208
+Dawa                                    0009, 0037
+Dayton                                  0009
+Daytron                                 0009, 0037
+Dayu                                    0661
+De Graaf                                0208
+DEC                                     0860
+Decca                                   0037
+Denver                                  0037, 0587, 1770
+Desmet                                  0009, 0037
+Diamant                                 0037
+Diamond                                 0706, 0009, 0371, 0698, 0820, 0860, 0896
+Dick Smith Electronics                  0698, 1556
+Digatron                                0037
+Digihome                                1667
+Digiline                                0037, 0668
+Digital Device                          1606
+Digitex                                 0820
+Digitor                                 0037, 0698, 0888
+Disney                                  1665
+Dixi                                    0009, 0037
+DL                                      0587, 1363
+DMTech                                  2001
+Domeos                                  0668
+Dongda                                  0009
+Donghai                                 0009
+Dream Vision                            1704
+Drean                                   0037
+DSE                                     0698, 0820, 0888, 1556
+DTS                                     0009
+Dual                                    0037, 0343, 1037, 1163, 2032
+Durabrand                               0178, 0171, 1037, 1652, 1665
+Dux                                     0037
+DX Antenna                              1817
+Dynatron                                0037
+Dynex                                   1780, 1785, 2049, 2184
+E:max                                   1324
+Easy Living                             1217, 1308, 1666, 1783, 2104
+Ecco                                    0773
+ECE                                     0037
+Elbe                                    0037, 0556
+Electroband                             0000
+Electrograph                            1755
+Electrohome                             1670
+Elekta                                  0009
+Element                                 1886, 2183
+Elfunk                                  1037
+ELG                                     0037
+Elin                                    0009, 0037
+Elite                                   0037
+Elta                                    0009
+Emerson                                 1864, 0178, 0171, 0037, 0371, 0668, 0714, 1394, 
+                                        1665
+Envision                                1365, 1506, 1589, 2087
+Enzer                                   0860
+Erres                                   0037
+ESA                                     0812, 0171
+ESC                                     0037
+Ether                                   0009
+Etron                                   0009, 0820
+Euroman                                 0037
+Europa                                  0037
+Europhon                                0037
+Evesham                                 1248, 1606, 1667
+Evolution                               1756
+Excello                                 1037
+Exquisit                                0037
+Feilang                                 0009
+Feilu                                   0009
+Feiyue                                  0009
+Fenner                                  0009
+Ferguson                                0053, 0037, 0195, 0335, 0343, 0443, 0560, 0625, 
+                                        1037, 1585
+Fidelity                                0171, 0037, 0371, 0512
+Finlandia                               0208
+Finlux                                  0037, 0480, 0556, 0714, 1248, 1556, 1667
+Firstar                                 0009
+Firstline                               0009, 0037, 0208, 0556, 0668, 0714, 1037, 1308, 
+                                        1363
+Fisher                                  0208
+Flint                                   0037
+Formenti                                0037
+Fortress                                0093
+Fraba                                   0037
+Friac                                   0009, 0037
+Frontech                                0009
+Fujitsu                                 0009
+Fujitsu General                         0009
+Fujitsu Siemens                         1163, 1248, 1298, 1666
+Funai                                   0000, 0171, 0668, 0714, 1037, 1394, 1666, 1817, 
+                                        2173
+Furichi                                 0860
+Futronic                                0860
+G-Hanz                                  1363
+Gaba                                    1037
+Galaxi                                  0037
+Galaxis                                 0037
+Gateway                                 1755, 1756
+GBC                                     0009
+GE                                      1454, 1447, 0093, 0178, 0335, 0560, 0625
+GEC                                     0037
+Geloso                                  0009
+General Technic                         0009
+Genesis                                 0009, 0037
+Genexxa                                 0009, 0037
+Gericom                                 1217, 1298, 1606
+GFM                                     1864, 0171, 1665
+Giant                                   0009
+Gold                                    1770
+Gold Vision                             0661
+Goldfunk                                0668
+GoldStar                                0178, 0037, 0606, 0714
+Goodmans                                1983, 1720, 1667, 1645, 1308, 1163, 1037, 0714, 
+                                        0668, 0661, 0634, 0625, 0560, 0556, 0480, 0371, 
+                                        0343, 0335, 0037, 0035, 0009
+Gorenje                                 1585, 1667
+Gradiente                               0053, 0037
+Graetz                                  0371, 0714, 1163
+Granada                                 0037, 0108, 0208, 0226, 0343, 0560
+Grandin                                 0009, 0037, 0556, 0668, 0714, 1037, 1298
+Grundig                                 0706, 0009, 0037, 0195, 0443, 0556, 0587, 1223, 
+                                        1308, 1667, 2007
+Grunkel                                 1163
+GVA                                     1363
+H & B                                   2001
+Haaz                                    0706
+Haier                                   0037, 0508, 0587, 0698, 0896, 1748, 1983
+Haihong                                 0009
+Hallmark                                0178
+Hankook                                 0178
+Hanns.G                                 1783
+Hannspree                               1348, 1745, 1783
+Hanseatic                               0009, 0037, 0556, 0625, 0634, 0661, 0714, 2001
+Hantarex                                0009, 0037
+Hantor                                  0037
+Harwa                                   0773
+Harwood                                 0009, 0037
+Hauppauge                               0037
+Havermy                                 0093
+HB                                      1324
+HCM                                     0009, 0037
+Hema                                    0009
+Heran                                   1852
+Hewlett Packard                         1494
+Highline                                0037
+Hikona                                  1983
+Hinari                                  0009, 0037, 0208, 0443
+Hisawa                                  0714
+Hisense                                 0156, 0009, 0208, 0508, 0556, 0860, 1363, 2098, 
+                                        2183, 2341
+Hitachi                                 1643, 0156, 0178, 2433, 2215, 2214, 2207, 1691, 
+                                        1667, 1585, 1576, 1163, 1037, 0744, 0679, 0634, 
+                                        0578, 0508, 0480, 0343, 0108, 0037, 0009
+Hitachi Fujian                          0108, 0860
+Hitec                                   0698
+Hitsu                                   0009
+Hoeher                                  0714, 1163, 1556
+Home Electronics                        0606
+Hongmei                                 0093, 0009
+Hornyphon                               0037
+HP                                      1494
+Hua Tun                                 0009
+Huafa                                   0009
+Huanghaimei                             0009
+Huanghe                                 0009
+Huanglong                               0009
+Huangshan                               0009
+Hugoson                                 1217, 1666
+Humax                                   1539
+Hyper                                   0009
+Hypson                                  0037, 0556, 0668, 0714, 1037
+Hyundai                                 1523, 0706, 0698, 0860, 0888, 1037, 1556, 1606, 
+                                        1770, 2460
+Iberia                                  0037
+ICE                                     0037, 0371
+iDEAL                                   1556
+Iiyama                                  1217
+iLo                                     1394, 1665
+Imperial                                0037
+Imperial Crown                          0009, 0661
+Indiana                                 0037
+Ingelen                                 0714
+Ingersol                                0009
+Inno Hit                                0009, 1037, 1163, 1585
+Innova                                  0037
+Innowert                                1298
+Inotech                                 0773, 0820
+Insignia                                1423, 1564, 0171, 1780, 1785, 2049
+Inspira                                 1556
+Interbuy                                0009, 0037
+Interfunk                               0037, 0512
+Internal                                0556
+Intervision                             0009, 0037
+Irradio                                 0009, 0037, 0371
+IRT                                     0698
+Isukai                                  0037
+ITS                                     0037, 0371
+ITT                                     1523, 0208, 0480
+ITT Nokia                               0208, 0480, 0606
+ITV                                     0037
+JCB                                     0000
+JCM                                     2256
+Jean                                    0156, 0009
+JEC                                     0035
+JiaLiCai                                0009
+Jinfeng                                 0208, 0226
+Jinque                                  0009
+Jinta                                   0009
+Jinxing                                 0156, 0009, 0037, 0556, 0698
+JMB                                     0443, 0556, 0634
+JNC                                     0896
+JTV                                     0860
+Jubilee                                 0556
+JVC                                     0093, 0053, 0371, 0508, 0606, 0650, 0653, 1172, 
+                                        1428, 1601, 1774, 2271
+Kaige                                   0009
+Kaisui                                  0009, 0037
+Kanghua                                 0896
+Kangli                                  0009, 0661
+Kangyi                                  0009
+Karcher                                 0606, 0714, 1308, 1324, 1556
+Kathrein                                0556
+Kawa                                    0371
+Ken Brown                               1321
+Kendo                                   0037, 1037, 1585
+Kennex                                  1037
+Khind                                   0706, 0661, 0896
+Kiota                                   0371
+Kioto                                   0706, 0556
+Kiton                                   0037, 0668
+KLL                                     0037
+Kneissel                                0037, 0556
+Koenig                                  0037
+Kolin                                   1610, 1755, 0053, 0037, 0108, 1217, 1240, 1331
+Kolster                                 0037
+Kongque                                 0009
+Konichi                                 0009
+Konka                                   0009, 0037, 0371, 0587, 0714
+Korpel                                  0037
+Kosmos                                  0037
+Koyoda                                  0009
+Kuaile                                  0009
+Kulun                                   0009
+Kunlun                                  0208, 0226, 0661
+L&S Electronic                          0714
+Lavic                                   1363
+Lavis                                   1037
+Leader                                  0009
+Lecson                                  0037
+Legend                                  0009
+Lenco                                   0037, 0587, 1037, 1983
+Lenoir                                  0009
+Leyco                                   0037
+LG                                      1423, 1447, 0178, 0009, 0037, 0108, 0556, 0698, 
+                                        0714, 1305, 1663, 2182, 2358, 2362, 2424
+Liesenkoetter                           0037
+Lifetec                                 0009, 0037, 0668, 0714, 1037, 2001
+Lloyd's                                 0009
+Local Chennai TV                        0009
+Local India TV                          0009, 0208, 0371, 1413
+Local Malaysia TV                       0698
+Lodos                                   1037
+Loewe                                   0037, 0512, 0633, 1884
+Logik                                   0009, 0371, 0698, 0773, 1037, 1217, 1865
+Logix                                   0668
+Luma                                    0009, 1037
+Lumatron                                0037
+Lux May                                 0009, 0037
+Luxor                                   0208, 0480, 1037, 1163
+LXI                                     0156, 0178
+M Electronic                            0009, 0037, 0195, 0343, 0480, 0512, 0634, 0661, 
+                                        0714, 1652
+Madison                                 0037
+Magnavox                                1454, 1866, 1755, 0171, 0706, 0035, 1365, 1506, 
+                                        1867, 2372
+Magnum                                  0037, 0714, 1556
+Manesth                                 0035, 0037
+Manhattan                               0037, 0668, 1037
+Maqma                                   1606
+Marantz                                 1454, 0037, 0556
+Mark                                    0009, 0037, 0714
+Marks and Spencer                       1770
+Mascom                                  1556
+Mastro                                  0053, 0706, 0698, 1556
+Masuda                                  0009, 0037, 0371
+Matsui                                  0009, 0035, 0037, 0195, 0208, 0335, 0371, 0443, 
+                                        0556, 0714, 0744, 1037, 1666, 1667, 2007
+Matsushita                              0250, 0650
+Matsuviama                              0587
+Maxdorf                                 0773, 1276
+Maxent                                  1755, 0762
+Maxim                                   1556
+MCE                                     0009
+Meck                                    0698
+Mediator                                0037, 0556
+Medion                                  0037, 0512, 0556, 0668, 0698, 0714, 1037, 1248, 
+                                        1556, 1585, 1667, 1741, 2001
+Megatron                                0178
+MEI                                     1037
+Memorex                                 0250, 0178, 0009, 1037, 1665, 1670
+Memory                                  1983
+Memphis                                 0009
+Mercury                                 0009, 0037
+Mermaid                                 0037
+Metronic                                0625
+Metz                                    0037, 0195, 0587, 0668, 1163, 1533
+MGA                                     0178
+Micromaxx                               0037, 0668, 0714, 1037, 1324, 2001
+Microtek                                0820, 0860
+Mikomi                                  0744, 1037, 1308, 1585
+Minato                                  0037
+Minerva                                 0108, 0195, 1248
+Ministry Of Sound                       1667
+Minoka                                  0037
+Mirai                                   1666, 1852
+Mitsai                                  1556
+Mitsubishi                              0250, 1250, 0093, 0178, 0037, 0108, 0512, 0556, 
+                                        1037, 1171, 2313
+Mivar                                   0609
+Monaco                                  0009
+Moree                                   0037
+Morgan's                                0037
+Motorola                                0093
+MTC                                     0512
+MTlogic                                 0714
+Mudan                                   0009, 0208, 0226
+Multitec                                0037, 0668, 1037, 1556
+Multitech                               0009, 0037
+Mx Onda                                 1983
+Myrica                                  1666
+Myryad                                  0556
+NAD                                     0156, 0178, 0037
+Naiko                                   0037, 0606
+Nakimura                                0037
+Nanbao                                  0009
+NAT                                     0226
+National                                0208, 0226, 0508, 1097
+NEC                                     0156, 0053, 0178, 0009, 0508, 0653, 0661, 1704, 
+                                        1797, 1852, 2461
+Neckermann                              0037, 0556
+NEI                                     0037, 0371, 1037
+NEO                                     1324
+Netsat                                  0037
+NetTV                                   1755, 0762
+Neufunk                                 0009, 0037, 0556, 0714
+New Tech                                0009, 0037, 0343, 0556
+Newave                                  0093, 0178, 0009
+Nexus Electronics                       2183
+Nikai                                   1163
+Nikkai                                  0009, 0035, 0037
+Nikkei                                  0714
+Nikko                                   0178
+Nimbro                                  2104
+Noblex                                  0037
+Nokia                                   0208, 0480, 0606
+Norcent                                 1365, 1589
+Nordmende                               0037, 0195, 0343, 0560, 0714, 1163, 1413, 1585, 
+                                        1667, 2001, 2007
+Normerel                                0037
+Nortek                                  0668
+Novatronic                              0037
+Novex                                   1523
+Novita                                  1585
+Nu-Tec                                  0698, 0820
+NuVision                                2158
+O.K.Line                                1037, 1324
+Oceanic                                 0208
+Okano                                   0009, 0037
+Olevia                                  1610, 1144, 1240, 1331, 2124
+Omni                                    0698
+Onei                                    1667
+Onida                                   0053, 0653
+Onimax                                  0714
+Onix                                    0698
+Onn                                     1667, 1770
+Onwa                                    0371
+Onyx                                    1770
+Opera                                   0037, 0714, 1308, 1770
+Optimus                                 0250, 0650
+Optoma                                  1348
+Optonica                                0093
+Orbit                                   0037
+Orion                                   0037, 0443, 0556, 0714, 1037, 2001, 2007, 2032
+Orline                                  0037
+Ormond                                  0668, 1037
+Osaki                                   0037, 0556
+Osio                                    0037
+Osume                                   0037
+Otic                                    1983
+Otto Versand                            0093, 0037, 0195, 0226, 0343, 0512, 0556
+Pacific                                 0443, 0556, 0714, 1037, 1324
+Palladium                               0037, 0556, 0714
+Palsonic                                0037, 0698, 0773, 2461
+Panama                                  0009, 0037
+Panasonic                               1480, 0250, 1457, 0037, 0108, 0208, 0226, 0508, 
+                                        0650, 0896, 1097, 1168, 1291, 1636, 1650, 2170
+Panavision                              0037
+Panda                                   0706, 0009, 0208, 0226, 0508, 0698
+PARK                                    2104
+Pausa                                   0009
+Penney                                  0156, 0178
+Perdio                                  0037
+Perfekt                                 0037
+Petters                                 1523, 0037
+Philco                                  0178, 0171, 0037, 1029, 1394, 1665
+Philips                                 0810, 0000, 1454, 1866, 0178, 0009, 0037, 0108, 
+                                        0343, 0512, 0556, 1394, 1506, 1744, 1756, 1867, 
+                                        2372
+Phocus                                  0714, 1308, 1652
+Phoenix                                 0037
+Phonola                                 0037, 0556
+Pilot                                   0706
+Pioneer                                 1457, 0037, 0512, 0679, 0698, 1260, 1636
+Pionier                                 1556
+Plantron                                0009, 0037
+Playsonic                               0037, 0714, 1652
+Plustron                                1770
+Polaroid                                1523, 1276, 1645, 1720, 1741
+Polyvision                              1144
+Poppy                                   0009
+Powerpoint                              0037, 0698, 1770
+Premier                                 0009
+President                               0860
+Prima                                   0009, 1785
+PrimeView                               1606
+Princess                                0773
+Prinston                                1037
+Profex                                  0009
+Profi                                   0009
+Profilo                                 1556
+Profitronic                             0037
+Proline                                 0037, 0625, 0634, 1037
+Proscan                                 1447, 2256
+Prosco                                  0156
+Prosonic                                0037, 0371, 0606, 0668, 0714, 1308, 1324, 1585, 
+                                        1667, 1770, 1849, 1865, 2001
+Protech                                 0009, 0037, 0668, 1037
+Proton                                  0178, 0009
+ProVision                               0037, 0556, 0714, 1324
+Pvision                                 2001
+Pye                                     0037, 0556
+Pymi                                    0009
+Qingdao                                 0208, 0226
+Quasar                                  0250, 0009, 0650
+Quelle                                  0037, 0195, 0512, 0668, 1037
+R-Line                                  0037
+Radiola                                 0037, 0556
+Radiomarelli                            0037
+RadioShack                              0178, 0037
+Radiotone                               0009, 0037, 0668, 1037
+RCA                                     0000, 1454, 1447, 0093, 0178, 0560, 0618, 0625, 
+                                        0679, 1781, 2187, 2247, 2403, 2429, 2434
+Realistic                               0178
+Recco                                   0706
+Recor                                   0037
+Rectiligne                              0037
+Redstar                                 0037
+Reflex                                  0037, 0668, 1037
+Relisys                                 1585, 1645, 1741
+Remotec                                 0250, 0093, 0171, 0037
+Reoc                                    0714
+Revox                                   0037
+RFT                                     0037
+Rinex                                   0773
+Roadstar                                0009, 0037, 0668, 0714, 1037
+Rolson                                  2098
+Rowa                                    0009, 0037, 0587, 0698
+Royal Lux                               0335
+S-Media                                 1217
+Saba                                    0250, 0335, 0343, 0560, 0625, 0714
+Sagem                                   0618
+Saige                                   0009
+Saisho                                  0009
+Saivod                                  0037, 0668, 1037, 1163, 1556
+Salora                                  0208, 0480, 1556
+Salsa                                   0335
+Sampo                                   1755, 0093, 0178, 0171, 0009, 0650, 0762
+Samsung                                 0812, 0156, 0093, 0178, 2051, 1630, 1619, 1458, 
+                                        1312, 1249, 0650, 0618, 0587, 0556, 0226, 0208, 
+                                        0037, 0009
+Sansui                                  0171, 0706, 0037, 0371, 0714, 0888, 1236, 1248, 
+                                        1413, 1556, 1670, 2001
+Santon                                  0009
+Sanyo                                   0156, 0009, 0108, 0208, 0508, 1037, 1142, 1179, 
+                                        1276, 1585, 1649, 1667, 2461
+Sanyuan                                 0093, 0009
+SBR                                     0037, 0556
+Sceptre                                 1217, 1360, 1599
+Schaub Lorenz                           0606, 0714, 1324, 1667, 2001
+Schneider                               0037, 0343, 0371, 0556, 0668, 0714, 1037
+Schoentech                              1037
+Scotch                                  0178
+Scott                                   0178, 1983
+Sears                                   0156, 0178, 0171
+Seaway                                  0634
+Seelver                                 1037
+SEG                                     0009, 0037, 0668, 1037, 1163
+SEI                                     0037
+Sei-Sinudyne                            0037
+Seleco                                  0371
+Semp                                    0156, 1743
+Sencora                                 0009
+Sentra                                  0035
+Serie Dorada                            0156, 0178
+Serino                                  0093
+Shanghai                                0009, 0208, 0226
+Sharp                                   0818, 0093, 0053, 0009, 0650, 0653, 1165, 1393, 
+                                        1659, 2214
+Shen Ying                               0009
+Shencai                                 0009
+Sheng Chia                              0093, 0009
+Shenyang                                0009
+Sherwood                                0009
+Shinelco                                2104
+Shintoshi                               0037
+Shivaki                                 0178, 0037, 0443
+Show                                    0009
+Siam                                    0037
+Siemens                                 0037, 0195
+Siera                                   0037, 0556
+Silva                                   0037
+Silva Schneider                         0037, 1556
+Silvano                                 0587
+SilverCrest                             1037
+Singer                                  0009, 0037, 0335, 0371, 1556
+Sinotec                                 0773
+Sinudyne                                0037
+SKY                                     0037, 1606, 1745
+Skyworth                                0009, 0037, 0698
+Sliding                                 1324
+SLX                                     0668
+Soemtron                                1298
+Sogo                                    0606
+Solavox                                 0037
+Songba                                  0009
+Soniko                                  0037
+Sonitron                                0208
+Sonneclair                              0037
+Sonoko                                  0009, 0037
+Sonolor                                 0208
+Sontec                                  0009, 0037
+Sontech                                 1983
+Sony                                    0810, 0000, 0650, 1167, 1505, 1651, 1825
+Soundesign                              0178
+Soundwave                               0037, 1037
+Sowa                                    0156, 0178, 0226
+Soyea                                   0773
+Spectra                                 0009
+Squareview                              0171
+Ssangyong                               0009
+Staksonic                               0009
+Standard                                0009, 0037, 1037
+Starlite                                0009, 0037
+Strato                                  0009, 0037, 2032
+Strong                                  1163
+Sungoo                                  1248
+Sunny                                   0037
+Sunstar                                 0009, 0037, 0371
+Sunstech                                2001
+Sunwood                                 0037
+Superscan                               0093, 0864
+Supersonic                              0009, 0208
+SuperTech                               0009, 0037, 0556
+Supra                                   0178, 0009
+Supreme                                 0000
+Susumu                                  0335
+Sutron                                  0009
+SVA                                     0587
+Svasa                                   0208
+Swedx                                   1606
+Swisstec                                1606, 1745, 1849, 2104, 2106
+Sylvania                                1864, 0171, 0587, 1394, 1665, 1886
+Symphonic                               0171, 1394
+Synco                                   0000, 1755, 0093, 0178
+Syntax                                  1610, 1144, 1240, 1331
+Sysline                                 0037
+Tacico                                  0178, 0009
+Tai Yi                                  0009
+Taishan                                 0009
+Talent                                  0178
+Tandy                                   0093
+Tashiko                                 0650
+Tatung                                  0156, 0009, 0037, 1248, 1324, 1556, 1720, 1756
+TCL                                     0706, 0698, 2403, 2429
+TCM                                     0714, 1308, 2001
+Teac                                    1755, 0178, 0171, 0706, 2032, 1983, 1770, 1645, 
+                                        1363, 1248, 1037, 0714, 0698, 0668, 0587, 0512, 
+                                        0037, 0009
+Tec                                     0009, 0037, 0335
+Tech Line                               0037, 0668, 1163
+Technica                                1037
+Technics                                0250, 0556, 0650
+Technika                                1667, 1849, 1865, 1983, 2032, 2106
+TechniSat                               0556
+Technisson                              0714, 1652
+Techno                                  1585
+Technosonic                             0556, 0625, 1324, 2032
+Techvision                              2032
+Techwood                                1037, 1163, 1667
+Tecnimagen                              0556
+Teco                                    1523, 0093, 0053, 0178, 0009, 0653, 0762, 1097, 
+                                        1838
+Tedelex                                 0009, 0208, 0606
+Teiron                                  0009
+Tek                                     0820
+TELE System                             1585
+Teleavia                                0343
+Telecor                                 0037
+Telefunken                              0037, 0335, 0343, 0560, 0587, 0625, 0698, 0714, 
+                                        0820, 0896, 1556, 1585
+Telefusion                              0037
+Telegazi                                0037
+Telemeister                             0037
+Telesonic                               0037
+Telestar                                0009, 0037, 0556
+Teletech                                0009, 0037, 0668, 1037
+Teleview                                0037
+Tempest                                 0009
+Tennessee                               0037
+Tensai                                  0009, 0037, 0371, 1037
+Tenson                                  0009
+Tesla                                   0037, 0556, 0714, 1037, 1652
+Tevion                                  0037, 0556, 0668, 0714, 1037, 1248, 1298, 1556, 
+                                        1585, 1645, 1667, 2032
+Texet                                   0009
+Thomson                                 1447, 0037, 0335, 0343, 0560, 0625
+Thorn                                   0035, 0037, 0335, 0343, 0512
+Thorn-Ferguson                          0335, 0343
+Tiane                                   0093
+TMK                                     0178
+TML                                     1756
+Tobo                                    0009
+Tokai                                   0009, 0037, 0668, 1037
+Tokaido                                 1037
+Tokyo                                   0035
+Tongtel                                 0587
+Topline                                 0668, 1037
+Toshiba                                 1524, 0156, 0093, 2311, 2203, 2006, 1743, 1704, 
+                                        1556, 1508, 1291, 1173, 1169, 1037, 0650, 0618, 
+                                        0508, 0195, 0035, 0009
+Tosumi                                  1770
+Toyoda                                  0009, 0371
+TRANS-continents                        0037, 0556, 0668, 1037
+Transonic                               0009, 0037, 0512, 0587, 0698, 1363
+Triad                                   0556
+Trio                                    1248
+Triumph                                 0037, 0556
+TruTech                                 1665
+Tuntex                                  0009
+TVTEXT 95                               0556
+Uher                                    0037, 0480
+Ultravox                                0037
+UMC                                     1606, 1745, 1849, 2106
+Unic Line                               0037
+Uniden                                  2122
+United                                  0037, 0556, 0587, 0714, 1037, 1652, 1770, 1983
+Universal                               0037, 0714
+Universum                               0009, 0037, 0195, 0480, 0512, 0618, 0668, 1037, 
+                                        1163
+Univox                                  0037
+V7 Videoseven                           1755, 1217, 1666
+Venturer                                1865
+Vestel                                  0037, 0668, 1037, 1163, 1585, 1667
+Vexa                                    0009, 0037
+Victor                                  0250, 0053, 0650, 0653, 1428
+Videocon                                0037, 0508
+Videomac                                0009
+VideoSystem                             0037
+Vidtech                                 0178
+Viewsonic                               1755, 0864, 0885, 1365, 1627, 1745, 2087, 2111, 
+                                        2277
+Viore                                   2104, 2352
+Vision                                  0037
+Vistron                                 1363
+Visual Innovations                      2106
+Vito                                    1852
+Vivax                                   1308
+Vivid                                   1308
+Vizio                                   1758, 0864, 0885, 1756, 2209
+Vortec                                  0037
+Voxson                                  0178, 0037
+VU                                      2098
+Vue                                     1236
+Walker                                  1667
+Waltham                                 0037, 0443, 0668, 1037
+Wansa                                   2098
+Wards                                   0000, 0156, 0178
+Warumaia                                0661
+Watson                                  0009, 0037, 0668, 0714, 1037
+Waycon                                  0156
+Wega                                    0037
+Wegavox                                 0009
+Weipai                                  0009
+Welltech                                0714, 1652
+Weltstar                                1037
+Westinghouse                            1712, 1755, 0885, 1217, 1577, 2293
+Wharfedale                              0037, 0556, 0860, 0896, 1324, 1556, 1667, 1983
+White Westinghouse                      0037
+Wilson                                  0556
+Windsor                                 0668, 1037
+Windy Sam                               0556
+Wintel                                  0714
+World-of-Vision                         1217, 1298, 1606, 2001
+Wyse                                    1365
+Xenius                                  0634, 0661
+Xiahua                                  0009, 0698, 0773
+Xianghai                                0009
+Xiangyu                                 0009
+Xingfu                                  0009
+Xiron                                   1983
+XLogic                                  0698, 0860
+Xomax                                   1770
+Xoro                                    1217
+Xrypton                                 0037
+Yamaha                                  0650, 1576
+Yamishi                                 0037
+Yapshe                                  0250
+Yingge                                  0009
+Yokan                                   0037
+Yoko                                    0009, 0037
+Yonggu                                  0009
+Yousida                                 0009
+YU-MA-TU                                0037
+Yuhang                                  0009
+Zenith                                  0000, 1423, 0178, 0037, 1305, 1365
+Zepto                                   1585
+ZhuHai                                  0009
+Zonda                                   0698
+
+
+--- HDTV (T) ---
+
+Memorex                                 1670
+Olevia                                  1610
+Panasonic                               0250, 0650, 1291
+Pioneer                                 0679
+Proscan                                 1447
+RCA                                     1447
+Samsung                                 0812
+
+
+--- HTiB (T) ---
+
+Panasonic                               0250
+
+
+--- Portable TV (T) ---
+
+SEG                                     1163
+Sony                                    1825
+Viore                                   2352
+
+
+--- Rear Projection TV (T) ---
+
+Akai                                    0812
+GE                                      1447
+Hitachi                                 1643
+JVC                                     0653, 1601, 1774
+Magnavox                                1454
+Mitsubishi                              1250
+Panasonic                               1480, 0250, 0650, 1291, 1650
+Philips                                 0037, 0556
+Pioneer                                 0679
+Proscan                                 1447
+Pye                                     0037
+RCA                                     1447
+Samsung                                 0812, 0618, 1249, 1312, 1619, 2051
+Sanyo                                   1142
+Sony                                    0810, 0000, 1505, 1651, 1825
+Thomson                                 0625
+Toshiba                                 1524, 0156, 1508
+
+
+--- TV/DVD Combination (T) ---
+
+Acoustic Solutions                      1865
+Akai                                    1675, 1865
+Akura                                   1770, 1983
+Alba                                    0587, 2104
+Audiosonic                              1983, 2104
+Black Diamond                           1037
+Blue Sky                                1037, 2153
+Bush                                    0587, 0698, 1037, 1556, 1983, 2104
+cello                                   1770
+Centrum                                 1037
+Coby                                    2350
+Crown                                   1037
+Denver                                  0587, 1770
+DMTech                                  2001
+Dual                                    1037
+Dynex                                   2049, 2184
+Easy Living                             2104
+Electrohome                             1670
+Elfunk                                  1037
+Emerson                                 1864, 1394
+Ferguson                                1037
+Finlux                                  1556
+Gold                                    1770
+Goodmans                                1037, 1983
+H & B                                   2001
+Hanseatic                               2001
+Hikona                                  1983
+Hitachi                                 1037
+Hyundai                                 1770
+Insignia                                2049
+JVC                                     1774, 2271
+Lenco                                   0587, 1983
+LG                                      1423
+Logik                                   1037, 1865
+Luxor                                   1037
+Magnavox                                1866, 2372
+Marks and Spencer                       1770
+Matsui                                  1037
+Memorex                                 1670
+Memory                                  1983
+Mx Onda                                 1983
+Nimbro                                  2104
+Nordmende                               2001
+Onn                                     1770
+Onyx                                    1770
+Opera                                   1770
+Otic                                    1983
+Palsonic                                1849
+Panasonic                               1291
+Philips                                 1454, 0556, 1394
+Plustron                                1770
+Polaroid                                1523
+Powerpoint                              0698, 1770
+Proscan                                 2256
+Prosonic                                1770, 1865, 2001
+Pvision                                 2001
+RCA                                     1447, 2187
+Sansui                                  1670
+Schaub Lorenz                           2001
+Scott                                   1983
+SEG                                     1037
+Sharp                                   0818
+Shinelco                                2104
+Sontech                                 1983
+Sunstech                                2001
+Swisstec                                2104
+Sylvania                                1864, 0171, 1394, 1886
+Teac                                    0587, 0698, 1770, 1983
+Technica                                1037
+Technika                                1865, 1983, 2106
+Telefunken                              0698
+Teletech                                1037
+Thomson                                 0625
+Toshiba                                 1524, 2006
+Tosumi                                  1770
+Transonic                               0587
+UMC                                     2106
+United                                  0587, 1037, 1770, 1983
+Venturer                                1865
+Vestel                                  1037
+Viore                                   2104, 2352
+Weltstar                                1037
+Wharfedale                              1983
+Xiron                                   1983
+Xomax                                   1770
+
+
+--- TV/VCR Combination (T) ---
+
+Amstrad                                 0171
+Ferguson                                0625
+Fidelity                                0171
+GE                                      0093
+GoldStar                                0037
+Grundig                                 0037, 0195, 0556
+JVC                                     0053
+LG                                      0178
+Memorex                                 0250
+Mitsubishi                              0093, 0556
+Panasonic                               0250
+Philips                                 0037, 0556
+Quasar                                  0250
+Radiola                                 0556
+RCA                                     0093
+Saba                                    0625
+Schneider                               0037, 0556
+Sharp                                   0818, 0093
+Siemens                                 0037
+Sony                                    0000, 1505
+Teac                                    0178, 0171
+Technics                                0556
+Thomson                                 0625
+Toshiba                                 2006
+
+
+--- Video Projector (T) ---
+
+Barco                                   0556
+NEC                                     1704
+Sanyo                                   1649
+
+
+###### Setup Codes For Video - VCR (V) ######
+
+Admiral                                 0048, 0479
+AEG                                     1593
+Aim                                     0348, 0642
+Aiwa                                    0032, 0037, 0348, 0352, 0479, 0742, 1137
+Akai                                    0037, 0240, 0348, 0352, 0642
+Alba                                    0081, 0348, 0352
+Allegro                                 0039, 1137
+Allorgan                                0240
+Allstar                                 0081
+American High                           0035
+Amoisonic                               0479
+Anam                                    0162, 0037, 0240, 0226
+Anam National                           0162, 0226, 1562
+Aristona                                0081
+ASA                                     0037, 0081
+Asha                                    0240
+Asuka                                   0037, 0081
+Audiolab                                0081
+Audiovox                                0037
+AVP                                     0352
+Awa                                     0037, 0043, 0320, 0642
+Baird                                   0104
+Basic Line                              0104
+Beaumark                                0240
+Beko                                    0104
+Bell & Howell                           0104
+Black Diamond                           0642
+Blaupunkt                               0162, 0081, 0226
+Blue Sky                                0037, 0348, 0352, 0642, 0742, 1137
+Brandt                                  0320
+Brinkmann                               0348
+Broksonic                               0184, 0348, 0479, 0742
+Bush                                    0081, 0348, 0352, 0642, 0742
+Calix                                   0037
+Canon                                   0035
+Carena                                  0081
+Carrefour                               0045
+Carver                                  0081
+Centrum                                 1593
+Changhong                               0048, 0081
+CineVision                              1137
+Citizen                                 0037
+Clatronic                               1593
+Combitech                               0352
+Craig                                   0037, 0240
+Crosley                                 0081
+Crown                                   0037
+Curtis Mathes                           0060, 0035, 0162, 0240
+Cybernex                                0240
+Cyrus                                   0081
+Daewoo                                  0045, 0104, 0352, 0642, 1137
+Dantax                                  0348, 0352, 0742
+De Graaf                                0048, 0081, 0042, 0104
+Decca                                   0081, 0067, 0352
+Denon                                   0042
+Diamant                                 0037
+Diamond                                 0348
+Dick Smith Electronics                  0642
+Digitor                                 0642
+DirecTV                                 0739
+DSE                                     0642, 1593
+Dual                                    0081, 0348
+Dumont                                  0081, 0104
+Durabrand                               0039, 0642, 1593
+Electrohome                             0037, 0043
+Electrophonic                           0037
+Elin                                    0240
+Emerex                                  0032
+Emerson                                 0035, 0037, 0184, 0240, 0045, 0043, 0348, 0479, 
+                                        1593
+ESA                                     1137
+ESC                                     0240
+EuroLine                                1593
+Ferguson                                0320, 0348, 0742
+Fidelity                                0240, 0352
+Finlandia                               0037, 0048, 0081, 0042, 0104, 0043, 0226
+Finlux                                  0081, 0042, 0104
+Firstline                               0037, 0045, 0042, 0043, 0348, 1137
+Fisher                                  0104
+Flint                                   0348
+Fuji                                    0035, 0033
+Fujitsu                                 0045
+Fujitsu General                         0037
+Funai                                   1593
+GE                                      0060, 0035, 0048, 0240, 0226, 0320
+GEC                                     0081
+General                                 0045
+General Technic                         0348
+Genexxa                                 0104
+GFM                                     1593
+Go Video                                0240, 0614, 1137
+GoldStar                                0037, 0226, 1137
+Goodmans                                0037, 0081, 0240, 0348, 0352, 0642, 0742
+GPX                                     0037
+Gradiente                               1137
+Graetz                                  0240, 0104
+Granada                                 0037, 0048, 0081, 0240, 0042, 0104, 0226
+Grandin                                 0037, 0742
+Grundig                                 0081, 0226, 0320, 0347, 0348, 0352, 0742
+Haaz                                    0348
+Hanimex                                 0352
+Hanseatic                               0037, 0081
+Haojie                                  0240
+Harman/Kardon                           0081
+Hinari                                  0240, 0352
+Hisawa                                  0352
+Hischito                                0045
+Hitachi                                 0037, 0081, 0240, 0042
+Hoeher                                  0642
+Hornyphon                               0081
+Hughes Network Systems                  0042
+Humax                                   0739
+Hypson                                  0037, 0352
+Ingersol                                0240
+Instant Replay                          0035, 0226
+Interbuy                                0037
+Interfunk                               0081, 0104
+International                           0037, 0642
+Intervision                             0037, 0348
+Irradio                                 0037, 0081, 1137
+ITT                                     0240, 0104
+ITV                                     0037
+JMB                                     0348, 0352, 0742
+JVC                                     0081, 0045, 0067
+Kambrook                                0037
+Karcher                                 0081, 0642
+KEC                                     0037
+Kendo                                   0037, 0348, 0642
+Kenwood                                 0067
+Kioto                                   0348
+Kneissel                                0037, 0348, 0352
+Kodak                                   0035, 0037
+Kolin                                   0043
+LG                                      0037, 0045, 0042, 1137
+Lifetec                                 0348
+Loewe                                   1062, 0162, 0037, 0081, 1562
+Logik                                   0240
+Lumatron                                1137
+Lunatron                                1137
+Luxor                                   0048, 0104, 0043
+LXI                                     0037
+M Electronic                            0037
+Magnavox                                0035, 0039, 0081, 0642, 1593
+Magnin                                  0240
+Magnum                                  0642
+Manesth                                 0081, 0045
+Marantz                                 0035, 0081
+Marta                                   0037
+Mascom                                  0642
+Mastec                                  0642
+Matsui                                  0037, 0240, 0348, 0352, 0742
+Matsushita                              0035, 0162, 0226
+Mediator                                0081
+Medion                                  0348, 0352, 0642
+MEI                                     0035
+Memorex                                 0035, 0162, 0037, 0048, 0039, 0240, 0104, 0348, 
+                                        0479
+Metronic                                0081
+Metz                                    1062, 0162, 0037, 0081, 0226, 0347, 0836, 1562
+MGA                                     0240, 0043
+MGN Technology                          0240
+Micormay                                0348
+Minolta                                 0042
+Mitsubishi                              0048, 0081, 0067, 0043, 0642
+Motorola                                0035, 0048
+MTC                                     0240
+Multitec                                0037
+Myryad                                  0081
+NAD                                     0104
+Naiko                                   0348, 0642
+NAP                                     0039
+National                                0226
+Nebula Electronics                      0033
+NEC                                     0035, 0037, 0048, 0104, 0067, 1137
+Neckermann                              0081
+Neufunk                                 1137
+Newave                                  0037
+Nikko                                   0037
+Noblex                                  0240
+Nokia                                   0048, 0081, 0240, 0042, 0104
+Nordmende                               0067, 0320, 0642
+Oceanic                                 0048, 0081, 0104, 0320
+Okano                                   0348
+Olympus                                 0035, 0226
+Onimax                                  0642
+Optimus                                 1062, 0162, 0037, 0048, 0104
+Orion                                   0184, 0348, 0352, 0479, 0742
+Osaki                                   0037
+Otto Versand                            0081
+Pace                                    0352
+Pacific                                 0348, 0642, 0742
+Palladium                               0037, 0348
+Palsonic                                0642
+Panasonic                               1062, 0035, 0162, 0226, 0614, 0616, 0836, 1562
+Pathe Cinema                            0043
+Penney                                  0035, 0037, 0240, 0042
+Pentax                                  0042
+Philco                                  0035, 0226, 0479
+Philips                                 0739, 0035, 0081, 0226
+Phonola                                 0081
+Pilot                                   0037
+Pioneer                                 0162, 0081, 0042, 0067
+Polk Audio                              0081
+Presidian                               1593
+Profitronic                             0081, 0240
+Proline                                 0320, 0642
+Proscan                                 0060
+Protech                                 0081
+Pulsar                                  0039
+Pye                                     0081
+Qisheng                                 0060
+Quasar                                  0035, 0162
+Quelle                                  0081
+Radialva                                0037, 0048, 0081
+Radiola                                 0081
+Radionette                              0037, 1137
+RadioShack                              0037
+Radix                                   0037
+Randex                                  0037
+RCA                                     0060, 0035, 0048, 0240, 0042, 0226, 0320
+Realistic                               0035, 0037, 0048, 0104
+Reoc                                    0348
+ReplayTV                                0614, 0616
+Rio                                     1137
+Roadstar                                0037, 0081, 0240, 0742
+Runco                                   0039
+Saba                                    0320
+Saisho                                  0348
+Salora                                  0104, 0043
+Sampo                                   0037, 0048
+Samsung                                 0240, 0045, 0742
+Sanky                                   0048, 0039
+Sansei                                  0048
+Sansui                                  0067, 0348, 0479
+Sanyo                                   0048, 0240, 0104, 0067, 0348, 1137
+Saville                                 0240, 0352
+SBR                                     0081
+ScanSonic                               0240
+Sceptre                                 0104
+Schaub Lorenz                           0104, 0348
+Schneider                               0037, 0081, 0240, 0042, 0348, 0352, 0642, 1137
+Scott                                   0184, 0045, 0043
+Sears                                   0035, 0037, 0042, 0104
+SEG                                     0081, 0240, 0642
+SEI                                     0081
+Sei-Sinudyne                            0081
+Seleco                                  0037
+Semivox                                 0045
+Semp                                    0045
+Sharp                                   0037, 0048, 1137
+Shintom                                 0104
+Shivaki                                 0037
+Shogun                                  0240
+Siemens                                 0037, 0081, 0104, 0320, 0347
+Siera                                   0081
+Signature                               0035
+Silva                                   0037
+Silva Schneider                         1137
+SilverCrest                             0642
+Singer                                  0045, 0348
+Sinudyne                                0081, 0352
+Skantic                                 0348
+Smaragd                                 0348
+Sonic Blue                              0614, 0616, 1137
+Sonolor                                 0048
+Sontec                                  0037
+Sonwa                                   0642
+Sony                                    0032, 0035, 0033, 1032
+Soundwave                               0037, 0348
+STS                                     0042
+Sunkai                                  0348
+Supra                                   0037, 0348
+Sylvania                                0035, 0081, 0043, 1593
+Symphonic                               1593
+T+A                                     0162
+Tandy                                   0104
+Tashiko                                 0037, 0048, 0081, 0240
+Tatung                                  0048, 0081, 0045, 0067, 0043, 0348, 0352
+Tchibo                                  0348
+TCM                                     0348
+Teac                                    0037, 0642, 1593
+Technics                                0035, 0162, 0081, 0226
+TechniSat                               0348
+Technosonic                             0352
+Teco                                    0035, 0037, 0048
+Tedelex                                 0037, 0348, 0642
+Teknika                                 0035, 0037
+Telefunken                              0320, 0642
+Telerent                                0226
+Telestar                                0037
+Tensai                                  0037
+Tesla                                   0081
+Tevion                                  0348, 0642
+Thomson                                 0060, 0067, 0320
+Thorn                                   0037, 0104
+Tivo                                    0739
+TMK                                     0240
+Tokai                                   0037, 0104
+Topline                                 0348
+Toshiba                                 0081, 0045, 0042, 0067, 0043, 0352, 0742
+Totevision                              0037, 0240
+Tradex                                  0081
+Uher                                    0240
+Unitech                                 0240
+United                                  0348, 0742, 1593
+Universum                               0037, 0081, 0240, 0104, 0348, 1137
+Vector                                  0045
+Victor                                  0067
+Video Concepts                          0045
+Videomagic                              0037
+Videosonic                              0240
+Wards                                   0060, 0035, 0048, 0039, 0081, 0033, 0240, 0045, 
+                                        0042
+Watson                                  0081, 0352, 0642
+Weltblick                               0037
+Wharfedale                              0642
+World                                   0348
+XR-1000                                 0035
+Yoko                                    0037, 0240
+Zenith                                  0037, 0039, 0033, 0479, 1137
+ZX                                      0348, 0352
+
+
+--- DVD/VCR Combination (V) ---
+
+AEG                                     1593
+Allegro                                 1137
+Centrum                                 1593
+CineVision                              1137
+Clatronic                               1593
+Daewoo                                  1137
+DSE                                     1593
+Durabrand                               1593
+Emerson                                 1593
+EuroLine                                1593
+Firstline                               1137
+Funai                                   1593
+GFM                                     1593
+Go Video                                1137
+GoldStar                                1137
+Irradio                                 1137
+LG                                      1137
+Lunatron                                1137
+Magnavox                                1593
+NEC                                     1137
+Panasonic                               0162, 1562
+Philips                                 0081
+Presidian                               1593
+Radionette                              1137
+RCA                                     0060
+Rio                                     1137
+Sanyo                                   0104
+Schneider                               1137
+Sharp                                   0048, 1137
+Silva Schneider                         1137
+Sylvania                                1593
+Symphonic                               1593
+Teac                                    1593
+Thomson                                 0320
+Toshiba                                 0045
+United                                  1593
+Universum                               1137
+Zenith                                  1137
+
+
+--- HTiB (V) ---
+
+Panasonic                               0162
+
+
+--- SAT/PVR Combination (V) ---
+
+DirecTV                                 0739
+
+
+--- TV/VCR Combination (V) ---
+
+Aiwa                                    0352, 0479, 0742, 1137
+Akai                                    0352
+Alba                                    0352
+Beko                                    0104
+Blue Sky                                0352, 0742
+Broksonic                               0479, 0742
+Bush                                    0352, 0742
+Curtis Mathes                           0035
+Dantax                                  0352, 0742
+Emerson                                 0479
+Ferguson                                0742
+GE                                      0060, 0035, 0048, 0240
+GoldStar                                0037
+Goodmans                                0352, 0742
+Gradiente                               1137
+Grandin                                 0742
+Grundig                                 0081, 0347, 0352, 0742
+Hanimex                                 0352
+Hinari                                  0352
+Hypson                                  0037
+JMB                                     0352
+Kambrook                                0037
+Kneissel                                0352
+LG                                      0037
+Loewe                                   0037
+Magnavox                                0081
+Magnin                                  0240
+Matsui                                  0352, 0742
+Medion                                  0352
+Memorex                                 0162, 0037
+MGA                                     0240
+Mitsubishi                              0048, 0081, 0043
+Optimus                                 0162
+Orion                                   0352, 0479, 0742
+Pace                                    0352
+Pacific                                 0742
+Panasonic                               0035, 0162
+Penney                                  0035, 0037, 0240
+Philco                                  0479
+Philips                                 0081
+Quasar                                  0035, 0162
+Radiola                                 0081
+RCA                                     0060, 0035, 0048, 0240
+Saba                                    0320
+Samsung                                 0240, 0742
+Sansui                                  0479
+Sanyo                                   0240
+Saville                                 0352
+Schneider                               0081, 0352
+Sears                                   0037
+Sharp                                   0037, 0048
+Shivaki                                 0037
+Siemens                                 0081
+Sinudyne                                0352
+Sony                                    0032
+Supra                                   0348
+Sylvania                                0081
+Tatung                                  0352
+Teac                                    0037, 0642
+Technics                                0081
+Technosonic                             0352
+Toshiba                                 0352, 0742
+United                                  0742
+Zenith                                  0479
+
+
+--- VCR/PVR Combination (V) ---
+
+JVC                                     0067
+
+
+###### Setup Codes For Video - DVD (Y) ######
+
+3D LAB                                  0539
+4Kus                                    1158
+Accurian                                0675, 1416
+Acoustic Solutions                      0713, 0730
+AEG                                     0675, 0770, 1233, 2173
+AFK                                     1051, 1152
+AG Electronics                          0713
+Aim                                     0672, 0833
+Airis                                   0672, 0826, 1005
+Aiwa                                    0533
+Akai                                    0675, 0695, 0770, 0884, 0898, 1115, 1233
+AKI                                     1005
+Akura                                   0898, 1051, 1140, 1233, 1493
+Alba                                    0672, 0539, 0695, 0713, 0730, 0884, 1140, 1530
+Allegro                                 0869
+Amitech                                 0770
+Amphion Media Works                     0872
+Amstrad                                 0713, 0770, 1493, 2139
+AMW                                     0872
+Ansonic                                 0831, 1493
+Apex Digital                            0672, 1004
+Arena                                   1115
+Aristona                                0539, 0646
+Arrgo                                   1023
+Audiola                                 1660
+Audix                                   0713
+Autovox                                 0713
+AVideo                                  2173
+Awa                                     0730, 0872, 2587
+Axil                                    2139
+Axion                                   0730
+Bang & Olufsen                          2696
+Basic Line                              0713
+Baze                                    0898
+BBK                                     2332
+Bel Canto Design                        1571
+Bellagio                                1004
+Bellwood                                0826
+Belson                                  1493, 2139
+Belsonic                                1493
+Berthen                                 1643
+Best Buy                                2139
+Black Diamond                           0713, 0833, 0884
+Blu:sens                                1233
+Blue Parade                             0571
+Blue Sky                                0672, 0695, 0713, 0884
+Boghe                                   1004
+Boman                                   0898, 1005
+Brainwave                               0770, 1115
+Brandt                                  0503, 0551
+Broksonic                               0695
+Bush                                    0672, 0713, 0730, 0831, 0833, 0884, 1051, 1140, 
+                                        1530
+Byd:sign                                0872
+C-Tech                                  1152
+California Audio Labs                   0490
+Cambridge Audio                         2808
+Campomatic Digital                      1051
+Cat                                     0789
+CCE                                     0730
+Centrex                                 0672, 1004
+Centrum                                 0675, 0713, 0789, 1005
+CGV                                     1115
+Changhong                               0627
+Chili                                   1493
+Cinea                                   0831, 0841
+Cineral                                 0730
+Cinetec                                 0713, 0872
+CineVision                              0833, 0869
+Citizen                                 0695
+CJ Digital                              1643, 2173
+Classic                                 0730
+Clatronic                               0672, 0675, 1233
+Clayton                                 0713
+CMX                                     1643
+Coby                                    0730
+Codex                                   1233
+Compacks                                0826
+Conia                                   0672
+Contel                                  2331
+Continental Edison                      0831, 0872
+Craig                                   0831
+Crown                                   0713, 0770, 1115
+Curtis                                  1493
+Cybercom                                0831
+CyberHome                               0816, 1023
+D-Vision                                1115
+Daenyx                                  0872
+Daewoo                                  0770, 0833, 0869, 0872
+Dansai                                  0770, 1115
+Dantax                                  0539, 0713
+Datsun                                  1233
+Daytek                                  0872, 1005
+Dayton                                  0872, 1158
+DCE                                     0831
+Decca                                   0770, 1115
+Denon                                   0490, 0634, 1634, 2258
+Denver                                  0672, 0898, 1493
+Dgtec                                   0672
+Diamond                                 0768
+Dick Smith Electronics                  0833, 1152
+Digihome                                0713
+DigiLogic                               0713
+Digital                                 2173
+DigitalMax                              1738
+Digitor                                 0833, 1005
+Digitrex                                0672, 1004
+Digix Media                             0826
+DiK                                     0831
+Disney                                  0675, 0831, 1270
+DK Digital                              0831, 1643, 1660
+DMTech                                  2173
+Dragon                                  0831
+DSE                                     0675, 0833, 1152
+Dual                                    0713, 0730, 0831, 0884, 1023, 1115, 1530
+Durabrand                               0675, 0713, 0831, 1023, 1530
+DVS                                     0672
+DVX                                     0768
+E:max                                   0770, 1233, 1643
+eBench                                  1152
+ECC                                     0730
+Elfunk                                  0713, 0884
+Elin                                    0770
+Elite                                   1152
+Elta                                    0672, 0770, 1051, 1115, 1233, 1643, 2173
+Eltax                                   1233
+Emerson                                 0591, 0675
+Enterprise                              0591
+EuroLine                                0675, 1115, 1233, 1643
+F&U                                     2172
+Ferguson                                0695, 0713, 0884, 0898
+Finlux                                  0672, 0591, 0741, 0770
+Fintec                                  1530
+Firstline                               0713, 0869, 1530
+Fisher                                  0670
+Funai                                   0675, 0695
+Gateway                                 1158
+GE                                      0522
+Germatic                                1051
+GFM                                     0675
+Global Solutions                        0768
+Global Sphere                           1152
+Go Video                                0744, 0741, 0833, 0869, 1044, 1075, 1158
+GoldStar                                0591, 0741, 0869
+Goodmans                                0713, 0730, 0833, 1004, 1140, 1152, 1530
+GoWell                                  1643
+GP Audio                                1140
+GPX                                     0741
+Gran Prix                               0831, 0898
+Grandin                                 0713, 1233, 2173
+Grundig                                 0539, 0551, 0670, 0695, 0713, 1004, 1416, 1643
+Grunkel                                 0770, 0831, 1493
+GVG                                     0770
+H & B                                   0713, 0841, 1233, 2173
+Haaz                                    1152
+Hanseatic                               0741
+Harman/Kardon                           0702
+HE                                      0730, 1493
+Hello Kitty                             0831
+Henss                                   0713
+Hitachi                                 0573, 0664, 0695, 0713, 0884, 1748, 1764
+Hiteker                                 0672
+Hoeher                                  0713, 0826, 0831, 1004, 1530, 2173
+Home Electronics                        0730, 0770
+Home Tech Industries                    1643
+HotMedia                                1152
+Humax                                   0646
+HYD                                     1233
+Hyundai                                 0768, 0826, 0833, 1660
+Ingersol                                1023
+Inno Hit                                0713
+Insignia                                0675, 0741, 2428, 2596
+Integra                                 0571, 1769, 0627, 1634, 2147
+Irradio                                 0646, 0869, 1115, 1233
+ISP                                     0695
+ITT                                     1233
+JBL                                     0702
+JDB                                     0730
+JGC                                     1530
+JMB                                     0695
+JNC                                     0672
+JVC                                     0503, 0539, 0623, 1164, 1550, 1602, 2365
+jWin                                    1051
+Kansas Technologies                     1233, 1530
+Kazuki                                  1493
+Kendo                                   0672, 0713, 0831
+Kennex                                  0713, 0770, 0898
+Kenwood                                 0490, 0534
+KeyPlug                                 1643
+Kiiro                                   0770
+King D'Home                             0833
+King Vision                             1493, 1643
+Kiss                                    0841
+Landel                                  0826
+Lawson                                  0768
+Lazer                                   2173
+Leiker                                  0872
+Lenco                                   0713, 0770
+Lenoxx                                  1005
+Lexia                                   0768
+LG                                      0591, 0741, 0869, 1233, 1602, 2189
+Lifetec                                 0831
+Limit                                   0768
+LiteOn                                  1158, 1416, 1738
+LM                                      1643
+Lodos                                   0713, 0884
+Loewe                                   0539, 0741
+Logik                                   0713, 0884
+Lumatron                                0695, 0713, 0741, 0833, 1115
+Lunatron                                0741
+Luxman                                  0573
+Luxor                                   0713, 0884, 1004
+Magnavox                                0503, 0539, 0646, 0675, 0713, 1140, 1354, 1506
+Magnum                                  1382
+Manhattan                               0713
+Manta                                   1493
+Marantz                                 0539, 2414
+Mark                                    0713
+Marquant                                0770
+Matsui                                  0672, 0695, 0713, 0884, 1004
+Maxim                                   0713, 0872
+MBO                                     0730
+McIntosh                                1533
+MDS                                     0713
+Mecotek                                 0770
+Medion                                  0630, 0741, 0831, 1270, 2189
+Memorex                                 0695, 0831, 1270, 2213
+Metz                                    0525, 0571, 0713
+Micromaxx                               0695
+Micromedia                              0503, 0539
+Micromega                               0539, 1005
+Microsoft                               0522, 2083, 1708
+Microstar                               0831
+Minax                                   0713
+Minoka                                  0770, 1115
+Mitsubishi                              1521, 0713
+Mizuda                                  0770
+Mustek                                  0730
+Muvid                                   1493, 1643, 2173
+Mystral                                 0831
+NAD                                     0741, 2572
+Naiko                                   0770, 1004
+NEC                                     0741, 0869, 1602
+Neom                                    1493, 1643
+Nevir                                   0672, 0770, 0831, 1660
+Next Base                               0826
+NFREN                                   0826
+Nintaus                                 1051
+Noblex                                  1233
+Norcent                                 0872
+Nordmende                               0831, 1530
+Nortek                                  1643, 2173
+Nu-Tec                                  1493
+Olevia                                  2331
+Olidata                                 0672
+Omni                                    0833
+Onida                                   1004
+Onkyo                                   0503, 1769, 0627, 2147
+Oopla                                   1158
+Oppo                                    0575, 2545
+Optimus                                 0525
+Orbit                                   0872, 1643
+Orion                                   0695, 0713, 1233
+Ormond                                  0713
+Otic                                    0826
+Pacific                                 0713, 0768, 0831
+Packard Bell                            0831
+Palladium                               0695, 0713
+Palsonic                                0672, 0833
+Panasonic                               0490, 0503, 1579, 1641, 1661, 1762, 2523
+Panda                                   0789
+peeKTon                                 0898
+Pelican Accessories                     0533
+Philco                                  0675
+Philips                                 0503, 0539, 2056, 2084, 0646, 0675, 0713, 1158, 
+                                        1267, 1340, 1354, 1506, 2093, 2334, 2434, 2526
+Pioneer                                 0525, 0571, 0142, 0631, 1531, 1571, 1768, 2442
+Play It                                 1643
+Polk Audio                              0539
+Portland                                0770
+Powerpoint                              0872, 1005
+Presidian                               0675, 1738
+Prinz                                   0831
+Prism                                   0831
+ProAudio                                1394
+ProCaster                               1004
+Proceed                                 0672
+Proline                                 0672, 0833, 1004, 1643, 1738, 2616
+Proscan                                 0522
+Proson                                  0713
+Prosonic                                1530
+ProVision                               0730, 1493
+Pye                                     0539, 0646
+QONIX                                   1051
+Radionette                              0741, 0869
+Radiotone                               0713
+RCA                                     0522, 0571, 1769, 2213, 2587, 2592
+REC                                     0490
+Red                                     2213
+Redstar                                 0770, 0898, 1394
+Reoc                                    0768
+Revoy                                   0841
+Richmond                                1233
+Rio                                     0869
+Roadstar                                0672, 0713, 0730, 0833, 0898, 1051
+Rocksonic                               0789
+Ronin                                   0872
+Rotel                                   0623
+Rowa                                    0872, 1004
+Rownsonic                               0789
+Saba                                    0551, 1643, 2173
+Saivod                                  0831
+Salora                                  0741
+Samsung                                 0490, 0573, 0744, 0199, 0298, 1044, 1075, 1470, 
+                                        1635, 1748, 2069, 2107, 2113, 2269, 2329, 2489
+Sansui                                  0695, 0768, 1051
+Santosh                                 1115
+Sanyo                                   0670, 0695, 0713
+ScanMagic                               0730
+Schaub Lorenz                           0770, 1115, 1643, 2173
+Schneider                               0539, 0646, 0713, 0831, 0869
+Schoentech                              0713
+Scientific Labs                         0768
+Scott                                   0672, 1005, 1233, 1394, 2173
+Seeltech                                1643
+SEG                                     0713, 0872, 0884, 1530
+Semp                                    0503
+Sensory Science                         1158
+Shanghai                                0672
+Sharp                                   0630, 0675, 0713, 0869, 2250, 2479, 2652
+Sherwood                                0741, 0770
+Shinsonic                               0533
+Siemssen                                1382
+Sigmatek                                1005, 2139
+Silva                                   0898
+Silva Schneider                         0741, 0831, 0869, 0898
+SilverCrest                             1152, 2173
+Singer                                  0768
+Sistemas                                0672
+Skantic                                 0539, 0713
+Skymaster                               0730, 0768
+Skyworth                                0898
+Sliding                                 1115
+SM Electronic                           0730, 0768, 1152
+Smart                                   0713
+Sogo                                    0672, 1493, 2172
+Sonashi                                 0831
+Sonic Blue                              0869
+Soniq                                   0831
+Sony                                    1633, 1533, 0533, 0864, 0772, 1033, 1070, 1431, 
+                                        1516, 1536, 2132, 2180
+Sound Color                             1233
+Soundmaster                             0768
+Soundmax                                0768
+Soundwave                               0713, 1530
+Spectra                                 0872
+Standard                                0768, 0831, 0898
+Star Clusters                           1152
+Starlogic                               1005
+Starmedia                               1005
+Strato                                  1152, 1382
+Strong                                  0713
+Sunkai                                  0770
+Sunstech                                0831, 2139
+Sunwood                                 0898
+Superior                                1643
+Supervision                             0768, 1152
+Supratech                               2139, 2172, 2238
+SVA                                     0672
+Swisstec                                2302
+Sylvania                                0630, 0675
+Symphonic                               0675
+Synn                                    0768
+Syscom                                  0826
+Sytech                                  2139
+Tamashi                                 1394
+Tandberg                                0713
+Targa                                   0741
+Tatung                                  0770
+TBoston                                 2139
+Tchibo                                  0741
+TCL                                     2587
+TCM                                     0741
+Teac                                    0571, 0675, 0741, 0768, 0833, 1394, 2139
+Tec                                     0898
+Technica                                0713, 0884
+Technics                                0490
+Technika                                0770, 0831, 1115, 1530, 2302
+Technisson                              1115
+Technosonic                             0730, 1051, 1115
+TechnoStar                              1643
+Techwood                                0713, 1530
+Tedelex                                 0768, 1004
+Telefunken                              0551, 0789, 0833
+Teletech                                0713, 0768, 0884
+Tensai                                  0770
+Tevion                                  0768, 0833, 0898, 1382, 1660
+Textorm                                 1493
+Theta Digital                           0571
+Thomson                                 0522, 0117, 0551, 0831
+Thule Audio                             0551
+Tokai                                   0898, 1233
+Tom-Tec                                 0789, 0833
+Toshiba                                 0503, 1769, 0695, 1045, 1154, 1510, 1639, 2006, 
+                                        2277, 2705
+TRANS-continents                        0826, 0831, 0833, 0872, 1233
+Transonic                               0730, 1394
+Trent                                   1643
+Trevi                                   0831
+TVE                                     0713
+UMC                                     2302
+United                                  0675, 0695, 0713, 0730, 0826, 0884, 1115, 1152, 
+                                        1233, 1643
+Universum                               0591, 0713, 0741, 0869, 1530
+Urban Concepts                          0503
+Vecatech                                1493
+Venturer                                1769
+Vestel                                  0713, 0884, 1530
+Viewsonic                               1530
+Visual Innovations                      2302
+Vizio                                   2563
+Voxson                                  0730, 0831
+Vtrek                                   2587
+Waitec                                  0730, 1233
+Waltham                                 0713, 1530
+Welkin                                  0831
+Wellington                              0713
+Weltstar                                0713
+Wharfedale                              0713, 1115
+Wilson                                  0831, 1233
+Windsor                                 0713
+Windy Sam                               0573
+WIZE                                    1115
+Woxter                                  1005, 2139
+X-View                                  1233
+Xbox                                    0522, 2083, 1708
+XLogic                                  0768, 1152
+XMS                                     0770
+Yakumo                                  1004
+Yamada                                  0872, 1004, 1158, 1416, 1493, 2139
+Yamaha                                  0490, 0539, 0646, 0497, 0817, 1416, 2298, 2558
+Yamakawa                                0872
+YBA                                     0872
+Yukai                                   0730
+Zenith                                  0503, 0591, 0741, 0869
+
+
+--- Blu-Ray [DVD High Definition] (Y) ---
+
+Bang & Olufsen                          2696
+Cambridge Audio                         2808
+Denon                                   2258
+Funai                                   0675
+Insignia                                0675, 2428, 2596
+Integra                                 1769, 2147
+JVC                                     2365
+LG                                      0741, 1602
+Magnavox                                0675
+Marantz                                 2414
+Microsoft                               2083, 1708
+NAD                                     2572
+Olevia                                  2331
+Onkyo                                   1769, 2147
+Oppo                                    2545
+Panasonic                               1641, 2523
+Philips                                 2084, 2434
+Pioneer                                 0142, 2442
+RCA                                     1769
+Samsung                                 0199, 0298
+Sharp                                   2250, 2479, 2652
+Sony                                    1516, 2180
+Sylvania                                0675
+Toshiba                                 1769, 2705
+Vizio                                   2563
+Xbox                                    2083, 1708
+Yamaha                                  2298
+
+
+--- DVD/PVR Combination (Y) ---
+
+Emerson                                 0675
+Funai                                   0675
+GPX                                     0741
+Grundig                                 1416
+Hitachi                                 1764
+JGC                                     1530
+JVC                                     0623
+LG                                      0741
+LiteOn                                  1416
+Medion                                  0741
+NEC                                     0741
+Nordmende                               1530
+Panasonic                               0490, 1579, 1661, 2523
+Philips                                 0539, 1158, 1340, 2093
+Pioneer                                 0631, 1768
+Prosonic                                1530
+RCA                                     0522
+Samsung                                 0490, 1635, 1748, 2107
+SEG                                     1530
+Sharp                                   0630
+Silva Schneider                         0741
+Sony                                    1033, 1070, 1536, 2132
+Soundwave                               1530
+Sylvania                                0675
+Targa                                   0741
+Tchibo                                  0741
+TCM                                     0741
+Technika                                1530
+Thomson                                 0117, 0551
+Toshiba                                 1510, 1639
+Universum                               0741
+Yamada                                  1416
+
+
+--- DVD/VCR Combination (Y) ---
+
+Accurian                                0675
+AEG                                     0675
+Aim                                     0833
+Akai                                    0675
+Allegro                                 0869
+Black Diamond                           0833
+Broksonic                               0695
+Bush                                    0833
+Centrum                                 0675
+CineVision                              0833, 0869
+Clatronic                               0675
+Daewoo                                  0833, 0869
+Dick Smith Electronics                  0833
+Digitor                                 0833
+DSE                                     0675, 0833
+Durabrand                               0675
+Emerson                                 0675
+EuroLine                                0675
+Firstline                               0869
+Funai                                   0675, 0695
+GFM                                     0675
+Go Video                                0744, 0741, 0833, 0869, 1044, 1075
+GoldStar                                0741
+Goodmans                                0833
+Hitachi                                 0664
+Hyundai                                 0833
+Irradio                                 0869
+JVC                                     1164, 1550, 1602
+King D'Home                             0833
+LG                                      0741, 0869
+Lumatron                                0695, 0741, 0833
+Lunatron                                0741
+Magnavox                                0675
+Memorex                                 0695
+Micromaxx                               0695
+NEC                                     0869, 1602
+Omni                                    0833
+Orion                                   0695
+Palsonic                                0833
+Panasonic                               0490, 1579, 1762
+Philips                                 0539, 0646, 0675, 1267
+Pioneer                                 0631
+Presidian                               0675
+Proline                                 0833
+Radionette                              0869
+RCA                                     0522
+Roadstar                                0833
+Samsung                                 0744, 1044, 1075, 2113, 2269, 2489
+Sansui                                  0695
+Sanyo                                   0670, 0695
+Schneider                               0869
+Sharp                                   0630, 0869
+Silva Schneider                         0869
+Sony                                    0864, 1033, 1070, 1431
+Sylvania                                0675
+Symphonic                               0675
+Teac                                    0675, 0833
+Telefunken                              0833
+Tevion                                  0833
+Thomson                                 0551
+Tom-Tec                                 0833
+Toshiba                                 0503, 1045, 1510
+TRANS-continents                        0833
+United                                  0675
+Universum                               0869
+Zenith                                  0741, 0869
+
+
+--- Game Console (Y) ---
+
+Microsoft                               0522, 2083, 1708
+Sony                                    0533, 0772
+Xbox                                    0522, 2083, 1708
+
+
+--- HTiB (Y) ---
+
+Denon                                   0634, 1634
+Finlux                                  0672
+Harman/Kardon                           0702
+Integra                                 0627
+Irradio                                 1233
+JBL                                     0702
+JVC                                     0623
+LG                                      0741, 2189
+Marquant                                0770
+Medion                                  2189
+Onkyo                                   0627
+Philips                                 1267, 2334, 2526
+Polk Audio                              0539
+Rio                                     0869
+Samsung                                 0298
+Sanyo                                   0670
+Sonic Blue                              0869
+Sony                                    1033, 1070, 2132
+Thomson                                 0522
+Toshiba                                 2006
+Yamaha                                  0497, 0817
+
+
+--- Media Center Controller (Y) ---
+
+Microsoft                               2083, 1708
+
+
+--- TV/DVD Combination (Y) ---
+
+Akai                                    0695
+Alba                                    0695, 0884
+Black Diamond                           0713, 0884
+Blue Sky                                0713, 0884
+Broksonic                               0695
+Bush                                    0713, 0884
+Centrum                                 0713
+Citizen                                 0695
+Crown                                   0713
+Dual                                    0713, 0884, 1115
+Elfunk                                  0713, 0884
+Emerson                                 0675
+Ferguson                                0695, 0713, 0884
+Goodmans                                0713
+Grandin                                 0713
+Grundig                                 0539, 0695
+Hitachi                                 0713, 0884
+Logik                                   0713, 0884
+Luxor                                   0713, 0884
+Matsui                                  0713, 0884
+Orion                                   0695
+Philips                                 0539
+Sansui                                  0695
+SEG                                     0713, 0884
+Sliding                                 1115
+Sylvania                                0630, 0675
+Technica                                0713, 0884
+Technika                                2302
+Teletech                                0713, 0884
+Thomson                                 0551
+Toshiba                                 0695
+UMC                                     2302
+United                                  0713, 0884
+Universum                               0713
+Vestel                                  0884
+Weltstar                                0713
+Wharfedale                              1115
+
+
+--- TV/VCR Combination (Y) ---
+
+Thomson                                 0551
+
+
+--- TV/VCR/DVD Combination (Y) ---
+
+Ferguson                                0695
+Matsui                                  0695
+Sharp                                   0630
+Toshiba                                 1045
+
+
+
+			UEI PROPRIETARY AND CONFIDENTIAL – ALL MATERIAL © 2010 UEI 
