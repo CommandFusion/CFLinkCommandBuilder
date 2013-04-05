@@ -24,15 +24,15 @@ Partial Class frmBuilder
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmBuilder))
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.splitPanels = New System.Windows.Forms.SplitContainer()
         Me.treeDevices = New System.Windows.Forms.TreeView()
         Me.imgTreeIcons = New System.Windows.Forms.ImageList(Me.components)
@@ -120,6 +120,8 @@ Partial Class frmBuilder
         Me.cboFiles = New System.Windows.Forms.ToolStripComboBox()
         Me.btnBrowse = New System.Windows.Forms.ToolStripButton()
         Me.dlgOpenFile = New System.Windows.Forms.OpenFileDialog()
+        Me.tabHelp = New System.Windows.Forms.TabPage()
+        Me.lblHelp = New System.Windows.Forms.Label()
         CType(Me.splitPanels, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.splitPanels.Panel1.SuspendLayout()
         Me.splitPanels.Panel2.SuspendLayout()
@@ -143,6 +145,7 @@ Partial Class frmBuilder
         CType(Me.dgvPortsEthernet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.toolStrip.SuspendLayout()
+        Me.tabHelp.SuspendLayout()
         Me.SuspendLayout()
         '
         'splitPanels
@@ -181,7 +184,7 @@ Partial Class frmBuilder
         '
         Me.imgTreeIcons.ImageStream = CType(resources.GetObject("imgTreeIcons.ImageStream"), System.Windows.Forms.ImageListStreamer)
         Me.imgTreeIcons.TransparentColor = System.Drawing.Color.Transparent
-        Me.imgTreeIcons.Images.SetKeyName(0, "16x16_transparent.png")
+        Me.imgTreeIcons.Images.SetKeyName(0, "16x16_dot.png")
         Me.imgTreeIcons.Images.SetKeyName(1, "16x16_ethernet.png")
         Me.imgTreeIcons.Images.SetKeyName(2, "16x16_serialcoms.png")
         Me.imgTreeIcons.Images.SetKeyName(3, "16x16_infrared.png")
@@ -215,6 +218,7 @@ Partial Class frmBuilder
         Me.tabMain.Controls.Add(Me.tabIR)
         Me.tabMain.Controls.Add(Me.tabError)
         Me.tabMain.Controls.Add(Me.tabEthernet)
+        Me.tabMain.Controls.Add(Me.tabHelp)
         Me.tabMain.Dock = System.Windows.Forms.DockStyle.Fill
         Me.tabMain.Location = New System.Drawing.Point(0, 0)
         Me.tabMain.Margin = New System.Windows.Forms.Padding(3, 0, 3, 3)
@@ -301,13 +305,13 @@ Partial Class frmBuilder
         'colPulse
         '
         Me.colPulse.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        DataGridViewCellStyle10.BackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.Gray
-        DataGridViewCellStyle10.Format = "N1"
-        DataGridViewCellStyle10.NullValue = "0.1"
-        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Gray
-        Me.colPulse.DefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Gray
+        DataGridViewCellStyle1.Format = "N1"
+        DataGridViewCellStyle1.NullValue = "0.1"
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Gray
+        Me.colPulse.DefaultCellStyle = DataGridViewCellStyle1
         Me.colPulse.HeaderText = "Pulse Time (ms)"
         Me.colPulse.Name = "colPulse"
         Me.colPulse.ReadOnly = True
@@ -390,13 +394,13 @@ Partial Class frmBuilder
         'DataGridViewTextBoxColumn2
         '
         Me.DataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        DataGridViewCellStyle11.BackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle11.ForeColor = System.Drawing.Color.Gray
-        DataGridViewCellStyle11.Format = "N1"
-        DataGridViewCellStyle11.NullValue = "0.1"
-        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Gray
-        Me.DataGridViewTextBoxColumn2.DefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gray
+        DataGridViewCellStyle2.Format = "N1"
+        DataGridViewCellStyle2.NullValue = "0.1"
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Gray
+        Me.DataGridViewTextBoxColumn2.DefaultCellStyle = DataGridViewCellStyle2
         Me.DataGridViewTextBoxColumn2.HeaderText = "Pulse Time (ms)"
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         Me.DataGridViewTextBoxColumn2.ReadOnly = True
@@ -543,13 +547,13 @@ Partial Class frmBuilder
         'DataGridViewTextBoxColumn6
         '
         Me.DataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        DataGridViewCellStyle12.BackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.Gray
-        DataGridViewCellStyle12.Format = "N1"
-        DataGridViewCellStyle12.NullValue = "0.1"
-        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Gray
-        Me.DataGridViewTextBoxColumn6.DefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Gray
+        DataGridViewCellStyle3.Format = "N1"
+        DataGridViewCellStyle3.NullValue = "0.1"
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Gray
+        Me.DataGridViewTextBoxColumn6.DefaultCellStyle = DataGridViewCellStyle3
         Me.DataGridViewTextBoxColumn6.HeaderText = "Pulse Time   (0.1 - 999.9s)"
         Me.DataGridViewTextBoxColumn6.MaxInputLength = 5
         Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
@@ -559,13 +563,13 @@ Partial Class frmBuilder
         'colMin
         '
         Me.colMin.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        DataGridViewCellStyle13.BackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle13.ForeColor = System.Drawing.Color.Gray
-        DataGridViewCellStyle13.Format = "N0"
-        DataGridViewCellStyle13.NullValue = "0"
-        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.Gray
-        Me.colMin.DefaultCellStyle = DataGridViewCellStyle13
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.Gray
+        DataGridViewCellStyle4.Format = "N0"
+        DataGridViewCellStyle4.NullValue = "0"
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Gray
+        Me.colMin.DefaultCellStyle = DataGridViewCellStyle4
         Me.colMin.HeaderText = "Min (0-100)"
         Me.colMin.MaxInputLength = 3
         Me.colMin.Name = "colMin"
@@ -575,13 +579,13 @@ Partial Class frmBuilder
         'colMax
         '
         Me.colMax.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        DataGridViewCellStyle14.BackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle14.ForeColor = System.Drawing.Color.Gray
-        DataGridViewCellStyle14.Format = "N0"
-        DataGridViewCellStyle14.NullValue = "100"
-        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.Gray
-        Me.colMax.DefaultCellStyle = DataGridViewCellStyle14
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.Gray
+        DataGridViewCellStyle5.Format = "N0"
+        DataGridViewCellStyle5.NullValue = "100"
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Gray
+        Me.colMax.DefaultCellStyle = DataGridViewCellStyle5
         Me.colMax.HeaderText = "Max (1-100)"
         Me.colMax.MaxInputLength = 3
         Me.colMax.Name = "colMax"
@@ -591,13 +595,13 @@ Partial Class frmBuilder
         'colTimeOn
         '
         Me.colTimeOn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        DataGridViewCellStyle15.BackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle15.ForeColor = System.Drawing.Color.Gray
-        DataGridViewCellStyle15.Format = "N1"
-        DataGridViewCellStyle15.NullValue = "0.1"
-        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Gray
-        Me.colTimeOn.DefaultCellStyle = DataGridViewCellStyle15
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.Gray
+        DataGridViewCellStyle6.Format = "N1"
+        DataGridViewCellStyle6.NullValue = "0.1"
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Gray
+        Me.colTimeOn.DefaultCellStyle = DataGridViewCellStyle6
         Me.colTimeOn.HeaderText = "Time On   (0.1 - 999.9s)"
         Me.colTimeOn.MaxInputLength = 5
         Me.colTimeOn.Name = "colTimeOn"
@@ -607,13 +611,13 @@ Partial Class frmBuilder
         'colTimeOff
         '
         Me.colTimeOff.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        DataGridViewCellStyle16.BackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle16.ForeColor = System.Drawing.Color.Gray
-        DataGridViewCellStyle16.Format = "N1"
-        DataGridViewCellStyle16.NullValue = "0.1"
-        DataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Gray
-        Me.colTimeOff.DefaultCellStyle = DataGridViewCellStyle16
+        DataGridViewCellStyle7.BackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle7.ForeColor = System.Drawing.Color.Gray
+        DataGridViewCellStyle7.Format = "N1"
+        DataGridViewCellStyle7.NullValue = "0.1"
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Gray
+        Me.colTimeOff.DefaultCellStyle = DataGridViewCellStyle7
         Me.colTimeOff.HeaderText = "Time Off   (0.1 - 999.9s)"
         Me.colTimeOff.MaxInputLength = 5
         Me.colTimeOff.Name = "colTimeOff"
@@ -623,13 +627,13 @@ Partial Class frmBuilder
         'colCount
         '
         Me.colCount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        DataGridViewCellStyle17.BackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle17.ForeColor = System.Drawing.Color.Gray
-        DataGridViewCellStyle17.Format = "N0"
-        DataGridViewCellStyle17.NullValue = "0"
-        DataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.Gray
-        Me.colCount.DefaultCellStyle = DataGridViewCellStyle17
+        DataGridViewCellStyle8.BackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.Gray
+        DataGridViewCellStyle8.Format = "N0"
+        DataGridViewCellStyle8.NullValue = "0"
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Gray
+        Me.colCount.DefaultCellStyle = DataGridViewCellStyle8
         Me.colCount.HeaderText = "Count"
         Me.colCount.Name = "colCount"
         Me.colCount.ReadOnly = True
@@ -841,8 +845,8 @@ Partial Class frmBuilder
         'DataGridViewTextBoxColumn8
         '
         Me.DataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        DataGridViewCellStyle18.NullValue = Nothing
-        Me.DataGridViewTextBoxColumn8.DefaultCellStyle = DataGridViewCellStyle18
+        DataGridViewCellStyle9.NullValue = Nothing
+        Me.DataGridViewTextBoxColumn8.DefaultCellStyle = DataGridViewCellStyle9
         Me.DataGridViewTextBoxColumn8.HeaderText = "IR Code"
         Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
         '
@@ -1128,6 +1132,25 @@ Partial Class frmBuilder
         Me.dlgOpenFile.Filter = "JSON files|*.json"
         Me.dlgOpenFile.InitialDirectory = "%appdata%\CommandFusion\SystemCommander\discovery"
         '
+        'tabHelp
+        '
+        Me.tabHelp.Controls.Add(Me.lblHelp)
+        Me.tabHelp.Location = New System.Drawing.Point(4, 22)
+        Me.tabHelp.Name = "tabHelp"
+        Me.tabHelp.Size = New System.Drawing.Size(449, 253)
+        Me.tabHelp.TabIndex = 7
+        Me.tabHelp.Text = "Help"
+        Me.tabHelp.UseVisualStyleBackColor = True
+        '
+        'lblHelp
+        '
+        Me.lblHelp.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblHelp.Location = New System.Drawing.Point(0, 0)
+        Me.lblHelp.Name = "lblHelp"
+        Me.lblHelp.Size = New System.Drawing.Size(449, 253)
+        Me.lblHelp.TabIndex = 0
+        Me.lblHelp.Text = resources.GetString("lblHelp.Text")
+        '
         'frmBuilder
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1172,6 +1195,7 @@ Partial Class frmBuilder
         Me.Panel1.PerformLayout()
         Me.toolStrip.ResumeLayout(False)
         Me.toolStrip.PerformLayout()
+        Me.tabHelp.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1263,4 +1287,6 @@ Partial Class frmBuilder
     Friend WithEvents DataGridViewComboBoxColumn3 As System.Windows.Forms.DataGridViewComboBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn8 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents btnCopyCommand As System.Windows.Forms.Button
+    Friend WithEvents tabHelp As System.Windows.Forms.TabPage
+    Friend WithEvents lblHelp As System.Windows.Forms.Label
 End Class

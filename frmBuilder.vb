@@ -69,6 +69,8 @@ Public Class frmBuilder
 
         HideAllTabs()
 
+        tabMain.TabPages.Add(tabHelp)
+
         LoadOnboardDatabase()
     End Sub
 
@@ -283,6 +285,7 @@ Public Class frmBuilder
                         If anAction.StartsWith(aModule("ModuleType")) Then
                             Dim moduleNode As New TreeNode(aModule("Model"))
                             moduleNode.Tag = aModule
+                            moduleNode.ToolTipText = "Module Slot " & aModule("ModuleNumber")
                             moduleNode.ImageIndex = 6 + aModule("ModuleNumber")
                             moduleNode.SelectedImageIndex = 6 + aModule("ModuleNumber")
                             moduleNode.NodeFont = New System.Drawing.Font(Me.Font, Drawing.FontStyle.Regular)
@@ -297,6 +300,10 @@ Public Class frmBuilder
                 treeDevices.Nodes.Add(actionNode)
             End If
         Next
+
+        HideAllTabs()
+
+        tabMain.TabPages.Add(tabHelp)
     End Sub
 
     Public Sub HideAllTabs()
