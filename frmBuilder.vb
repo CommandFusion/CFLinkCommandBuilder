@@ -1203,7 +1203,7 @@ Public Class frmBuilder
             Exit Sub
         End If
 
-        If MsgBox("All IR commands for the chosen device and codeset will be added to the system you have selected in the 'New Command Details' window below. Do you want to continue?") = MsgBoxResult.Cancel Then
+        If MsgBox("All IR commands for the chosen device and codeset will be added to the system you have selected in the 'New Command Details' window below. Do you want to continue?", MsgBoxStyle.OkCancel) = MsgBoxResult.Cancel Then
             Exit Sub
         End If
 
@@ -1241,6 +1241,7 @@ Public Class frmBuilder
                 If ListOfSystems IsNot Nothing AndAlso ListOfSystems.Count > 0 Then
                     theSystem = GetSystem(cboSystems.SelectedItem)
                     If theSystem IsNot Nothing Then
+                        theSystem = theSystem.Clone
                         LastSystemName = theSystem.Name
                     Else
                         MsgBox("The system could not be found in the currently open project.")
@@ -1323,6 +1324,7 @@ Public Class frmBuilder
         'txtCommandValue.Enabled = enabled
         btnAdd.Enabled = enabled
         btnAddAllIRCommands.Enabled = enabled
+        lblProjectWarning.Visible = Not enabled
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
@@ -1384,6 +1386,7 @@ Public Class frmBuilder
             If ListOfSystems IsNot Nothing AndAlso ListOfSystems.Count > 0 Then
                 Dim theSystem As CommandFusion.SystemClass = GetSystem(cboSystems.SelectedItem)
                 If theSystem IsNot Nothing Then
+                    theSystem = theSystem.Clone
                     newCommand.Name = txtCommandName.Text
                     newCommand.Value = txtCommandValue.Text
                     newCommand.System = theSystem
@@ -1402,6 +1405,24 @@ Public Class frmBuilder
 
     Private Sub btnRefreshSystems_Click(sender As Object, e As EventArgs) Handles btnRefreshSystems.Click
         RaiseEvent RequestSystemList(Me)
+    End Sub
+
+    Private Sub btnCopyCommand_Click(sender As Object, e As EventArgs) Handles btnCopyCommand.Click
+        If txtCommandValue.Text = "" Then
+            MsgBox("The command value is empty, copying has been aborted.")
+        Else
+            My.Computer.Clipboard.SetText(txtCommandValue.Text)
+            MsgBox("The command value has been copied to your clipboard." & Environment.NewLine & "You can now paste the command into the System Commander test window if you want to test the CFLink command in a live system.", MsgBoxStyle.Information)
+        End If
+        
+    End Sub
+
+    Private Sub txtCommandValue_TextChanged(sender As Object, e As EventArgs) Handles txtCommandValue.TextChanged
+        If txtCommandValue.Text <> "" Then
+            btnCopyCommand.Enabled = True
+        Else
+            btnCopyCommand.Enabled = False
+        End If
     End Sub
 
 End Class

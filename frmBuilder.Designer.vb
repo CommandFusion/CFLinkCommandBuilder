@@ -24,15 +24,15 @@ Partial Class frmBuilder
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmBuilder))
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.splitPanels = New System.Windows.Forms.SplitContainer()
         Me.treeDevices = New System.Windows.Forms.TreeView()
         Me.imgTreeIcons = New System.Windows.Forms.ImageList(Me.components)
@@ -90,10 +90,22 @@ Partial Class frmBuilder
         Me.tabIRCommand = New System.Windows.Forms.TabPage()
         Me.btnGenerateIR = New System.Windows.Forms.Button()
         Me.dgvPortsIR = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewComboBoxColumn3 = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.tabError = New System.Windows.Forms.TabPage()
         Me.lblErrorMsg = New System.Windows.Forms.Label()
+        Me.tabEthernet = New System.Windows.Forms.TabPage()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.btnGenerateEthernet = New System.Windows.Forms.Button()
+        Me.dgvPortsEthernet = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colDetails = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnCopyCommand = New System.Windows.Forms.Button()
+        Me.lblProjectWarning = New System.Windows.Forms.Label()
         Me.btnRefreshSystems = New System.Windows.Forms.Button()
         Me.cboSystems = New System.Windows.Forms.ComboBox()
         Me.lblSystem = New System.Windows.Forms.Label()
@@ -108,16 +120,6 @@ Partial Class frmBuilder
         Me.cboFiles = New System.Windows.Forms.ToolStripComboBox()
         Me.btnBrowse = New System.Windows.Forms.ToolStripButton()
         Me.dlgOpenFile = New System.Windows.Forms.OpenFileDialog()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewComboBoxColumn3 = New System.Windows.Forms.DataGridViewComboBoxColumn()
-        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.tabEthernet = New System.Windows.Forms.TabPage()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.btnGenerateEthernet = New System.Windows.Forms.Button()
-        Me.dgvPortsEthernet = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colDetails = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.splitPanels, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.splitPanels.Panel1.SuspendLayout()
         Me.splitPanels.Panel2.SuspendLayout()
@@ -137,10 +139,10 @@ Partial Class frmBuilder
         Me.tabIRCommand.SuspendLayout()
         CType(Me.dgvPortsIR, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tabError.SuspendLayout()
-        Me.Panel1.SuspendLayout()
-        Me.toolStrip.SuspendLayout()
         Me.tabEthernet.SuspendLayout()
         CType(Me.dgvPortsEthernet, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
+        Me.toolStrip.SuspendLayout()
         Me.SuspendLayout()
         '
         'splitPanels
@@ -169,11 +171,11 @@ Partial Class frmBuilder
         Me.treeDevices.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.treeDevices.ImageIndex = 0
         Me.treeDevices.ImageList = Me.imgTreeIcons
-        Me.treeDevices.Location = New System.Drawing.Point(0, 23)
+        Me.treeDevices.Location = New System.Drawing.Point(0, 31)
         Me.treeDevices.Name = "treeDevices"
         Me.treeDevices.SelectedImageIndex = 0
-        Me.treeDevices.Size = New System.Drawing.Size(184, 380)
-        Me.treeDevices.TabIndex = 0
+        Me.treeDevices.Size = New System.Drawing.Size(184, 372)
+        Me.treeDevices.TabIndex = 1
         '
         'imgTreeIcons
         '
@@ -199,8 +201,8 @@ Partial Class frmBuilder
         Me.lblFile.ForeColor = System.Drawing.SystemColors.ControlText
         Me.lblFile.Location = New System.Drawing.Point(0, 0)
         Me.lblFile.Name = "lblFile"
-        Me.lblFile.Size = New System.Drawing.Size(184, 23)
-        Me.lblFile.TabIndex = 68
+        Me.lblFile.Size = New System.Drawing.Size(184, 31)
+        Me.lblFile.TabIndex = 0
         Me.lblFile.Text = "Waiting for above selection..."
         Me.lblFile.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -299,13 +301,13 @@ Partial Class frmBuilder
         'colPulse
         '
         Me.colPulse.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Gray
-        DataGridViewCellStyle1.Format = "N1"
-        DataGridViewCellStyle1.NullValue = "0.1"
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Gray
-        Me.colPulse.DefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle10.BackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.Gray
+        DataGridViewCellStyle10.Format = "N1"
+        DataGridViewCellStyle10.NullValue = "0.1"
+        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Gray
+        Me.colPulse.DefaultCellStyle = DataGridViewCellStyle10
         Me.colPulse.HeaderText = "Pulse Time (ms)"
         Me.colPulse.Name = "colPulse"
         Me.colPulse.ReadOnly = True
@@ -388,13 +390,13 @@ Partial Class frmBuilder
         'DataGridViewTextBoxColumn2
         '
         Me.DataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gray
-        DataGridViewCellStyle2.Format = "N1"
-        DataGridViewCellStyle2.NullValue = "0.1"
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Gray
-        Me.DataGridViewTextBoxColumn2.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle11.BackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle11.ForeColor = System.Drawing.Color.Gray
+        DataGridViewCellStyle11.Format = "N1"
+        DataGridViewCellStyle11.NullValue = "0.1"
+        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Gray
+        Me.DataGridViewTextBoxColumn2.DefaultCellStyle = DataGridViewCellStyle11
         Me.DataGridViewTextBoxColumn2.HeaderText = "Pulse Time (ms)"
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         Me.DataGridViewTextBoxColumn2.ReadOnly = True
@@ -541,13 +543,13 @@ Partial Class frmBuilder
         'DataGridViewTextBoxColumn6
         '
         Me.DataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Gray
-        DataGridViewCellStyle3.Format = "N1"
-        DataGridViewCellStyle3.NullValue = "0.1"
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Gray
-        Me.DataGridViewTextBoxColumn6.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle12.BackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.Gray
+        DataGridViewCellStyle12.Format = "N1"
+        DataGridViewCellStyle12.NullValue = "0.1"
+        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Gray
+        Me.DataGridViewTextBoxColumn6.DefaultCellStyle = DataGridViewCellStyle12
         Me.DataGridViewTextBoxColumn6.HeaderText = "Pulse Time   (0.1 - 999.9s)"
         Me.DataGridViewTextBoxColumn6.MaxInputLength = 5
         Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
@@ -557,13 +559,13 @@ Partial Class frmBuilder
         'colMin
         '
         Me.colMin.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.Gray
-        DataGridViewCellStyle4.Format = "N0"
-        DataGridViewCellStyle4.NullValue = "0"
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Gray
-        Me.colMin.DefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle13.BackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle13.ForeColor = System.Drawing.Color.Gray
+        DataGridViewCellStyle13.Format = "N0"
+        DataGridViewCellStyle13.NullValue = "0"
+        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.Gray
+        Me.colMin.DefaultCellStyle = DataGridViewCellStyle13
         Me.colMin.HeaderText = "Min (0-100)"
         Me.colMin.MaxInputLength = 3
         Me.colMin.Name = "colMin"
@@ -573,13 +575,13 @@ Partial Class frmBuilder
         'colMax
         '
         Me.colMax.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.Gray
-        DataGridViewCellStyle5.Format = "N0"
-        DataGridViewCellStyle5.NullValue = "100"
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Gray
-        Me.colMax.DefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle14.BackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle14.ForeColor = System.Drawing.Color.Gray
+        DataGridViewCellStyle14.Format = "N0"
+        DataGridViewCellStyle14.NullValue = "100"
+        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.Gray
+        Me.colMax.DefaultCellStyle = DataGridViewCellStyle14
         Me.colMax.HeaderText = "Max (1-100)"
         Me.colMax.MaxInputLength = 3
         Me.colMax.Name = "colMax"
@@ -589,13 +591,13 @@ Partial Class frmBuilder
         'colTimeOn
         '
         Me.colTimeOn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.Gray
-        DataGridViewCellStyle6.Format = "N1"
-        DataGridViewCellStyle6.NullValue = "0.1"
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Gray
-        Me.colTimeOn.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle15.BackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle15.ForeColor = System.Drawing.Color.Gray
+        DataGridViewCellStyle15.Format = "N1"
+        DataGridViewCellStyle15.NullValue = "0.1"
+        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Gray
+        Me.colTimeOn.DefaultCellStyle = DataGridViewCellStyle15
         Me.colTimeOn.HeaderText = "Time On   (0.1 - 999.9s)"
         Me.colTimeOn.MaxInputLength = 5
         Me.colTimeOn.Name = "colTimeOn"
@@ -605,13 +607,13 @@ Partial Class frmBuilder
         'colTimeOff
         '
         Me.colTimeOff.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle7.ForeColor = System.Drawing.Color.Gray
-        DataGridViewCellStyle7.Format = "N1"
-        DataGridViewCellStyle7.NullValue = "0.1"
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Gray
-        Me.colTimeOff.DefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle16.BackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle16.ForeColor = System.Drawing.Color.Gray
+        DataGridViewCellStyle16.Format = "N1"
+        DataGridViewCellStyle16.NullValue = "0.1"
+        DataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Gray
+        Me.colTimeOff.DefaultCellStyle = DataGridViewCellStyle16
         Me.colTimeOff.HeaderText = "Time Off   (0.1 - 999.9s)"
         Me.colTimeOff.MaxInputLength = 5
         Me.colTimeOff.Name = "colTimeOff"
@@ -621,13 +623,13 @@ Partial Class frmBuilder
         'colCount
         '
         Me.colCount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        DataGridViewCellStyle8.BackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.Gray
-        DataGridViewCellStyle8.Format = "N0"
-        DataGridViewCellStyle8.NullValue = "0"
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.LightGray
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Gray
-        Me.colCount.DefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle17.BackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle17.ForeColor = System.Drawing.Color.Gray
+        DataGridViewCellStyle17.Format = "N0"
+        DataGridViewCellStyle17.NullValue = "0"
+        DataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.LightGray
+        DataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.Gray
+        Me.colCount.DefaultCellStyle = DataGridViewCellStyle17
         Me.colCount.HeaderText = "Count"
         Me.colCount.Name = "colCount"
         Me.colCount.ReadOnly = True
@@ -656,7 +658,7 @@ Partial Class frmBuilder
         Me.tabIRModes.Name = "tabIRModes"
         Me.tabIRModes.SelectedIndex = 0
         Me.tabIRModes.Size = New System.Drawing.Size(432, 227)
-        Me.tabIRModes.TabIndex = 19
+        Me.tabIRModes.TabIndex = 0
         '
         'tabIRDB
         '
@@ -687,7 +689,7 @@ Partial Class frmBuilder
         Me.btnAddAllIRCommands.Location = New System.Drawing.Point(262, 141)
         Me.btnAddAllIRCommands.Name = "btnAddAllIRCommands"
         Me.btnAddAllIRCommands.Size = New System.Drawing.Size(157, 23)
-        Me.btnAddAllIRCommands.TabIndex = 32
+        Me.btnAddAllIRCommands.TabIndex = 9
         Me.btnAddAllIRCommands.Text = "Add All Commands To Project"
         Me.btnAddAllIRCommands.UseVisualStyleBackColor = True
         '
@@ -698,7 +700,7 @@ Partial Class frmBuilder
         Me.cboIRPort.Location = New System.Drawing.Point(81, 6)
         Me.cboIRPort.Name = "cboIRPort"
         Me.cboIRPort.Size = New System.Drawing.Size(78, 21)
-        Me.cboIRPort.TabIndex = 26
+        Me.cboIRPort.TabIndex = 1
         '
         'lblPort
         '
@@ -706,7 +708,7 @@ Partial Class frmBuilder
         Me.lblPort.Location = New System.Drawing.Point(34, 9)
         Me.lblPort.Name = "lblPort"
         Me.lblPort.Size = New System.Drawing.Size(43, 13)
-        Me.lblPort.TabIndex = 25
+        Me.lblPort.TabIndex = 0
         Me.lblPort.Text = "IR Port:"
         '
         'cboCommand
@@ -716,7 +718,7 @@ Partial Class frmBuilder
         Me.cboCommand.Location = New System.Drawing.Point(81, 114)
         Me.cboCommand.Name = "cboCommand"
         Me.cboCommand.Size = New System.Drawing.Size(338, 21)
-        Me.cboCommand.TabIndex = 24
+        Me.cboCommand.TabIndex = 8
         '
         'lblCommand
         '
@@ -724,7 +726,7 @@ Partial Class frmBuilder
         Me.lblCommand.Location = New System.Drawing.Point(18, 117)
         Me.lblCommand.Name = "lblCommand"
         Me.lblCommand.Size = New System.Drawing.Size(57, 13)
-        Me.lblCommand.TabIndex = 23
+        Me.lblCommand.TabIndex = 7
         Me.lblCommand.Text = "Command:"
         '
         'cboCodeSet
@@ -734,7 +736,7 @@ Partial Class frmBuilder
         Me.cboCodeSet.Location = New System.Drawing.Point(81, 87)
         Me.cboCodeSet.Name = "cboCodeSet"
         Me.cboCodeSet.Size = New System.Drawing.Size(78, 21)
-        Me.cboCodeSet.TabIndex = 22
+        Me.cboCodeSet.TabIndex = 6
         '
         'Label7
         '
@@ -742,7 +744,7 @@ Partial Class frmBuilder
         Me.Label7.Location = New System.Drawing.Point(21, 90)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(54, 13)
-        Me.Label7.TabIndex = 21
+        Me.Label7.TabIndex = 5
         Me.Label7.Text = "Code Set:"
         '
         'cboManufacturer
@@ -753,7 +755,7 @@ Partial Class frmBuilder
         Me.cboManufacturer.Location = New System.Drawing.Point(81, 33)
         Me.cboManufacturer.Name = "cboManufacturer"
         Me.cboManufacturer.Size = New System.Drawing.Size(338, 21)
-        Me.cboManufacturer.TabIndex = 18
+        Me.cboManufacturer.TabIndex = 3
         '
         'Label8
         '
@@ -761,7 +763,7 @@ Partial Class frmBuilder
         Me.Label8.Location = New System.Drawing.Point(4, 36)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(73, 13)
-        Me.Label8.TabIndex = 17
+        Me.Label8.TabIndex = 2
         Me.Label8.Text = "Manufacturer:"
         '
         'cboDeviceType
@@ -771,7 +773,7 @@ Partial Class frmBuilder
         Me.cboDeviceType.Location = New System.Drawing.Point(81, 60)
         Me.cboDeviceType.Name = "cboDeviceType"
         Me.cboDeviceType.Size = New System.Drawing.Size(338, 21)
-        Me.cboDeviceType.TabIndex = 20
+        Me.cboDeviceType.TabIndex = 4
         '
         'lblDeviceType
         '
@@ -820,6 +822,30 @@ Partial Class frmBuilder
         Me.dgvPortsIR.Size = New System.Drawing.Size(418, 163)
         Me.dgvPortsIR.TabIndex = 9
         '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.DataGridViewTextBoxColumn7.HeaderText = "Port"
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        Me.DataGridViewTextBoxColumn7.ReadOnly = True
+        Me.DataGridViewTextBoxColumn7.Width = 50
+        '
+        'DataGridViewComboBoxColumn3
+        '
+        Me.DataGridViewComboBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.DataGridViewComboBoxColumn3.HeaderText = "Action"
+        Me.DataGridViewComboBoxColumn3.Items.AddRange(New Object() {"Raw CCF Hex Code", "CF String (IR Learner)"})
+        Me.DataGridViewComboBoxColumn3.Name = "DataGridViewComboBoxColumn3"
+        Me.DataGridViewComboBoxColumn3.Width = 150
+        '
+        'DataGridViewTextBoxColumn8
+        '
+        Me.DataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        DataGridViewCellStyle18.NullValue = Nothing
+        Me.DataGridViewTextBoxColumn8.DefaultCellStyle = DataGridViewCellStyle18
+        Me.DataGridViewTextBoxColumn8.HeaderText = "IR Code"
+        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        '
         'Label5
         '
         Me.Label5.AutoSize = True
@@ -853,179 +879,6 @@ Partial Class frmBuilder
         Me.lblErrorMsg.Size = New System.Drawing.Size(437, 281)
         Me.lblErrorMsg.TabIndex = 0
         Me.lblErrorMsg.Text = "Label6"
-        '
-        'Panel1
-        '
-        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel1.Controls.Add(Me.btnRefreshSystems)
-        Me.Panel1.Controls.Add(Me.cboSystems)
-        Me.Panel1.Controls.Add(Me.lblSystem)
-        Me.Panel1.Controls.Add(Me.btnAdd)
-        Me.Panel1.Controls.Add(Me.txtCommandValue)
-        Me.Panel1.Controls.Add(Me.lblValue)
-        Me.Panel1.Controls.Add(Me.txtCommandName)
-        Me.Panel1.Controls.Add(Me.lblCommandName)
-        Me.Panel1.Controls.Add(Me.Label6)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel1.Location = New System.Drawing.Point(0, 279)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(457, 124)
-        Me.Panel1.TabIndex = 1
-        '
-        'btnRefreshSystems
-        '
-        Me.btnRefreshSystems.AutoSize = True
-        Me.btnRefreshSystems.Image = CType(resources.GetObject("btnRefreshSystems.Image"), System.Drawing.Image)
-        Me.btnRefreshSystems.Location = New System.Drawing.Point(110, 62)
-        Me.btnRefreshSystems.Name = "btnRefreshSystems"
-        Me.btnRefreshSystems.Size = New System.Drawing.Size(163, 27)
-        Me.btnRefreshSystems.TabIndex = 34
-        Me.btnRefreshSystems.Text = " Refresh System List"
-        Me.btnRefreshSystems.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnRefreshSystems.UseVisualStyleBackColor = True
-        '
-        'cboSystems
-        '
-        Me.cboSystems.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboSystems.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cboSystems.FormattingEnabled = True
-        Me.cboSystems.Location = New System.Drawing.Point(60, 36)
-        Me.cboSystems.Name = "cboSystems"
-        Me.cboSystems.Size = New System.Drawing.Size(213, 21)
-        Me.cboSystems.TabIndex = 33
-        '
-        'lblSystem
-        '
-        Me.lblSystem.AutoSize = True
-        Me.lblSystem.Location = New System.Drawing.Point(10, 39)
-        Me.lblSystem.Name = "lblSystem"
-        Me.lblSystem.Size = New System.Drawing.Size(44, 13)
-        Me.lblSystem.TabIndex = 32
-        Me.lblSystem.Text = "System:"
-        '
-        'btnAdd
-        '
-        Me.btnAdd.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnAdd.AutoSize = True
-        Me.btnAdd.Location = New System.Drawing.Point(356, 88)
-        Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(88, 23)
-        Me.btnAdd.TabIndex = 31
-        Me.btnAdd.Text = "Add To Project"
-        Me.btnAdd.UseVisualStyleBackColor = True
-        '
-        'txtCommandValue
-        '
-        Me.txtCommandValue.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtCommandValue.Location = New System.Drawing.Point(335, 62)
-        Me.txtCommandValue.Name = "txtCommandValue"
-        Me.txtCommandValue.Size = New System.Drawing.Size(109, 20)
-        Me.txtCommandValue.TabIndex = 30
-        '
-        'lblValue
-        '
-        Me.lblValue.AutoSize = True
-        Me.lblValue.Location = New System.Drawing.Point(292, 65)
-        Me.lblValue.Name = "lblValue"
-        Me.lblValue.Size = New System.Drawing.Size(37, 13)
-        Me.lblValue.TabIndex = 29
-        Me.lblValue.Text = "Value:"
-        '
-        'txtCommandName
-        '
-        Me.txtCommandName.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtCommandName.Location = New System.Drawing.Point(335, 36)
-        Me.txtCommandName.Name = "txtCommandName"
-        Me.txtCommandName.Size = New System.Drawing.Size(109, 20)
-        Me.txtCommandName.TabIndex = 28
-        '
-        'lblCommandName
-        '
-        Me.lblCommandName.AutoSize = True
-        Me.lblCommandName.Location = New System.Drawing.Point(291, 39)
-        Me.lblCommandName.Name = "lblCommandName"
-        Me.lblCommandName.Size = New System.Drawing.Size(38, 13)
-        Me.lblCommandName.TabIndex = 27
-        Me.lblCommandName.Text = "Name:"
-        '
-        'Label6
-        '
-        Me.Label6.BackColor = System.Drawing.SystemColors.ScrollBar
-        Me.Label6.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label6.Location = New System.Drawing.Point(0, 0)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(455, 23)
-        Me.Label6.TabIndex = 69
-        Me.Label6.Text = "New Command Details"
-        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'toolStrip
-        '
-        Me.toolStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
-        Me.toolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.lblSelectExport, Me.cboFiles, Me.btnBrowse})
-        Me.toolStrip.Location = New System.Drawing.Point(0, 0)
-        Me.toolStrip.Name = "toolStrip"
-        Me.toolStrip.Size = New System.Drawing.Size(645, 25)
-        Me.toolStrip.TabIndex = 1
-        Me.toolStrip.Text = "ToolStrip1"
-        '
-        'lblSelectExport
-        '
-        Me.lblSelectExport.Name = "lblSelectExport"
-        Me.lblSelectExport.Size = New System.Drawing.Size(152, 22)
-        Me.lblSelectExport.Text = "Select Discovery Export File:"
-        '
-        'cboFiles
-        '
-        Me.cboFiles.AutoSize = False
-        Me.cboFiles.BackColor = System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.cboFiles.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboFiles.Name = "cboFiles"
-        Me.cboFiles.Size = New System.Drawing.Size(250, 23)
-        '
-        'btnBrowse
-        '
-        Me.btnBrowse.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.btnBrowse.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.btnBrowse.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
-        Me.btnBrowse.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.btnBrowse.Name = "btnBrowse"
-        Me.btnBrowse.Size = New System.Drawing.Size(49, 22)
-        Me.btnBrowse.Text = "Browse"
-        '
-        'dlgOpenFile
-        '
-        Me.dlgOpenFile.DefaultExt = "json"
-        Me.dlgOpenFile.Filter = "JSON files|*.json"
-        Me.dlgOpenFile.InitialDirectory = "%appdata%\CommandFusion\SystemCommander\discovery"
-        '
-        'DataGridViewTextBoxColumn7
-        '
-        Me.DataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.DataGridViewTextBoxColumn7.HeaderText = "Port"
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        Me.DataGridViewTextBoxColumn7.ReadOnly = True
-        Me.DataGridViewTextBoxColumn7.Width = 50
-        '
-        'DataGridViewComboBoxColumn3
-        '
-        Me.DataGridViewComboBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.DataGridViewComboBoxColumn3.HeaderText = "Action"
-        Me.DataGridViewComboBoxColumn3.Items.AddRange(New Object() {"Raw CCF Hex Code", "CF String (IR Learner)"})
-        Me.DataGridViewComboBoxColumn3.Name = "DataGridViewComboBoxColumn3"
-        Me.DataGridViewComboBoxColumn3.Width = 150
-        '
-        'DataGridViewTextBoxColumn8
-        '
-        Me.DataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        DataGridViewCellStyle9.NullValue = Nothing
-        Me.DataGridViewTextBoxColumn8.DefaultCellStyle = DataGridViewCellStyle9
-        Me.DataGridViewTextBoxColumn8.HeaderText = "Code"
-        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
         '
         'tabEthernet
         '
@@ -1098,6 +951,183 @@ Partial Class frmBuilder
         Me.DataGridViewTextBoxColumn10.HeaderText = "Data to send (enter hex bytes in \x0D format)"
         Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
         '
+        'Panel1
+        '
+        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel1.Controls.Add(Me.btnCopyCommand)
+        Me.Panel1.Controls.Add(Me.lblProjectWarning)
+        Me.Panel1.Controls.Add(Me.btnRefreshSystems)
+        Me.Panel1.Controls.Add(Me.cboSystems)
+        Me.Panel1.Controls.Add(Me.lblSystem)
+        Me.Panel1.Controls.Add(Me.btnAdd)
+        Me.Panel1.Controls.Add(Me.txtCommandValue)
+        Me.Panel1.Controls.Add(Me.lblValue)
+        Me.Panel1.Controls.Add(Me.txtCommandName)
+        Me.Panel1.Controls.Add(Me.lblCommandName)
+        Me.Panel1.Controls.Add(Me.Label6)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel1.Location = New System.Drawing.Point(0, 279)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(457, 124)
+        Me.Panel1.TabIndex = 1
+        '
+        'btnCopyCommand
+        '
+        Me.btnCopyCommand.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnCopyCommand.AutoSize = True
+        Me.btnCopyCommand.Enabled = False
+        Me.btnCopyCommand.Location = New System.Drawing.Point(259, 88)
+        Me.btnCopyCommand.Name = "btnCopyCommand"
+        Me.btnCopyCommand.Size = New System.Drawing.Size(91, 23)
+        Me.btnCopyCommand.TabIndex = 9
+        Me.btnCopyCommand.Text = "Copy Command"
+        Me.btnCopyCommand.UseVisualStyleBackColor = True
+        '
+        'lblProjectWarning
+        '
+        Me.lblProjectWarning.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblProjectWarning.AutoSize = True
+        Me.lblProjectWarning.ForeColor = System.Drawing.Color.Red
+        Me.lblProjectWarning.Location = New System.Drawing.Point(50, 93)
+        Me.lblProjectWarning.Name = "lblProjectWarning"
+        Me.lblProjectWarning.Size = New System.Drawing.Size(203, 13)
+        Me.lblProjectWarning.TabIndex = 70
+        Me.lblProjectWarning.Text = "You must open a guiDesigner project first."
+        Me.lblProjectWarning.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.lblProjectWarning.Visible = False
+        '
+        'btnRefreshSystems
+        '
+        Me.btnRefreshSystems.AutoSize = True
+        Me.btnRefreshSystems.Image = CType(resources.GetObject("btnRefreshSystems.Image"), System.Drawing.Image)
+        Me.btnRefreshSystems.Location = New System.Drawing.Point(132, 62)
+        Me.btnRefreshSystems.Name = "btnRefreshSystems"
+        Me.btnRefreshSystems.Size = New System.Drawing.Size(141, 23)
+        Me.btnRefreshSystems.TabIndex = 3
+        Me.btnRefreshSystems.Text = " Refresh System List"
+        Me.btnRefreshSystems.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnRefreshSystems.UseVisualStyleBackColor = True
+        '
+        'cboSystems
+        '
+        Me.cboSystems.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboSystems.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboSystems.FormattingEnabled = True
+        Me.cboSystems.Location = New System.Drawing.Point(60, 36)
+        Me.cboSystems.Name = "cboSystems"
+        Me.cboSystems.Size = New System.Drawing.Size(213, 21)
+        Me.cboSystems.TabIndex = 1
+        '
+        'lblSystem
+        '
+        Me.lblSystem.AutoSize = True
+        Me.lblSystem.Location = New System.Drawing.Point(10, 39)
+        Me.lblSystem.Name = "lblSystem"
+        Me.lblSystem.Size = New System.Drawing.Size(44, 13)
+        Me.lblSystem.TabIndex = 0
+        Me.lblSystem.Text = "System:"
+        '
+        'btnAdd
+        '
+        Me.btnAdd.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnAdd.AutoSize = True
+        Me.btnAdd.Enabled = False
+        Me.btnAdd.Location = New System.Drawing.Point(356, 88)
+        Me.btnAdd.Name = "btnAdd"
+        Me.btnAdd.Size = New System.Drawing.Size(88, 23)
+        Me.btnAdd.TabIndex = 8
+        Me.btnAdd.Text = "Add To Project"
+        Me.btnAdd.UseVisualStyleBackColor = True
+        '
+        'txtCommandValue
+        '
+        Me.txtCommandValue.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtCommandValue.Location = New System.Drawing.Point(335, 62)
+        Me.txtCommandValue.Name = "txtCommandValue"
+        Me.txtCommandValue.Size = New System.Drawing.Size(109, 20)
+        Me.txtCommandValue.TabIndex = 7
+        '
+        'lblValue
+        '
+        Me.lblValue.AutoSize = True
+        Me.lblValue.Location = New System.Drawing.Point(292, 65)
+        Me.lblValue.Name = "lblValue"
+        Me.lblValue.Size = New System.Drawing.Size(37, 13)
+        Me.lblValue.TabIndex = 6
+        Me.lblValue.Text = "Value:"
+        '
+        'txtCommandName
+        '
+        Me.txtCommandName.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtCommandName.Location = New System.Drawing.Point(335, 36)
+        Me.txtCommandName.Name = "txtCommandName"
+        Me.txtCommandName.Size = New System.Drawing.Size(109, 20)
+        Me.txtCommandName.TabIndex = 5
+        '
+        'lblCommandName
+        '
+        Me.lblCommandName.AutoSize = True
+        Me.lblCommandName.Location = New System.Drawing.Point(291, 39)
+        Me.lblCommandName.Name = "lblCommandName"
+        Me.lblCommandName.Size = New System.Drawing.Size(38, 13)
+        Me.lblCommandName.TabIndex = 4
+        Me.lblCommandName.Text = "Name:"
+        '
+        'Label6
+        '
+        Me.Label6.BackColor = System.Drawing.SystemColors.ScrollBar
+        Me.Label6.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Label6.Location = New System.Drawing.Point(0, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(455, 23)
+        Me.Label6.TabIndex = 69
+        Me.Label6.Text = "New Command Details"
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'toolStrip
+        '
+        Me.toolStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
+        Me.toolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.lblSelectExport, Me.cboFiles, Me.btnBrowse})
+        Me.toolStrip.Location = New System.Drawing.Point(0, 0)
+        Me.toolStrip.Name = "toolStrip"
+        Me.toolStrip.Size = New System.Drawing.Size(645, 25)
+        Me.toolStrip.TabIndex = 1
+        Me.toolStrip.Text = "ToolStrip1"
+        '
+        'lblSelectExport
+        '
+        Me.lblSelectExport.Name = "lblSelectExport"
+        Me.lblSelectExport.Size = New System.Drawing.Size(152, 22)
+        Me.lblSelectExport.Text = "Select Discovery Export File:"
+        '
+        'cboFiles
+        '
+        Me.cboFiles.AutoSize = False
+        Me.cboFiles.BackColor = System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.cboFiles.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboFiles.Name = "cboFiles"
+        Me.cboFiles.Size = New System.Drawing.Size(250, 23)
+        '
+        'btnBrowse
+        '
+        Me.btnBrowse.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.btnBrowse.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        Me.btnBrowse.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.btnBrowse.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.btnBrowse.Name = "btnBrowse"
+        Me.btnBrowse.Size = New System.Drawing.Size(49, 22)
+        Me.btnBrowse.Text = "Browse"
+        '
+        'dlgOpenFile
+        '
+        Me.dlgOpenFile.DefaultExt = "json"
+        Me.dlgOpenFile.Filter = "JSON files|*.json"
+        Me.dlgOpenFile.InitialDirectory = "%appdata%\CommandFusion\SystemCommander\discovery"
+        '
         'frmBuilder
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1135,13 +1165,13 @@ Partial Class frmBuilder
         Me.tabIRCommand.PerformLayout()
         CType(Me.dgvPortsIR, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tabError.ResumeLayout(False)
+        Me.tabEthernet.ResumeLayout(False)
+        Me.tabEthernet.PerformLayout()
+        CType(Me.dgvPortsEthernet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.toolStrip.ResumeLayout(False)
         Me.toolStrip.PerformLayout()
-        Me.tabEthernet.ResumeLayout(False)
-        Me.tabEthernet.PerformLayout()
-        CType(Me.dgvPortsEthernet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1221,9 +1251,6 @@ Partial Class frmBuilder
     Friend WithEvents dgvPortsIR As System.Windows.Forms.DataGridView
     Friend WithEvents btnGenerateIR As System.Windows.Forms.Button
     Friend WithEvents btnAddAllIRCommands As System.Windows.Forms.Button
-    Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewComboBoxColumn3 As System.Windows.Forms.DataGridViewComboBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn8 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents tabEthernet As System.Windows.Forms.TabPage
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents btnGenerateEthernet As System.Windows.Forms.Button
@@ -1231,4 +1258,9 @@ Partial Class frmBuilder
     Friend WithEvents DataGridViewTextBoxColumn9 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents colDetails As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn10 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents lblProjectWarning As System.Windows.Forms.Label
+    Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewComboBoxColumn3 As System.Windows.Forms.DataGridViewComboBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn8 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents btnCopyCommand As System.Windows.Forms.Button
 End Class
