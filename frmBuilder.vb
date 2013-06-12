@@ -2,6 +2,9 @@
 Imports System.IO
 Imports System.Web.Script.Serialization
 Imports System.Text.RegularExpressions
+Imports GaDotNet.Common
+Imports GaDotNet.Common.Data
+Imports GaDotNet.Common.Helpers
 
 Public Class frmBuilder
     Implements CommandFusion.CFPlugin
@@ -11,8 +14,8 @@ Public Class frmBuilder
     Public Event AddMacro(sender As CommandFusion.CFPlugin, newMacro As CommandFusion.SystemMacro) Implements CommandFusion.CFPlugin.AddMacro
     Public Event AddMacros(sender As CommandFusion.CFPlugin, newMacros As List(Of CommandFusion.SystemMacro)) Implements CommandFusion.CFPlugin.AddMacros
     Public Event AddScript(sender As CommandFusion.CFPlugin, ScriptRelativePathToProject As String) Implements CommandFusion.CFPlugin.AddScript
-    Public Event AddSystem(sender As CommandFusion.CFPlugin, newSystem As CommandFusion.SystemClass) Implements CommandFusion.CFPlugin.AddSystem
-    Public Event AppendSystem(sender As CommandFusion.CFPlugin, newSystem As CommandFusion.SystemClass) Implements CommandFusion.CFPlugin.AppendSystem
+    Public Event AddSystem(sender As CommandFusion.CFPlugin, newSystem As CommandFusion.JSONSystem) Implements CommandFusion.CFPlugin.AddSystem
+    Public Event AppendSystem(sender As CommandFusion.CFPlugin, newSystem As CommandFusion.JSONSystem) Implements CommandFusion.CFPlugin.AppendSystem
 
     Public Event EditMacro(sender As CommandFusion.CFPlugin, existingMacro As String, newMacro As CommandFusion.SystemMacro) Implements CommandFusion.CFPlugin.EditMacro
     Public Event RequestMacroList(sender As CommandFusion.CFPlugin) Implements CommandFusion.CFPlugin.RequestMacroList
@@ -24,10 +27,14 @@ Public Class frmBuilder
     Private pathDiscovery As String = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) & Path.DirectorySeparatorChar & "CommandFusion" & Path.DirectorySeparatorChar & "SystemCommander" & Path.DirectorySeparatorChar & "discovery" & Path.DirectorySeparatorChar
     Private discoveredDevices As Dictionary(Of String, Object)
     Private availableActions As Dictionary(Of String, List(Of Object))
-    Private ListOfSystems As List(Of CommandFusion.SystemClass)
+    Private ListOfSystems As List(Of CommandFusion.JSONSystem)
     Private Const NewSystem As String = "Create New System..."
     Private Const OnboardSerialPort As String = "On-board"
     Private Const CCF As String = "Raw CCF Hex Code"
+    Private Const GADomain As String = "commandfusion.com"
+    Private Const GAEventCategory As String = "CFLink Command Builder"
+    Private Const GACode As String = "UA-1634994-6"
+    Dim statsMenu As New MenuItem("Send Anonymous Stats")
 
     Private SelectedAction As String = "Ethernet"
     Private SelectedDevice As Dictionary(Of String, Object)
@@ -58,8 +65,14 @@ Public Class frmBuilder
     Public Sub Init(menu As Windows.Forms.MainMenu) Implements CommandFusion.CFPlugin.Init
         Dim pluginMenu As New MenuItem(Me.Name1)
         Dim showHideMenu As New MenuItem("Toggle Window")
+        statsMenu.Checked = My.Settings.sendStats
+
         AddHandler showHideMenu.Click, AddressOf Me.DoToggleWindow
+        AddHandler statsMenu.Click, AddressOf Me.DoToggleStats
+
         pluginMenu.MenuItems.Add(showHideMenu)
+        pluginMenu.MenuItems.Add(statsMenu)
+
         menu.MenuItems.Add(pluginMenu)
 
         ' Hide the tab buttons, because we only ever show one tab at a time for a dynamic interface
@@ -78,6 +91,19 @@ Public Class frmBuilder
         RaiseEvent ToggleWindow(Me)
     End Sub
 
+    Public Sub DoToggleStats(ByVal sender As Object, ByVal e As System.EventArgs)
+        If My.Settings.sendStats Then
+            If MsgBox("Anonymous usage statistics are used to improve our products and no personally identifiable data is tracked." & Environment.NewLine & "Are you sure you want to opt out of sending anonymous usage statistics?", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
+                My.Settings.sendStats = False
+                statsMenu.Checked = False
+            End If
+        Else
+            MsgBox("Thank you for enabling anonymous usage statistics. We use this data to improve our products and it does not contain any personally identifiable data.")
+            My.Settings.sendStats = True
+            statsMenu.Checked = True
+        End If
+    End Sub
+
     Public ReadOnly Property Name1 As String Implements CommandFusion.CFPlugin.Name
         Get
             Return "CFLink Command Builder"
@@ -93,13 +119,13 @@ Public Class frmBuilder
 
     End Sub
 
-    Public Sub UpdateSystemList(systemList As List(Of CommandFusion.SystemClass)) Implements CommandFusion.CFPlugin.UpdateSystemList
+    Public Sub UpdateSystemList(systemList As List(Of CommandFusion.JSONSystem)) Implements CommandFusion.CFPlugin.UpdateSystemList
         ListOfSystems = systemList
         cboSystems.Items.Clear()
         cboSystems.Items.Add(NewSystem)
         cboSystems.SelectedIndex = 0
         If systemList IsNot Nothing Then
-            For Each aSystem As CommandFusion.SystemClass In systemList
+            For Each aSystem As CommandFusion.JSONSystem In systemList
                 cboSystems.Items.Add(aSystem.ToString)
                 If LastSystemName = aSystem.Name Then
                     cboSystems.SelectedIndex = cboSystems.Items.Count - 1
@@ -109,12 +135,12 @@ Public Class frmBuilder
     End Sub
 #End Region
 
-    Private Function GetSystem(ByVal name As String) As CommandFusion.SystemClass
+    Private Function GetSystem(ByVal name As String) As CommandFusion.JSONSystem
         If ListOfSystems Is Nothing Then
             Return Nothing
         End If
 
-        For Each aSystem As CommandFusion.SystemClass In ListOfSystems
+        For Each aSystem As CommandFusion.JSONSystem In ListOfSystems
             If aSystem.ToString = name Then
                 Return aSystem
             End If
@@ -157,6 +183,15 @@ Public Class frmBuilder
         OpenFile(cboFiles.SelectedItem)
     End Sub
 
+    Public Sub LogEvent(ByVal eventAction As String, ByVal eventLabel As String)
+        If My.Settings.sendStats Then
+            Dim googleEvent As New GoogleEvent(GADomain, GAEventCategory, eventAction, eventLabel)
+            Dim request As TrackingRequest
+            request = New RequestFactory(GACode).BuildRequest(googleEvent)
+            GoogleTracking.FireTrackingEvent(request)
+        End If
+    End Sub
+
     Public Sub OpenFile(ByVal theFile As String)
         If Not File.Exists(theFile) Then
             If File.Exists(pathDiscovery & theFile) Then
@@ -166,6 +201,10 @@ Public Class frmBuilder
             End If
         End If
         lblFile.Text = New FileInfo(theFile).Name
+
+        ' Log event
+        LogEvent("Loaded Export File", lblFile.Text)
+
         'lblFilenameInfo.Visible = True
         Dim contents As String = File.ReadAllText(theFile)
         Dim json As New JavaScriptSerializer()
@@ -239,6 +278,10 @@ Public Class frmBuilder
     End Sub
 
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If Not Directory.Exists(pathDiscovery) Then
+            Exit Sub
+        End If
+
         For Each aFile As String In Directory.GetFiles(pathDiscovery, "*.json")
             cboFiles.Items.Add(New FileInfo(aFile).Name)
         Next
@@ -587,6 +630,9 @@ Public Class frmBuilder
 
         txtCommandValue.Text = BuildCFLinkCommandRAW(SelectedDevice("CFLinkID"), "TLANSND", dataString)
         txtCommandName.Text = SelectedDevice("Model") & "-" & Integer2HexString(SelectedDevice("CFLinkID")) & "_ETH" & commandName
+
+        ' Log event
+        LogEvent("Generated Command", "Ethernet")
     End Sub
 #End Region
 
@@ -760,6 +806,9 @@ Public Class frmBuilder
 
         txtCommandName.Text = SelectedDevice("Model") & "-" & Integer2HexString(SelectedDevice("CFLinkID")) & "_LED" & commandName
         txtCommandValue.Text = BuildCFLinkCommandRAW(SelectedDevice("CFLinkID"), IIf(SelectedAction <> "LED", "TSWXBKL", "TSWXLED"), dataString)
+
+        ' Log event
+        LogEvent("Generated Command", "LED")
     End Sub
 #End Region
 
@@ -876,6 +925,9 @@ Public Class frmBuilder
 
         txtCommandName.Text = SelectedDevice("Model") & "-" & Integer2HexString(SelectedDevice("CFLinkID")) & "_RELAYS" & commandName
         txtCommandValue.Text = BuildCFLinkCommandRAW(SelectedDevice("CFLinkID"), "TRLYSET", dataString)
+
+        ' Log event
+        LogEvent("Generated Command", "Relay")
     End Sub
 #End Region
 
@@ -913,6 +965,9 @@ Public Class frmBuilder
         End If
 
         txtCommandName.Text = SelectedDevice("Model") & "-" & Integer2HexString(SelectedDevice("CFLinkID")) & "_SERIAL" & commandName
+
+        ' Log event
+        LogEvent("Generated Command", "Serial")
     End Sub
 #End Region
 
@@ -1029,6 +1084,9 @@ Public Class frmBuilder
 
         txtCommandName.Text = SelectedDevice("Model") & "-" & Integer2HexString(SelectedDevice("CFLinkID")) & "_OUPUT" & commandName
         txtCommandValue.Text = BuildCFLinkCommandRAW(SelectedDevice("CFLinkID"), "TIOXSET", dataString)
+
+        ' Log event
+        LogEvent("Generated Command", "IO")
     End Sub
 #End Region
 
@@ -1199,7 +1257,7 @@ Public Class frmBuilder
     Private Sub cboCommand_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cboCommand.SelectedIndexChanged
         Dim newCmdName As String = SelectedDevice("Model") & "-" & Integer2HexString(SelectedDevice("CFLinkID")) & "_IRDB-" & cboDeviceType.Text & "-" & cboCodeSet.Text.PadLeft(4, "0") & "-" & cboCommand.SelectedItem.ToString
         Me.txtCommandName.Text = Regex.Replace(newCmdName, "[^\w\s]", "-")
-        Me.txtCommandValue.Text = BuildCFLinkCommandRAW(SelectedDevice("CFLinkID"), "TIRXSND", cboIRPort.SelectedItem.ToString & ":DBA:" & theDB.GetDeviceType(cboDeviceType.Text).DeviceNumber.ToString.PadLeft(2, "0") & ":" & cboCodeSet.Text.PadLeft(4, "0") & ":" & (cboCommand.SelectedIndex + 1).ToString.PadLeft(2, "0"))
+        Me.txtCommandValue.Text = BuildCFLinkCommandRAW(SelectedDevice("CFLinkID"), "TIRXSND", "P" & cboIRPort.SelectedItem.ToString & ":DBA:" & theDB.GetDeviceType(cboDeviceType.Text).DeviceNumber.ToString.PadLeft(2, "0") & ":" & cboCodeSet.Text.PadLeft(4, "0") & ":" & (cboCommand.SelectedIndex + 1).ToString.PadLeft(2, "0"))
     End Sub
 
     Private Sub btnAddAllIRCommands_Click(sender As Object, e As EventArgs) Handles btnAddAllIRCommands.Click
@@ -1216,7 +1274,7 @@ Public Class frmBuilder
 
         If cboCodeSet.SelectedIndex <> -1 AndAlso cboDeviceType.SelectedIndex <> -1 Then
 
-            Dim theSystem As CommandFusion.SystemClass
+            Dim theSystem As CommandFusion.JSONSystem
 
             If cboSystems.SelectedItem = NewSystem Then
                 If discoveredDevices Is Nothing OrElse Not discoveredDevices.ContainsKey("DeviceList") Then
@@ -1224,21 +1282,21 @@ Public Class frmBuilder
                     Exit Sub
                 End If
 
-                theSystem = New CommandFusion.SystemClass
+                theSystem = New CommandFusion.JSONSystem
 
                 ' Create a new default system using the selected discovered devices
                 For Each aDevice As Dictionary(Of String, Object) In discoveredDevices("DeviceList")
                     If aDevice("IsEthernet") Then
                         theSystem.Name = aDevice("Model") & "-" & Integer2HexString(aDevice("CFLinkID"))
-                        theSystem.Protocol = "UDP"
-                        theSystem.IPAddress = aDevice("NetworkName")
-                        theSystem.PortDestination = 10207
-                        theSystem.PortOrigin = 10207
-                        theSystem.Queue = False
-                        theSystem.EOM = "\xF5\xF5"
-                        theSystem.AcceptBroadcasts = True
-                        theSystem.AcceptIncoming = True
-                        theSystem.AlwaysOn = True
+                        theSystem.GetSetting("protocol").Value = "UDP"
+                        theSystem.GetSetting("ip").Value = aDevice("NetworkName")
+                        theSystem.GetSetting("port").Value = 10207
+                        theSystem.GetSetting("origin").Value = 10207
+                        theSystem.GetSetting("offlinequeue").Value = False
+                        theSystem.GetSetting("eom").Value = "\xF5\xF5"
+                        theSystem.GetSetting("acceptBroadcasts").Value = True
+                        theSystem.GetSetting("accept").Value = True
+                        theSystem.GetSetting("alwayson").Value = True
                         Exit For
                     End If
                 Next
@@ -1265,8 +1323,8 @@ Public Class frmBuilder
                 Dim newCommand As New CommandFusion.SystemCommand
                 Dim newCmdName As String = SelectedDevice("Model") & "-" & Integer2HexString(SelectedDevice("CFLinkID")) & "_IRDB-" & cboManufacturer.Text & "-" & cboCodeSet.Text.PadLeft(4, "0") & "-" & cboCommand.Items(i).ToString
                 newCommand.Name = Regex.Replace(newCmdName, "[^\w\s]", "-")
-                newCommand.Value = BuildCFLinkCommandRAW(SelectedDevice("CFLinkID"), "TIRXSND", cboIRPort.SelectedItem.ToString & ":DBA:" & theDB.GetDeviceType(cboDeviceType.Text).DeviceNumber.ToString.PadLeft(2, "0") & ":" & cboCodeSet.Text.PadLeft(4, "0") & ":" & (i + 1).ToString.PadLeft(2, "0"))
-                newCommand.System = theSystem
+                newCommand.Value = BuildCFLinkCommandRAW(SelectedDevice("CFLinkID"), "TIRXSND", "P" & cboIRPort.SelectedItem.ToString & ":DBA:" & theDB.GetDeviceType(cboDeviceType.Text).DeviceNumber.ToString.PadLeft(2, "0") & ":" & cboCodeSet.Text.PadLeft(4, "0") & ":" & (i + 1).ToString.PadLeft(2, "0"))
+                newCommand.System = theSystem.Name
                 theSystem.Commands.Add(newCommand)
             Next
 
@@ -1276,6 +1334,9 @@ Public Class frmBuilder
             Else
                 RaiseEvent AppendSystem(Me, theSystem)
             End If
+
+            ' Log event
+            LogEvent("Generated Command", "IR DB All Commands")
         Else
             btnAddAllIRCommands.Enabled = False
         End If
@@ -1321,6 +1382,9 @@ Public Class frmBuilder
         End If
 
         txtCommandName.Text = SelectedDevice("Model") & "-" & Integer2HexString(SelectedDevice("CFLinkID")) & "_IR" & commandName
+
+        ' Log event
+        LogEvent("Generated Command", "IR Code")
     End Sub
 
 #End Region
@@ -1360,28 +1424,28 @@ Public Class frmBuilder
                 Exit Sub
             End If
 
-            Dim newSystem As New CommandFusion.SystemClass
+            Dim newSystem As New CommandFusion.JSONSystem
 
             ' Create a new default system using the selected discovered devices
             For Each aDevice As Dictionary(Of String, Object) In discoveredDevices("DeviceList")
                 If aDevice("IsEthernet") Then
                     newSystem.Name = aDevice("Model") & "-" & Integer2HexString(aDevice("CFLinkID"))
-                    newSystem.Protocol = "UDP"
-                    newSystem.IPAddress = aDevice("NetworkName")
-                    newSystem.PortDestination = 10207
-                    newSystem.PortOrigin = 10207
-                    newSystem.Queue = False
-                    newSystem.EOM = "\xF5\xF5"
-                    newSystem.AcceptBroadcasts = True
-                    newSystem.AcceptIncoming = True
-                    newSystem.AlwaysOn = True
+                    newSystem.GetSetting("protocol").Value = "UDP"
+                    newSystem.GetSetting("ip").Value = aDevice("NetworkName")
+                    newSystem.GetSetting("port").Value = 10207
+                    newSystem.GetSetting("origin").Value = 10207
+                    newSystem.GetSetting("queue").Value = False
+                    newSystem.GetSetting("eom").Value = "\xF5\xF5"
+                    newSystem.GetSetting("acceptBroadcasts").Value = True
+                    newSystem.GetSetting("accept").Value = True
+                    newSystem.GetSetting("alwayson").Value = True
                     Exit For
                 End If
             Next
 
             newCommand.Name = txtCommandName.Text
             newCommand.Value = txtCommandValue.Text
-            newCommand.System = newSystem
+            newCommand.System = newSystem.Name
             newSystem.Commands.Add(newCommand)
 
             LastSystemName = newSystem.Name
@@ -1391,12 +1455,12 @@ Public Class frmBuilder
 
         Else
             If ListOfSystems IsNot Nothing AndAlso ListOfSystems.Count > 0 Then
-                Dim theSystem As CommandFusion.SystemClass = GetSystem(cboSystems.SelectedItem)
+                Dim theSystem As CommandFusion.JSONSystem = GetSystem(cboSystems.SelectedItem)
                 If theSystem IsNot Nothing Then
                     theSystem = theSystem.Clone
                     newCommand.Name = txtCommandName.Text
                     newCommand.Value = txtCommandValue.Text
-                    newCommand.System = theSystem
+                    newCommand.System = theSystem.Name
                     theSystem.Commands.Add(newCommand)
 
                     LastSystemName = theSystem.Name

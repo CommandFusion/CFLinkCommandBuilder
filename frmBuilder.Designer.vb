@@ -103,6 +103,8 @@ Partial Class frmBuilder
         Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colDetails = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.tabHelp = New System.Windows.Forms.TabPage()
+        Me.lblHelp = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btnCopyCommand = New System.Windows.Forms.Button()
         Me.lblProjectWarning = New System.Windows.Forms.Label()
@@ -120,8 +122,6 @@ Partial Class frmBuilder
         Me.cboFiles = New System.Windows.Forms.ToolStripComboBox()
         Me.btnBrowse = New System.Windows.Forms.ToolStripButton()
         Me.dlgOpenFile = New System.Windows.Forms.OpenFileDialog()
-        Me.tabHelp = New System.Windows.Forms.TabPage()
-        Me.lblHelp = New System.Windows.Forms.Label()
         CType(Me.splitPanels, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.splitPanels.Panel1.SuspendLayout()
         Me.splitPanels.Panel2.SuspendLayout()
@@ -143,9 +143,9 @@ Partial Class frmBuilder
         Me.tabError.SuspendLayout()
         Me.tabEthernet.SuspendLayout()
         CType(Me.dgvPortsEthernet, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.tabHelp.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.toolStrip.SuspendLayout()
-        Me.tabHelp.SuspendLayout()
         Me.SuspendLayout()
         '
         'splitPanels
@@ -955,6 +955,25 @@ Partial Class frmBuilder
         Me.DataGridViewTextBoxColumn10.HeaderText = "Data to send (enter hex bytes in \x0D format)"
         Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
         '
+        'tabHelp
+        '
+        Me.tabHelp.Controls.Add(Me.lblHelp)
+        Me.tabHelp.Location = New System.Drawing.Point(4, 22)
+        Me.tabHelp.Name = "tabHelp"
+        Me.tabHelp.Size = New System.Drawing.Size(449, 253)
+        Me.tabHelp.TabIndex = 7
+        Me.tabHelp.Text = "Help"
+        Me.tabHelp.UseVisualStyleBackColor = True
+        '
+        'lblHelp
+        '
+        Me.lblHelp.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblHelp.Location = New System.Drawing.Point(0, 0)
+        Me.lblHelp.Name = "lblHelp"
+        Me.lblHelp.Size = New System.Drawing.Size(449, 253)
+        Me.lblHelp.TabIndex = 0
+        Me.lblHelp.Text = resources.GetString("lblHelp.Text")
+        '
         'Panel1
         '
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
@@ -1132,25 +1151,6 @@ Partial Class frmBuilder
         Me.dlgOpenFile.Filter = "JSON files|*.json"
         Me.dlgOpenFile.InitialDirectory = "%appdata%\CommandFusion\SystemCommander\discovery"
         '
-        'tabHelp
-        '
-        Me.tabHelp.Controls.Add(Me.lblHelp)
-        Me.tabHelp.Location = New System.Drawing.Point(4, 22)
-        Me.tabHelp.Name = "tabHelp"
-        Me.tabHelp.Size = New System.Drawing.Size(449, 253)
-        Me.tabHelp.TabIndex = 7
-        Me.tabHelp.Text = "Help"
-        Me.tabHelp.UseVisualStyleBackColor = True
-        '
-        'lblHelp
-        '
-        Me.lblHelp.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblHelp.Location = New System.Drawing.Point(0, 0)
-        Me.lblHelp.Name = "lblHelp"
-        Me.lblHelp.Size = New System.Drawing.Size(449, 253)
-        Me.lblHelp.TabIndex = 0
-        Me.lblHelp.Text = resources.GetString("lblHelp.Text")
-        '
         'frmBuilder
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1191,11 +1191,11 @@ Partial Class frmBuilder
         Me.tabEthernet.ResumeLayout(False)
         Me.tabEthernet.PerformLayout()
         CType(Me.dgvPortsEthernet, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.tabHelp.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.toolStrip.ResumeLayout(False)
         Me.toolStrip.PerformLayout()
-        Me.tabHelp.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
