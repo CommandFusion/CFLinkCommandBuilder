@@ -11,13 +11,13 @@ Public Class frmBuilder
 
     Public Event AddCommand(sender As CommandFusion.CFPlugin, newCommand As CommandFusion.SystemCommand) Implements CommandFusion.CFPlugin.AddCommand
     Public Event AddFeedback(sender As CommandFusion.CFPlugin, newFB As CommandFusion.SystemFeedback) Implements CommandFusion.CFPlugin.AddFeedback
-    Public Event AddMacro(sender As CommandFusion.CFPlugin, newMacro As CommandFusion.SystemMacro) Implements CommandFusion.CFPlugin.AddMacro
-    Public Event AddMacros(sender As CommandFusion.CFPlugin, newMacros As List(Of CommandFusion.SystemMacro)) Implements CommandFusion.CFPlugin.AddMacros
+    Public Event AddMacro(sender As CommandFusion.CFPlugin, newMacro As CommandFusion.Macro) Implements CommandFusion.CFPlugin.AddMacro
+    Public Event AddMacros(sender As CommandFusion.CFPlugin, newMacros As List(Of CommandFusion.Macro)) Implements CommandFusion.CFPlugin.AddMacros
     Public Event AddScript(sender As CommandFusion.CFPlugin, ScriptRelativePathToProject As String) Implements CommandFusion.CFPlugin.AddScript
     Public Event AddSystem(sender As CommandFusion.CFPlugin, newSystem As CommandFusion.JSONSystem) Implements CommandFusion.CFPlugin.AddSystem
     Public Event AppendSystem(sender As CommandFusion.CFPlugin, newSystem As CommandFusion.JSONSystem) Implements CommandFusion.CFPlugin.AppendSystem
 
-    Public Event EditMacro(sender As CommandFusion.CFPlugin, existingMacro As String, newMacro As CommandFusion.SystemMacro) Implements CommandFusion.CFPlugin.EditMacro
+    Public Event EditMacro(sender As CommandFusion.CFPlugin, existingMacro As String, newMacro As CommandFusion.Macro) Implements CommandFusion.CFPlugin.EditMacro
     Public Event RequestMacroList(sender As CommandFusion.CFPlugin) Implements CommandFusion.CFPlugin.RequestMacroList
     Public Event RequestProjectFileInfo(sender As CommandFusion.CFPlugin) Implements CommandFusion.CFPlugin.RequestProjectFileInfo
     Public Event RequestSystemList(sender As CommandFusion.CFPlugin) Implements CommandFusion.CFPlugin.RequestSystemList
@@ -28,6 +28,7 @@ Public Class frmBuilder
     Private discoveredDevices As Dictionary(Of String, Object)
     Private availableActions As Dictionary(Of String, List(Of Object))
     Private ListOfSystems As List(Of CommandFusion.JSONSystem)
+    Private ListOfSystemTypes As List(Of CommandFusion.JSONSystem)
     Private Const NewSystem As String = "Create New System..."
     Private Const OnboardSerialPort As String = "On-board"
     Private Const CCF As String = "Raw CCF Hex Code"
@@ -115,12 +116,13 @@ Public Class frmBuilder
         RaiseEvent RequestSystemList(Me)
     End Sub
 
-    Public Sub UpdateMacroList(systemList As List(Of CommandFusion.SystemMacro)) Implements CommandFusion.CFPlugin.UpdateMacroList
+    Public Sub UpdateMacroList(systemList As List(Of CommandFusion.Macro)) Implements CommandFusion.CFPlugin.UpdateMacroList
 
     End Sub
 
-    Public Sub UpdateSystemList(systemList As List(Of CommandFusion.JSONSystem)) Implements CommandFusion.CFPlugin.UpdateSystemList
+    Public Sub UpdateSystemList(systemList As List(Of CommandFusion.JSONSystem), systemTypes As List(Of CommandFusion.JSONSystem)) Implements CommandFusion.CFPlugin.UpdateSystemList
         ListOfSystems = systemList
+        ListOfSystemTypes = systemTypes
         cboSystems.Items.Clear()
         cboSystems.Items.Add(NewSystem)
         cboSystems.SelectedIndex = 0
@@ -134,6 +136,10 @@ Public Class frmBuilder
         End If
     End Sub
 #End Region
+
+    Public Function GetSystemByID(ByVal ID As String) As CommandFusion.JSONSystem
+        Return ListOfSystemTypes.Find(Function(s) s.ID = ID)
+    End Function
 
     Private Function GetSystem(ByVal name As String) As CommandFusion.JSONSystem
         If ListOfSystems Is Nothing Then
@@ -278,6 +284,7 @@ Public Class frmBuilder
     End Sub
 
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         If Not Directory.Exists(pathDiscovery) Then
             Exit Sub
         End If
@@ -1257,7 +1264,7 @@ Public Class frmBuilder
     Private Sub cboCommand_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cboCommand.SelectedIndexChanged
         Dim newCmdName As String = SelectedDevice("Model") & "-" & Integer2HexString(SelectedDevice("CFLinkID")) & "_IRDB-" & cboDeviceType.Text & "-" & cboCodeSet.Text.PadLeft(4, "0") & "-" & cboCommand.SelectedItem.ToString
         Me.txtCommandName.Text = Regex.Replace(newCmdName, "[^\w\s]", "-")
-        Me.txtCommandValue.Text = BuildCFLinkCommandRAW(SelectedDevice("CFLinkID"), "TIRXSND", "P" & cboIRPort.SelectedItem.ToString & ":DBA:" & theDB.GetDeviceType(cboDeviceType.Text).DeviceNumber.ToString.PadLeft(2, "0") & ":" & cboCodeSet.Text.PadLeft(4, "0") & ":" & (cboCommand.SelectedIndex + 1).ToString.PadLeft(2, "0"))
+        Me.txtCommandValue.Text = BuildCFLinkCommandRAW(SelectedDevice("CFLinkID"), "TIRXSND", "P" & PadZero(cboIRPort.SelectedIndex + 1) & ":DBA:" & theDB.GetDeviceType(cboDeviceType.Text).DeviceNumber.ToString.PadLeft(2, "0") & ":" & cboCodeSet.Text.PadLeft(4, "0") & ":" & (cboCommand.SelectedIndex + 1).ToString.PadLeft(2, "0"))
     End Sub
 
     Private Sub btnAddAllIRCommands_Click(sender As Object, e As EventArgs) Handles btnAddAllIRCommands.Click
@@ -1274,7 +1281,7 @@ Public Class frmBuilder
 
         If cboCodeSet.SelectedIndex <> -1 AndAlso cboDeviceType.SelectedIndex <> -1 Then
 
-            Dim theSystem As CommandFusion.JSONSystem
+            Dim theSystem As CommandFusion.JSONSystem = Nothing
 
             If cboSystems.SelectedItem = NewSystem Then
                 If discoveredDevices Is Nothing OrElse Not discoveredDevices.ContainsKey("DeviceList") Then
@@ -1282,13 +1289,20 @@ Public Class frmBuilder
                     Exit Sub
                 End If
 
-                theSystem = New CommandFusion.JSONSystem
+                Try
+                    theSystem = GetSystemByID("udp-socket").Clone
+                Catch ex As Exception
+                    MsgBox("Unable to create a new UDP socket system. Please see the log for more details.")
+                    RaiseEvent WriteToLog(Me, "ERROR: System could not be cloned." & Environment.NewLine & ex.ToString)
+                    Exit Sub
+                End Try
 
                 ' Create a new default system using the selected discovered devices
                 For Each aDevice As Dictionary(Of String, Object) In discoveredDevices("DeviceList")
                     If aDevice("IsEthernet") Then
                         theSystem.Name = aDevice("Model") & "-" & Integer2HexString(aDevice("CFLinkID"))
-                        theSystem.GetSetting("protocol").Value = "UDP"
+                        theSystem.ID = "udp-socket"
+                        theSystem.GetSetting("protocol").Value = "udp"
                         theSystem.GetSetting("ip").Value = aDevice("NetworkName")
                         theSystem.GetSetting("port").Value = 10207
                         theSystem.GetSetting("origin").Value = 10207
@@ -1424,17 +1438,26 @@ Public Class frmBuilder
                 Exit Sub
             End If
 
-            Dim newSystem As New CommandFusion.JSONSystem
+            Dim newSystem As CommandFusion.JSONSystem = Nothing
+
+            Try
+                NewSystem = GetSystemByID("udp-socket").Clone
+            Catch ex As Exception
+                MsgBox("Unable to create a new UDP socket system. Please see the log for more details.")
+                RaiseEvent WriteToLog(Me, "ERROR: System could not be cloned." & Environment.NewLine & ex.ToString)
+                Exit Sub
+            End Try
 
             ' Create a new default system using the selected discovered devices
             For Each aDevice As Dictionary(Of String, Object) In discoveredDevices("DeviceList")
                 If aDevice("IsEthernet") Then
                     newSystem.Name = aDevice("Model") & "-" & Integer2HexString(aDevice("CFLinkID"))
-                    newSystem.GetSetting("protocol").Value = "UDP"
+                    newSystem.ID = "udp-socket"
+                    newSystem.GetSetting("protocol").Value = "udp"
                     newSystem.GetSetting("ip").Value = aDevice("NetworkName")
                     newSystem.GetSetting("port").Value = 10207
                     newSystem.GetSetting("origin").Value = 10207
-                    newSystem.GetSetting("queue").Value = False
+                    newSystem.GetSetting("offlinequeue").Value = False
                     newSystem.GetSetting("eom").Value = "\xF5\xF5"
                     newSystem.GetSetting("acceptBroadcasts").Value = True
                     newSystem.GetSetting("accept").Value = True
