@@ -11,13 +11,13 @@ Public Class frmBuilder
 
     Public Event AddCommand(sender As CommandFusion.CFPlugin, newCommand As CommandFusion.SystemCommand) Implements CommandFusion.CFPlugin.AddCommand
     Public Event AddFeedback(sender As CommandFusion.CFPlugin, newFB As CommandFusion.SystemFeedback) Implements CommandFusion.CFPlugin.AddFeedback
-    Public Event AddMacro(sender As CommandFusion.CFPlugin, newMacro As CommandFusion.Macro) Implements CommandFusion.CFPlugin.AddMacro
-    Public Event AddMacros(sender As CommandFusion.CFPlugin, newMacros As List(Of CommandFusion.Macro)) Implements CommandFusion.CFPlugin.AddMacros
+    Public Event AddMacro(sender As CommandFusion.CFPlugin, newMacro As CommandFusion.SystemMacro) Implements CommandFusion.CFPlugin.AddMacro
+    Public Event AddMacros(sender As CommandFusion.CFPlugin, newMacros As List(Of CommandFusion.SystemMacro)) Implements CommandFusion.CFPlugin.AddMacros
     Public Event AddScript(sender As CommandFusion.CFPlugin, ScriptRelativePathToProject As String) Implements CommandFusion.CFPlugin.AddScript
     Public Event AddSystem(sender As CommandFusion.CFPlugin, newSystem As CommandFusion.JSONSystem) Implements CommandFusion.CFPlugin.AddSystem
     Public Event AppendSystem(sender As CommandFusion.CFPlugin, newSystem As CommandFusion.JSONSystem) Implements CommandFusion.CFPlugin.AppendSystem
 
-    Public Event EditMacro(sender As CommandFusion.CFPlugin, existingMacro As String, newMacro As CommandFusion.Macro) Implements CommandFusion.CFPlugin.EditMacro
+    Public Event EditMacro(sender As CommandFusion.CFPlugin, existingMacro As String, newMacro As CommandFusion.SystemMacro) Implements CommandFusion.CFPlugin.EditMacro
     Public Event RequestMacroList(sender As CommandFusion.CFPlugin) Implements CommandFusion.CFPlugin.RequestMacroList
     Public Event RequestProjectFileInfo(sender As CommandFusion.CFPlugin) Implements CommandFusion.CFPlugin.RequestProjectFileInfo
     Public Event RequestSystemList(sender As CommandFusion.CFPlugin) Implements CommandFusion.CFPlugin.RequestSystemList
@@ -116,7 +116,7 @@ Public Class frmBuilder
         RaiseEvent RequestSystemList(Me)
     End Sub
 
-    Public Sub UpdateMacroList(systemList As List(Of CommandFusion.Macro)) Implements CommandFusion.CFPlugin.UpdateMacroList
+    Public Sub UpdateMacroList(systemList As List(Of CommandFusion.SystemMacro)) Implements CommandFusion.CFPlugin.UpdateMacroList
 
     End Sub
 
@@ -173,7 +173,7 @@ Public Class frmBuilder
         End If
     End Sub
 
-    Private Sub toolStrip_Resize(sender As Object, e As EventArgs) Handles toolStrip.Resize
+    Private Sub toolStrip_Resize(sender As Object, e As EventArgs) Handles ToolStrip.Resize
         cboFiles.Width = btnBrowse.Bounds.Left - lblSelectExport.Bounds.Right - 10
     End Sub
 
@@ -510,7 +510,7 @@ Public Class frmBuilder
                                     tabMain.TabPages.Add(tabError)
                                     lblErrorMsg.Text = "An invalid Ethernet device was selected (missing Ethernet slot configurations)."
                                 End If
-                                
+
                         End Select
                     Case "DIN-MOD4", "MOD4"
                         Select Case SelectedAction
@@ -625,7 +625,7 @@ Public Class frmBuilder
                     dataString &= PadZero(dgvPortsEthernet.Rows(i).Cells(0).Value) & ":" & dgvPortsEthernet.Rows(i).Cells(2).Value
                     found = True
                 End If
-                
+
             End If
         Next
 
