@@ -162,10 +162,10 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy "$(TargetPath)" "C:\Work\GuiLink\Products\CommandFusion\GitHub\guiDesigner\bin\x86\Debug\plugins"
-copy "$(TargetPath)" "C:\Work\GuiLink\Products\CommandFusion\GitHub\guiDesigner\plugins"
-copy "$(TargetDir)\GaDotNet.Common.dll" "C:\Work\GuiLink\Products\CommandFusion\GitHub\guiDesigner\bin\x86\Debug\plugins"
-copy "$(TargetDir)\GaDotNet.Common.dll" "C:\Work\GuiLink\Products\CommandFusion\GitHub\guiDesigner\plugins"</PostBuildEvent>
+    <PostBuildEvent>copy "$(TargetPath)" "C:\work\CommandFusion\GitHub\guiDesigner\bin\x86\Debug\plugins"
+copy "$(TargetPath)" "C:\work\CommandFusion\GitHub\guiDesigner\plugins"
+copy "$(TargetDir)\GaDotNet.Common.dll" "C:\work\CommandFusion\GitHub\guiDesigner\bin\x86\Debug\plugins"
+copy "$(TargetDir)\GaDotNet.Common.dll" "C:\work\CommandFusion\GitHub\guiDesigner\plugins"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -5,10 +5,10 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <StartAction>Program</StartAction>
-    <StartProgram>C:\Work\GuiLink\Products\CommandFusion\GitHub\guiDesigner\bin\x86\Debug\guiDesigner.exe</StartProgram>
+    <StartProgram>C:\work\CommandFusion\GitHub\guiDesigner\bin\x86\Debug\guiDesigner.exe</StartProgram>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
     <StartAction>Program</StartAction>
-    <StartProgram>C:\Work\GuiLink\Products\CommandFusion\GitHub\guiDesigner\bin\x86\Debug\guiDesigner.exe</StartProgram>
+    <StartProgram>C:\work\CommandFusion\GitHub\guiDesigner\bin\x86\Debug\guiDesigner.exe</StartProgram>
   </PropertyGroup>
 </Project>
