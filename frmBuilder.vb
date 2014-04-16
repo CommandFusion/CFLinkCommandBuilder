@@ -1264,7 +1264,11 @@ Public Class frmBuilder
     Private Sub cboCommand_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cboCommand.SelectedIndexChanged
         Dim newCmdName As String = SelectedDevice("Model") & "-" & Integer2HexString(SelectedDevice("CFLinkID")) & "_IRDB-" & cboDeviceType.Text & "-" & cboCodeSet.Text.PadLeft(4, "0") & "-" & cboCommand.SelectedItem.ToString
         Me.txtCommandName.Text = Regex.Replace(newCmdName, "[^\w\s]", "-")
-        Me.txtCommandValue.Text = BuildCFLinkCommandRAW(SelectedDevice("CFLinkID"), "TIRXSND", "P" & PadZero(cboIRPort.SelectedIndex + 1) & ":DBA:" & theDB.GetDeviceType(cboDeviceType.Text).DeviceNumber.ToString.PadLeft(2, "0") & ":" & cboCodeSet.Text.PadLeft(4, "0") & ":" & (cboCommand.SelectedIndex + 1).ToString.PadLeft(2, "0"))
+        Dim moduleString As String = ""
+        If Not SelectedModule Is Nothing Then
+            moduleString = "M" & SelectedModule("ModuleNumber") & "|"
+        End If
+        Me.txtCommandValue.Text = BuildCFLinkCommandRAW(SelectedDevice("CFLinkID"), "TIRXSND", moduleString & "P" & PadZero(cboIRPort.SelectedIndex + 1) & ":DBA:" & theDB.GetDeviceType(cboDeviceType.Text).DeviceNumber.ToString.PadLeft(2, "0") & ":" & cboCodeSet.Text.PadLeft(4, "0") & ":" & (cboCommand.SelectedIndex + 1).ToString.PadLeft(2, "0"))
     End Sub
 
     Private Sub btnAddAllIRCommands_Click(sender As Object, e As EventArgs) Handles btnAddAllIRCommands.Click
@@ -1337,7 +1341,11 @@ Public Class frmBuilder
                 Dim newCommand As New CommandFusion.SystemCommand
                 Dim newCmdName As String = SelectedDevice("Model") & "-" & Integer2HexString(SelectedDevice("CFLinkID")) & "_IRDB-" & cboManufacturer.Text & "-" & cboCodeSet.Text.PadLeft(4, "0") & "-" & cboCommand.Items(i).ToString
                 newCommand.Name = Regex.Replace(newCmdName, "[^\w\s]", "-")
-                newCommand.Value = BuildCFLinkCommandRAW(SelectedDevice("CFLinkID"), "TIRXSND", "P" & cboIRPort.SelectedItem.ToString & ":DBA:" & theDB.GetDeviceType(cboDeviceType.Text).DeviceNumber.ToString.PadLeft(2, "0") & ":" & cboCodeSet.Text.PadLeft(4, "0") & ":" & (i + 1).ToString.PadLeft(2, "0"))
+                Dim moduleString As String = ""
+                If Not SelectedModule Is Nothing Then
+                    moduleString = "M" & SelectedModule("ModuleNumber") & "|"
+                End If
+                newCommand.Value = BuildCFLinkCommandRAW(SelectedDevice("CFLinkID"), "TIRXSND", moduleString & "P" & PadZero(cboIRPort.SelectedIndex + 1) & ":DBA:" & theDB.GetDeviceType(cboDeviceType.Text).DeviceNumber.ToString.PadLeft(2, "0") & ":" & cboCodeSet.Text.PadLeft(4, "0") & ":" & (i + 1).ToString.PadLeft(2, "0"))
                 newCommand.System = theSystem.Name
                 theSystem.Commands.Add(newCommand)
             Next
