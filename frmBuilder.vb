@@ -1454,7 +1454,7 @@ Public Class frmBuilder
                     newSystem.Name = aDevice("Model") & "-" & Integer2HexString(aDevice("CFLinkID"))
                     newSystem.ID = "udp-socket"
                     newSystem.GetSetting("protocol").Value = "udp"
-                    newSystem.GetSetting("ip").Value = aDevice("NetworkName")
+                    newSystem.GetSetting("ip").Value = aDevice("IPAddress")
                     newSystem.GetSetting("port").Value = 10207
                     newSystem.GetSetting("origin").Value = 10207
                     newSystem.GetSetting("offlinequeue").Value = False
