@@ -173,7 +173,7 @@ Public Class frmBuilder
         End If
     End Sub
 
-    Private Sub toolStrip_Resize(sender As Object, e As EventArgs) Handles ToolStrip.Resize
+    Private Sub toolStrip_Resize(sender As Object, e As EventArgs) Handles toolStrip.Resize
         cboFiles.Width = btnBrowse.Bounds.Left - lblSelectExport.Bounds.Right - 10
     End Sub
 
@@ -1449,7 +1449,7 @@ Public Class frmBuilder
             Dim newSystem As CommandFusion.JSONSystem = Nothing
 
             Try
-                NewSystem = GetSystemByID("udp-socket").Clone
+                newSystem = GetSystemByID("udp-socket").Clone
             Catch ex As Exception
                 MsgBox("Unable to create a new UDP socket system. Please see the log for more details.")
                 RaiseEvent WriteToLog(Me, "ERROR: System could not be cloned." & Environment.NewLine & ex.ToString)
@@ -1516,7 +1516,7 @@ Public Class frmBuilder
             My.Computer.Clipboard.SetText(txtCommandValue.Text)
             MsgBox("The command value has been copied to your clipboard." & Environment.NewLine & "You can now paste the command into the System Commander test window if you want to test the CFLink command in a live system.", MsgBoxStyle.Information)
         End If
-        
+
     End Sub
 
     Private Sub txtCommandValue_TextChanged(sender As Object, e As EventArgs) Handles txtCommandValue.TextChanged
