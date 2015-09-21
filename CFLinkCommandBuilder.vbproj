@@ -44,8 +44,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CFPlugin">
-      <HintPath>..\..\..\..\..\..\Work\GuiLink\Products\CommandFusion\GitHub\guiDesigner Plugin API\bin\Release\CFPlugin.dll</HintPath>
+    <Reference Include="CFPlugin, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\guiDesigner\bin\x86\Release\CFPlugin.dll</HintPath>
     </Reference>
     <Reference Include="GaDotNet.Common">
       <HintPath>.\GaDotNet.Common.dll</HintPath>
