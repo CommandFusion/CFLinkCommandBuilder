@@ -46,7 +46,7 @@
   <ItemGroup>
     <Reference Include="CFPlugin, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\guiDesigner\bin\x86\Debug\CFPlugin.dll</HintPath>
+      <HintPath>..\guiDesigner\bin\x86\Release\CFPlugin.dll</HintPath>
     </Reference>
     <Reference Include="GaDotNet.Common">
       <HintPath>.\GaDotNet.Common.dll</HintPath>
