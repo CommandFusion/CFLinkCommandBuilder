@@ -11,4 +11,12 @@
     <StartAction>Program</StartAction>
     <StartProgram>C:\Work\GuiLink\Products\CommandFusion\GitHub\guiDesigner\bin\x86\Debug\guiDesigner.exe</StartProgram>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <StartProgram>C:\Work\GuiLink\Products\CommandFusion\GitHub\guiDesigner\bin\x86\Debug\guiDesigner.exe</StartProgram>
+    <StartAction>Program</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <StartProgram>C:\Work\GuiLink\Products\CommandFusion\GitHub\guiDesigner\bin\x86\Debug\guiDesigner.exe</StartProgram>
+    <StartAction>Program</StartAction>
+  </PropertyGroup>
 </Project>
